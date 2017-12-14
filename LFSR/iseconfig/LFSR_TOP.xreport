@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-12-13T15:54:16</DateModified>
+  <DateModified>2017-12-14T13:32:23</DateModified>
   <ModuleName>LFSR_TOP</ModuleName>
   <SummaryTimeStamp>2017-12-13T13:59:56</SummaryTimeStamp>
-  <SavedFilePath>U:/Xilinx/LFSR/iseconfig/LFSR_TOP.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>U:/Xilinx/LFSR\</ImplementationReportsDirectory>
+  <SavedFilePath>/media/sf_Red/Projects/USB_Research/LFSR/iseconfig/LFSR_TOP.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/media/sf_Red/Projects/USB_Research/LFSR/</ImplementationReportsDirectory>
   <DateInitialized>2017-12-13T11:44:46</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

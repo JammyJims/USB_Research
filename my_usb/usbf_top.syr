@@ -1,0 +1,1557 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> 
+Reading design: usbf_top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "usbf_top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "usbf_top"
+Output Format                      : NGC
+Target Device                      : xc6slx16-2-csg324
+
+---- Source Options
+Top Module Name                    : usbf_top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "/media/sf_Red/Projects/USB_Research/my_usb/usbf_crc5.v" into library work
+Parsing verilog file "usbf_defines.v" included at line 67.
+Parsing module <usbf_crc5>.
+Analyzing Verilog file "/media/sf_Red/Projects/USB_Research/my_usb/usbf_crc16.v" into library work
+Parsing verilog file "usbf_defines.v" included at line 67.
+Parsing module <usbf_crc16>.
+Analyzing Verilog file "/media/sf_Red/Projects/USB_Research/my_usb/usbf_utmi_ls.v" into library work
+Parsing verilog file "usbf_defines.v" included at line 96.
+Parsing module <usbf_utmi_ls>.
+Analyzing Verilog file "/media/sf_Red/Projects/USB_Research/my_usb/usbf_pe.v" into library work
+Parsing verilog file "usbf_defines.v" included at line 107.
+Parsing module <usbf_pe>.
+Analyzing Verilog file "/media/sf_Red/Projects/USB_Research/my_usb/usbf_pd.v" into library work
+Parsing verilog file "usbf_defines.v" included at line 92.
+Parsing module <usbf_pd>.
+Analyzing Verilog file "/media/sf_Red/Projects/USB_Research/my_usb/usbf_pa.v" into library work
+Parsing verilog file "usbf_defines.v" included at line 85.
+Parsing module <usbf_pa>.
+Analyzing Verilog file "/media/sf_Red/Projects/USB_Research/my_usb/usbf_idma.v" into library work
+Parsing verilog file "usbf_defines.v" included at line 101.
+Parsing module <usbf_idma>.
+Analyzing Verilog file "/media/sf_Red/Projects/USB_Research/my_usb/usbf_ep_rf_dummy.v" into library work
+Parsing verilog file "usbf_defines.v" included at line 67.
+Parsing module <usbf_ep_rf_dummy>.
+Analyzing Verilog file "/media/sf_Red/Projects/USB_Research/my_usb/usbf_ep_rf.v" into library work
+Parsing verilog file "usbf_defines.v" included at line 84.
+Parsing module <usbf_ep_rf>.
+Analyzing Verilog file "/media/sf_Red/Projects/USB_Research/my_usb/usbf_wb.v" into library work
+Parsing verilog file "usbf_defines.v" included at line 86.
+Parsing module <usbf_wb>.
+Analyzing Verilog file "/media/sf_Red/Projects/USB_Research/my_usb/usbf_utmi_if.v" into library work
+Parsing verilog file "usbf_defines.v" included at line 98.
+Parsing module <usbf_utmi_if>.
+Analyzing Verilog file "/media/sf_Red/Projects/USB_Research/my_usb/usbf_rf.v" into library work
+Parsing verilog file "usbf_defines.v" included at line 99.
+Parsing module <usbf_rf>.
+Analyzing Verilog file "/media/sf_Red/Projects/USB_Research/my_usb/usbf_pl.v" into library work
+Parsing verilog file "usbf_defines.v" included at line 91.
+Parsing module <usbf_pl>.
+Analyzing Verilog file "/media/sf_Red/Projects/USB_Research/my_usb/usbf_mem_arb.v" into library work
+Parsing verilog file "usbf_defines.v" included at line 81.
+Parsing module <usbf_mem_arb>.
+Analyzing Verilog file "/media/sf_Red/Projects/USB_Research/my_usb/usbf_top.v" into library work
+Parsing verilog file "usbf_defines.v" included at line 107.
+Parsing module <usbf_top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <usbf_top>.
+
+Elaborating module <usbf_utmi_if>.
+
+Elaborating module <usbf_utmi_ls>.
+WARNING:HDLCompiler:1127 - "/media/sf_Red/Projects/USB_Research/my_usb/usbf_utmi_ls.v" Line 267: Assignment to ls_se1 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/media/sf_Red/Projects/USB_Research/my_usb/usbf_utmi_ls.v" Line 343: Assignment to T1_gt_3_125_mS ignored, since the identifier is never used
+WARNING:HDLCompiler:1308 - "/media/sf_Red/Projects/USB_Research/my_usb/usbf_utmi_ls.v" Line 445: Found full_case directive in module usbf_utmi_ls. Use of full_case directives may cause differences between RTL and post-synthesis simulation
+
+Elaborating module <usbf_pl(SSRAM_HADR=14)>.
+
+Elaborating module <usbf_pd>.
+WARNING:HDLCompiler:1127 - "/media/sf_Red/Projects/USB_Research/my_usb/usbf_pd.v" Line 232: Assignment to pid_RES ignored, since the identifier is never used
+
+Elaborating module <usbf_crc5>.
+
+Elaborating module <usbf_crc16>.
+WARNING:HDLCompiler:1309 - "/media/sf_Red/Projects/USB_Research/my_usb/usbf_pd.v" Line 364: Found full_case directive. Use of full_case directives may cause differences between RTL and post-synthesis simulation
+WARNING:HDLCompiler:1127 - "/media/sf_Red/Projects/USB_Research/my_usb/usbf_pl.v" Line 360: Assignment to rx_seq_err ignored, since the identifier is never used
+
+Elaborating module <usbf_pa>.
+WARNING:HDLCompiler:1308 - "/media/sf_Red/Projects/USB_Research/my_usb/usbf_pa.v" Line 305: Found full_case directive in module usbf_pa. Use of full_case directives may cause differences between RTL and post-synthesis simulation
+
+Elaborating module <usbf_idma(SSRAM_HADR=14)>.
+WARNING:HDLCompiler:413 - "/media/sf_Red/Projects/USB_Research/my_usb/usbf_idma.v" Line 280: Result of 17-bit expression is truncated to fit in 15-bit target.
+WARNING:HDLCompiler:1308 - "/media/sf_Red/Projects/USB_Research/my_usb/usbf_idma.v" Line 453: Found full_case directive in module usbf_idma. Use of full_case directives may cause differences between RTL and post-synthesis simulation
+
+Elaborating module <usbf_pe(SSRAM_HADR=14)>.
+WARNING:HDLCompiler:1127 - "/media/sf_Red/Projects/USB_Research/my_usb/usbf_pe.v" Line 359: Assignment to txfr_bulk ignored, since the identifier is never used
+WARNING:HDLCompiler:1308 - "/media/sf_Red/Projects/USB_Research/my_usb/usbf_pe.v" Line 429: Found full_case directive in module usbf_pe. Use of full_case directives may cause differences between RTL and post-synthesis simulation
+WARNING:HDLCompiler:1308 - "/media/sf_Red/Projects/USB_Research/my_usb/usbf_pe.v" Line 437: Found full_case directive in module usbf_pe. Use of full_case directives may cause differences between RTL and post-synthesis simulation
+WARNING:HDLCompiler:1308 - "/media/sf_Red/Projects/USB_Research/my_usb/usbf_pe.v" Line 444: Found full_case directive in module usbf_pe. Use of full_case directives may cause differences between RTL and post-synthesis simulation
+WARNING:HDLCompiler:1308 - "/media/sf_Red/Projects/USB_Research/my_usb/usbf_pe.v" Line 451: Found full_case directive in module usbf_pe. Use of full_case directives may cause differences between RTL and post-synthesis simulation
+WARNING:HDLCompiler:1308 - "/media/sf_Red/Projects/USB_Research/my_usb/usbf_pe.v" Line 470: Found full_case directive in module usbf_pe. Use of full_case directives may cause differences between RTL and post-synthesis simulation
+WARNING:HDLCompiler:1308 - "/media/sf_Red/Projects/USB_Research/my_usb/usbf_pe.v" Line 415: Found full_case directive in module usbf_pe. Use of full_case directives may cause differences between RTL and post-synthesis simulation
+WARNING:HDLCompiler:1308 - "/media/sf_Red/Projects/USB_Research/my_usb/usbf_pe.v" Line 484: Found full_case directive in module usbf_pe. Use of full_case directives may cause differences between RTL and post-synthesis simulation
+WARNING:HDLCompiler:1308 - "/media/sf_Red/Projects/USB_Research/my_usb/usbf_pe.v" Line 523: Found full_case directive in module usbf_pe. Use of full_case directives may cause differences between RTL and post-synthesis simulation
+WARNING:HDLCompiler:1308 - "/media/sf_Red/Projects/USB_Research/my_usb/usbf_pe.v" Line 492: Found full_case directive in module usbf_pe. Use of full_case directives may cause differences between RTL and post-synthesis simulation
+WARNING:HDLCompiler:1308 - "/media/sf_Red/Projects/USB_Research/my_usb/usbf_pe.v" Line 836: Found full_case directive in module usbf_pe. Use of full_case directives may cause differences between RTL and post-synthesis simulation
+
+Elaborating module <usbf_mem_arb(SSRAM_HADR=14)>.
+
+Elaborating module <usbf_rf>.
+WARNING:HDLCompiler:1308 - "/media/sf_Red/Projects/USB_Research/my_usb/usbf_rf.v" Line 298: Found full_case directive in module usbf_rf. Use of full_case directives may cause differences between RTL and post-synthesis simulation
+WARNING:HDLCompiler:1308 - "/media/sf_Red/Projects/USB_Research/my_usb/usbf_rf.v" Line 382: Found full_case directive in module usbf_rf. Use of full_case directives may cause differences between RTL and post-synthesis simulation
+
+Elaborating module <usbf_ep_rf>.
+
+Elaborating module <usbf_ep_rf_dummy>.
+WARNING:HDLCompiler:1127 - "/media/sf_Red/Projects/USB_Research/my_usb/usbf_top.v" Line 454: Assignment to rf_resume_req ignored, since the identifier is never used
+
+Elaborating module <usbf_wb>.
+WARNING:HDLCompiler:1308 - "/media/sf_Red/Projects/USB_Research/my_usb/usbf_wb.v" Line 200: Found full_case directive in module usbf_wb. Use of full_case directives may cause differences between RTL and post-synthesis simulation
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <usbf_top>.
+    Related source file is "/media/sf_Red/Projects/USB_Research/my_usb/usbf_top.v".
+        SSRAM_HADR = 14
+INFO:Xst:3210 - "/media/sf_Red/Projects/USB_Research/my_usb/usbf_top.v" line 405: Output port <rf_resume_req> of the instance <u4> is unconnected or connected to loadless signal.
+    Found 2-bit register for signal <LineState_r>.
+    Found 8-bit register for signal <VStatus_r>.
+    Found 1-bit register for signal <suspend_clr_wr>.
+    Found 1-bit register for signal <resume_req_r>.
+    Found 1-bit register for signal <susp_o>.
+    Summary:
+	inferred  13 D-type flip-flop(s).
+Unit <usbf_top> synthesized.
+
+Synthesizing Unit <usbf_utmi_if>.
+    Related source file is "/media/sf_Red/Projects/USB_Research/my_usb/usbf_utmi_if.v".
+    Found 1-bit register for signal <rx_active>.
+    Found 1-bit register for signal <rx_err>.
+    Found 8-bit register for signal <rx_data>.
+    Found 8-bit register for signal <DataOut>.
+    Found 1-bit register for signal <tx_ready>.
+    Found 1-bit register for signal <drive_k_r>.
+    Found 1-bit register for signal <TxValid>.
+    Found 1-bit register for signal <rx_valid>.
+    Summary:
+	inferred  22 D-type flip-flop(s).
+Unit <usbf_utmi_if> synthesized.
+
+Synthesizing Unit <usbf_utmi_ls>.
+    Related source file is "/media/sf_Red/Projects/USB_Research/my_usb/usbf_utmi_ls.v".
+        POR = 15'b000000000000001
+        NORMAL = 15'b000000000000010
+        RES_SUSP = 15'b000000000000100
+        SUSPEND = 15'b000000000001000
+        RESUME = 15'b000000000010000
+        RESUME_REQUEST = 15'b000000000100000
+        RESUME_WAIT = 15'b000000001000000
+        RESUME_SIG = 15'b000000010000000
+        ATTACH = 15'b000000100000000
+        RESET = 15'b000001000000000
+        SPEED_NEG = 15'b000010000000000
+        SPEED_NEG_K = 15'b000100000000000
+        SPEED_NEG_J = 15'b001000000000000
+        SPEED_NEG_HS = 15'b010000000000000
+        SPEED_NEG_FS = 15'b100000000000000
+WARNING:Xst:37 - Detected unknown constraint/property "enum". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "state". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "enum". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "state". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "state_vector". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "state". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:647 - Input <rx_active> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <tx_ready> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Register <T2_gt_1_2_mS> equivalent to <T2_gt_1_0_mS> has been removed
+    Found 1-bit register for signal <resume_req_s1>.
+    Found 1-bit register for signal <resume_req_s>.
+    Found 1-bit register for signal <mode_hs>.
+    Found 1-bit register for signal <usb_suspend>.
+    Found 1-bit register for signal <usb_attached>.
+    Found 1-bit register for signal <TermSel>.
+    Found 1-bit register for signal <XcvSelect>.
+    Found 2-bit register for signal <OpMode>.
+    Found 1-bit register for signal <usb_reset>.
+    Found 2-bit register for signal <line_state_r>.
+    Found 1-bit register for signal <ls_idle_r>.
+    Found 1-bit register for signal <idle_long>.
+    Found 1-bit register for signal <ls_k_r>.
+    Found 1-bit register for signal <ls_j_r>.
+    Found 1-bit register for signal <ls_se0_r>.
+    Found 4-bit register for signal <ps_cnt>.
+    Found 1-bit register for signal <ps_cnt_clr>.
+    Found 8-bit register for signal <idle_cnt1>.
+    Found 8-bit register for signal <idle_cnt1_next>.
+    Found 1-bit register for signal <idle_cnt1_clr>.
+    Found 1-bit register for signal <T1_gt_2_5_uS>.
+    Found 1-bit register for signal <T1_st_3_0_mS>.
+    Found 1-bit register for signal <T1_gt_3_0_mS>.
+    Found 1-bit register for signal <T1_gt_5_0_mS>.
+    Found 8-bit register for signal <me_ps>.
+    Found 1-bit register for signal <me_ps_2_5_us>.
+    Found 8-bit register for signal <me_ps2>.
+    Found 1-bit register for signal <me_ps2_0_5_ms>.
+    Found 8-bit register for signal <me_cnt>.
+    Found 1-bit register for signal <T2_gt_100_uS>.
+    Found 1-bit register for signal <T2_wakeup>.
+    Found 1-bit register for signal <T2_gt_1_0_mS>.
+    Found 1-bit register for signal <me_cnt_100_ms>.
+    Found 3-bit register for signal <chirp_cnt>.
+    Found 1-bit register for signal <chirp_cnt_is_6>.
+    Found 15-bit register for signal <state>.
+    Found 1-bit register for signal <drive_k>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 15                                             |
+    | Transitions        | 89                                             |
+    | Inputs             | 19                                             |
+    | Outputs            | 15                                             |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst_INV_30_o (positive)                        |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 000000000000001                                |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 4-bit adder for signal <ps_cnt[3]_GND_3_o_add_26_OUT> created at line 317.
+    Found 8-bit adder for signal <idle_cnt1[7]_GND_3_o_add_36_OUT> created at line 329.
+    Found 8-bit adder for signal <me_ps[7]_GND_3_o_add_51_OUT> created at line 355.
+    Found 8-bit adder for signal <me_ps2[7]_GND_3_o_add_57_OUT> created at line 364.
+    Found 8-bit adder for signal <me_cnt[7]_GND_3_o_add_64_OUT> created at line 373.
+    Found 3-bit adder for signal <chirp_cnt[2]_GND_3_o_add_79_OUT> created at line 396.
+    Found 8-bit comparator greater for signal <GND_3_o_idle_cnt1[7]_LessThan_42_o> created at line 335
+    Found 8-bit comparator greater for signal <idle_cnt1[7]_GND_3_o_LessThan_44_o> created at line 338
+    Found 8-bit comparator greater for signal <GND_3_o_idle_cnt1[7]_LessThan_46_o> created at line 341
+    Found 8-bit comparator greater for signal <GND_3_o_idle_cnt1[7]_LessThan_50_o> created at line 347
+    Found 8-bit comparator greater for signal <GND_3_o_me_ps2[7]_LessThan_70_o> created at line 376
+    Found 8-bit comparator greater for signal <GND_3_o_me_cnt[7]_LessThan_72_o> created at line 379
+    Found 8-bit comparator greater for signal <GND_3_o_me_cnt[7]_LessThan_74_o> created at line 382
+    Summary:
+	inferred   6 Adder/Subtractor(s).
+	inferred  78 D-type flip-flop(s).
+	inferred   7 Comparator(s).
+	inferred  10 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <usbf_utmi_ls> synthesized.
+
+Synthesizing Unit <usbf_pl>.
+    Related source file is "/media/sf_Red/Projects/USB_Research/my_usb/usbf_pl.v".
+        SSRAM_HADR = 14
+WARNING:Xst:647 - Input <usb_reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <usb_suspend> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <usb_attached> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "/media/sf_Red/Projects/USB_Research/my_usb/usbf_pl.v" line 328: Output port <seq_err> of the instance <u0> is unconnected or connected to loadless signal.
+    Register <frame_no_we_r> equivalent to <clr_sof_time> has been removed
+    Found 11-bit register for signal <frame_no_r>.
+    Found 1-bit register for signal <frame_no_same>.
+    Found 4-bit register for signal <mfm_cnt>.
+    Found 1-bit register for signal <clr_sof_time>.
+    Found 12-bit register for signal <sof_time>.
+    Found 5-bit register for signal <hms_cnt>.
+    Found 1-bit register for signal <hms_clk>.
+    Found 4-bit adder for signal <mfm_cnt[3]_GND_4_o_add_8_OUT> created at line 290.
+    Found 12-bit adder for signal <sof_time[11]_GND_4_o_add_15_OUT> created at line 299.
+    Found 5-bit adder for signal <hms_cnt[4]_GND_4_o_add_21_OUT> created at line 312.
+    Found 11-bit comparator equal for signal <frame_no_r[10]_frame_no[10]_equal_7_o> created at line 278
+    Found 7-bit comparator equal for signal <fsel> created at line 320
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred  35 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+Unit <usbf_pl> synthesized.
+
+Synthesizing Unit <usbf_pd>.
+    Related source file is "/media/sf_Red/Projects/USB_Research/my_usb/usbf_pd.v".
+        IDLE = 4'b0001
+        ACTIVE = 4'b0010
+        TOKEN = 4'b0100
+        DATA = 4'b1000
+WARNING:Xst:37 - Detected unknown constraint/property "enum". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "state". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "enum". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "state". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "state_vector". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "state". This constraint/property is not supported by the current software release and will be ignored.
+    Found 8-bit register for signal <token0>.
+    Found 8-bit register for signal <token1>.
+    Found 1-bit register for signal <token_valid_r1>.
+    Found 1-bit register for signal <token_valid_str1>.
+    Found 1-bit register for signal <rxv1>.
+    Found 1-bit register for signal <rxv2>.
+    Found 1-bit register for signal <data_valid0>.
+    Found 8-bit register for signal <d0>.
+    Found 8-bit register for signal <d1>.
+    Found 8-bit register for signal <d2>.
+    Found 1-bit register for signal <rx_active_r>.
+    Found 16-bit register for signal <crc16_sum>.
+    Found 4-bit register for signal <state>.
+    Found 8-bit register for signal <pid>.
+    Found finite state machine <FSM_1> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 21                                             |
+    | Inputs             | 8                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst_INV_65_o (positive)                        |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 0001                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 4-bit comparator not equal for signal <n0006> created at line 214
+    Found 5-bit comparator not equal for signal <n0038> created at line 254
+    Summary:
+	inferred  70 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred  13 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <usbf_pd> synthesized.
+
+Synthesizing Unit <usbf_crc5>.
+    Related source file is "/media/sf_Red/Projects/USB_Research/my_usb/usbf_crc5.v".
+    Summary:
+Unit <usbf_crc5> synthesized.
+
+Synthesizing Unit <usbf_crc16>.
+    Related source file is "/media/sf_Red/Projects/USB_Research/my_usb/usbf_crc16.v".
+    Summary:
+Unit <usbf_crc16> synthesized.
+
+Synthesizing Unit <usbf_pa>.
+    Related source file is "/media/sf_Red/Projects/USB_Research/my_usb/usbf_pa.v".
+        IDLE = 5'b00001
+        DATA = 5'b00010
+        CRC1 = 5'b00100
+        CRC2 = 5'b01000
+        WAIT = 5'b10000
+WARNING:Xst:37 - Detected unknown constraint/property "enum". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "state". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "enum". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "state". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "state_vector". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "state". This constraint/property is not supported by the current software release and will be ignored.
+    Found 1-bit register for signal <zero_length_r>.
+    Found 1-bit register for signal <tx_valid_r1>.
+    Found 1-bit register for signal <tx_valid_r>.
+    Found 1-bit register for signal <send_token_r>.
+    Found 1-bit register for signal <tx_first_r>.
+    Found 1-bit register for signal <send_data_r>.
+    Found 1-bit register for signal <send_data_r2>.
+    Found 16-bit register for signal <crc16>.
+    Found 5-bit register for signal <state>.
+    Found 1-bit register for signal <send_zero_length_r>.
+    Found finite state machine <FSM_2> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 12                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 5                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst_INV_106_o (positive)                       |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 00001                                          |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred  24 D-type flip-flop(s).
+	inferred   6 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <usbf_pa> synthesized.
+
+Synthesizing Unit <usbf_idma>.
+    Related source file is "/media/sf_Red/Projects/USB_Research/my_usb/usbf_idma.v".
+        SSRAM_HADR = 14
+        IDLE = 8'b00000001
+        WAIT_MRD = 8'b00000010
+        MEM_WR = 8'b00000100
+        MEM_WR1 = 8'b00001000
+        MEM_WR2 = 8'b00010000
+        MEM_RD1 = 8'b00100000
+        MEM_RD2 = 8'b01000000
+        MEM_RD3 = 8'b10000000
+WARNING:Xst:37 - Detected unknown constraint/property "enum". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "state". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "enum". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "state". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "state_vector". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "state". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "state_vector". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "state". This constraint/property is not supported by the current software release and will be ignored.
+    Register <wr_done_r> equivalent to <rx_data_done_r2> has been removed
+    Found 1-bit register for signal <mack_r>.
+    Found 1-bit register for signal <rx_data_valid_r>.
+    Found 8-bit register for signal <rx_data_st_r>.
+    Found 1-bit register for signal <rx_data_done_r>.
+    Found 1-bit register for signal <rx_data_done_r2>.
+    Found 1-bit register for signal <tx_dma_en_r>.
+    Found 1-bit register for signal <rx_dma_en_r>.
+    Found 1-bit register for signal <send_zero_length_r>.
+    Found 15-bit register for signal <adr_cw>.
+    Found 15-bit register for signal <last_buf_adr>.
+    Found 3-bit register for signal <adr_cb>.
+    Found 14-bit register for signal <sizd_c>.
+    Found 1-bit register for signal <sizd_is_zero>.
+    Found 11-bit register for signal <sizu_c>.
+    Found 1-bit register for signal <idma_done>.
+    Found 1-bit register for signal <dtmp_sel_r>.
+    Found 32-bit register for signal <dtmp_r>.
+    Found 1-bit register for signal <word_done>.
+    Found 1-bit register for signal <word_done_r>.
+    Found 32-bit register for signal <dout_r>.
+    Found 1-bit register for signal <wr_last>.
+    Found 1-bit register for signal <wr_done>.
+    Found 32-bit register for signal <rd_buf0>.
+    Found 32-bit register for signal <rd_buf1>.
+    Found 1-bit register for signal <send_data_r>.
+    Found 8-bit register for signal <state>.
+    Found 1-bit register for signal <mwe>.
+    Found finite state machine <FSM_3> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 8                                              |
+    | Transitions        | 28                                             |
+    | Inputs             | 11                                             |
+    | Outputs            | 8                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst_INV_131_o (positive)                       |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 00000001                                       |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 14-bit subtractor for signal <sizd_c[13]_GND_9_o_sub_30_OUT> created at line 317.
+    Found 17-bit adder for signal <n0195> created at line 280.
+    Found 15-bit adder for signal <adr_cw[14]_GND_9_o_add_20_OUT> created at line 287.
+    Found 3-bit adder for signal <adr_cb[2]_GND_9_o_add_26_OUT> created at line 301.
+    Found 11-bit adder for signal <sizu_c[10]_GND_9_o_add_38_OUT> created at line 337.
+    Found 8-bit 8-to-1 multiplexer for signal <tx_data_st> created at line 397.
+    Found 15-bit comparator equal for signal <adrw_next[14]_last_buf_adr[14]_equal_19_o> created at line 283
+    Summary:
+	inferred   5 Adder/Subtractor(s).
+	inferred 210 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred  42 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <usbf_idma> synthesized.
+
+Synthesizing Unit <usbf_pe>.
+    Related source file is "/media/sf_Red/Projects/USB_Research/my_usb/usbf_pe.v".
+        SSRAM_HADR = 14
+        ACK = 0
+        NACK = 1
+        STALL = 2
+        NYET = 3
+        IDLE = 10'b0000000001
+        TOKEN = 10'b0000000010
+        IN = 10'b0000000100
+        IN2 = 10'b0000001000
+        OUT = 10'b0000010000
+        OUT2A = 10'b0000100000
+        OUT2B = 10'b0001000000
+        UPDATEW = 10'b0010000000
+        UPDATE = 10'b0100000000
+        UPDATE2 = 10'b1000000000
+WARNING:Xst:37 - Detected unknown constraint/property "enum". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "state". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "enum". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "state". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "state_vector". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "state". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:647 - Input <ep_sel> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <csr<14:13>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <csr<21:18>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <pid_NACK> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <pid_STALL> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <pid_NYET> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <pid_PRE> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <pid_ERR> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <pid_SPLIT> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <crc5_err> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <fsel> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Register <uc_dpd_set> equivalent to <uc_bsel_set> has been removed
+    Found 1-bit register for signal <buf1_na>.
+    Found 1-bit register for signal <buf0_not_aloc>.
+    Found 1-bit register for signal <buf1_not_aloc>.
+    Found 1-bit register for signal <match_r>.
+    Found 1-bit register for signal <nse_err>.
+    Found 1-bit register for signal <send_token>.
+    Found 2-bit register for signal <token_pid_sel>.
+    Found 2-bit register for signal <next_dpid>.
+    Found 2-bit register for signal <this_dpid>.
+    Found 1-bit register for signal <pid_seq_err>.
+    Found 1-bit register for signal <in_token>.
+    Found 1-bit register for signal <out_token>.
+    Found 1-bit register for signal <setup_token>.
+    Found 17-bit register for signal <adr>.
+    Found 1-bit register for signal <buffer_full>.
+    Found 1-bit register for signal <buffer_empty>.
+    Found 1-bit register for signal <buffer_done>.
+    Found 1-bit register for signal <buf0_st_max>.
+    Found 1-bit register for signal <buf1_st_max>.
+    Found 1-bit register for signal <no_bufs0>.
+    Found 1-bit register for signal <no_bufs1>.
+    Found 14-bit register for signal <new_sizeb>.
+    Found 14-bit register for signal <new_size>.
+    Found 17-bit register for signal <adr_r>.
+    Found 14-bit register for signal <size_next_r>.
+    Found 1-bit register for signal <buffer_overflow>.
+    Found 1-bit register for signal <out_to_small_r>.
+    Found 1-bit register for signal <out_to_small>.
+    Found 1-bit register for signal <to_small>.
+    Found 1-bit register for signal <to_large>.
+    Found 1-bit register for signal <idin<31>>.
+    Found 1-bit register for signal <idin<30>>.
+    Found 1-bit register for signal <idin<29>>.
+    Found 1-bit register for signal <idin<28>>.
+    Found 1-bit register for signal <idin<27>>.
+    Found 1-bit register for signal <idin<26>>.
+    Found 1-bit register for signal <idin<25>>.
+    Found 1-bit register for signal <idin<24>>.
+    Found 1-bit register for signal <idin<23>>.
+    Found 1-bit register for signal <idin<22>>.
+    Found 1-bit register for signal <idin<21>>.
+    Found 1-bit register for signal <idin<20>>.
+    Found 1-bit register for signal <idin<19>>.
+    Found 1-bit register for signal <idin<18>>.
+    Found 1-bit register for signal <idin<17>>.
+    Found 1-bit register for signal <idin<16>>.
+    Found 1-bit register for signal <idin<15>>.
+    Found 1-bit register for signal <idin<14>>.
+    Found 1-bit register for signal <idin<13>>.
+    Found 1-bit register for signal <idin<12>>.
+    Found 1-bit register for signal <idin<11>>.
+    Found 1-bit register for signal <idin<10>>.
+    Found 1-bit register for signal <idin<9>>.
+    Found 1-bit register for signal <idin<8>>.
+    Found 1-bit register for signal <idin<7>>.
+    Found 1-bit register for signal <idin<6>>.
+    Found 1-bit register for signal <idin<5>>.
+    Found 1-bit register for signal <idin<4>>.
+    Found 1-bit register for signal <idin<3>>.
+    Found 1-bit register for signal <idin<2>>.
+    Found 1-bit register for signal <idin<1>>.
+    Found 1-bit register for signal <idin<0>>.
+    Found 1-bit register for signal <buf0_set>.
+    Found 1-bit register for signal <buf1_set>.
+    Found 1-bit register for signal <uc_bsel_set>.
+    Found 1-bit register for signal <buf0_rl>.
+    Found 1-bit register for signal <abort>.
+    Found 1-bit register for signal <rx_ack_to_clr>.
+    Found 8-bit register for signal <rx_ack_to_cnt>.
+    Found 1-bit register for signal <rx_ack_to>.
+    Found 8-bit register for signal <tx_data_to_cnt>.
+    Found 1-bit register for signal <tx_data_to>.
+    Found 1-bit register for signal <pid_OUT_r>.
+    Found 1-bit register for signal <pid_IN_r>.
+    Found 1-bit register for signal <pid_PING_r>.
+    Found 1-bit register for signal <pid_SETUP_r>.
+    Found 1-bit register for signal <int_upid_set>.
+    Found 1-bit register for signal <int_seqerr_set>.
+    Found 10-bit register for signal <state>.
+    Found 1-bit register for signal <buf0_na>.
+    Found finite state machine <FSM_4> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 10                                             |
+    | Transitions        | 41                                             |
+    | Inputs             | 20                                             |
+    | Outputs            | 10                                             |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst_INV_169_o (positive)                       |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 0000000001                                     |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 14-bit subtractor for signal <buf_size[13]_new_sizeb[13]_sub_139_OUT> created at line 648.
+    Found 17-bit adder for signal <new_adr> created at line 658.
+    Found 2-bit adder for signal <uc_bsel[1]_GND_10_o_add_156_OUT> created at line 692.
+    Found 8-bit adder for signal <rx_ack_to_cnt[7]_GND_10_o_add_173_OUT> created at line 742.
+    Found 8-bit adder for signal <tx_data_to_cnt[7]_GND_10_o_add_180_OUT> created at line 759.
+    Found 14-bit comparator greater for signal <buf_smaller> created at line 602
+    Found 14-bit comparator greater for signal <new_size[13]_GND_10_o_LessThan_124_o> created at line 613
+    Found 14-bit comparator greater for signal <buf0_sz[13]_GND_10_o_LessThan_129_o> created at line 629
+    Found 14-bit comparator greater for signal <buf1_sz[13]_GND_10_o_LessThan_131_o> created at line 632
+    Found 14-bit comparator greater for signal <buf_size[13]_GND_10_o_LessThan_149_o> created at line 665
+    Found 11-bit comparator not equal for signal <n0166> created at line 670
+    Found 11-bit comparator greater for signal <sizu_c[10]_max_pl_sz[10]_LessThan_154_o> created at line 682
+    Found 11-bit comparator greater for signal <max_pl_sz[10]_sizu_c[10]_LessThan_156_o> created at line 685
+    Found 8-bit comparator equal for signal <rx_ack_to_cnt[7]_rx_ack_to_val[7]_equal_178_o> created at line 745
+    Found 8-bit comparator equal for signal <tx_data_to_cnt[7]_tx_data_to_val[7]_equal_185_o> created at line 762
+    Summary:
+	inferred   5 Adder/Subtractor(s).
+	inferred 167 D-type flip-flop(s).
+	inferred  10 Comparator(s).
+	inferred  75 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <usbf_pe> synthesized.
+
+Synthesizing Unit <usbf_mem_arb>.
+    Related source file is "/media/sf_Red/Projects/USB_Research/my_usb/usbf_mem_arb.v".
+        SSRAM_HADR = 14
+WARNING:Xst:647 - Input <wclk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <wack_r>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+	inferred   3 Multiplexer(s).
+Unit <usbf_mem_arb> synthesized.
+
+Synthesizing Unit <usbf_rf>.
+    Related source file is "/media/sf_Red/Projects/USB_Research/my_usb/usbf_rf.v".
+WARNING:Xst:647 - Input <attached> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 8-bit register for signal <utmi_vend_stat_r>.
+    Found 1-bit register for signal <utmi_vend_wr_r>.
+    Found 1-bit register for signal <utmi_vend_wr>.
+    Found 4-bit register for signal <utmi_vend_ctrl_r>.
+    Found 4-bit register for signal <utmi_vend_ctrl>.
+    Found 1-bit register for signal <rf_resume_req_r>.
+    Found 1-bit register for signal <rf_resume_req>.
+    Found 7-bit register for signal <funct_adr>.
+    Found 9-bit register for signal <inta_msk>.
+    Found 9-bit register for signal <intb_msk>.
+    Found 32-bit register for signal <dout>.
+    Found 1-bit register for signal <match_r1>.
+    Found 32-bit register for signal <csr>.
+    Found 32-bit register for signal <buf0>.
+    Found 32-bit register for signal <buf1>.
+    Found 1-bit register for signal <dma_in_buf_sz1>.
+    Found 1-bit register for signal <dma_out_buf_avail>.
+    Found 1-bit register for signal <attach_r>.
+    Found 1-bit register for signal <attach_r1>.
+    Found 1-bit register for signal <suspend_r>.
+    Found 1-bit register for signal <suspend_r1>.
+    Found 1-bit register for signal <usb_reset_r>.
+    Found 1-bit register for signal <rx_err_r>.
+    Found 1-bit register for signal <nse_err_r>.
+    Found 1-bit register for signal <pid_cs_err_r>.
+    Found 1-bit register for signal <crc5_err_r>.
+    Found 1-bit register for signal <int_srcb<8>>.
+    Found 1-bit register for signal <int_srcb<7>>.
+    Found 1-bit register for signal <int_srcb<6>>.
+    Found 1-bit register for signal <int_srcb<5>>.
+    Found 1-bit register for signal <int_srcb<4>>.
+    Found 1-bit register for signal <int_srcb<3>>.
+    Found 1-bit register for signal <int_srcb<2>>.
+    Found 1-bit register for signal <int_srcb<1>>.
+    Found 1-bit register for signal <int_srcb<0>>.
+    Found 16-bit register for signal <int_srca>.
+    Found 1-bit register for signal <inta>.
+    Found 1-bit register for signal <intb>.
+    Found 1-bit register for signal <int_src_re>.
+    Found 32-bit 6-to-1 multiplexer for signal <dtmp> created at line 298.
+    Found 32-bit 18-to-1 multiplexer for signal <adr[6]_X_12_o_wide_mux_32_OUT> created at line 382.
+    Summary:
+	inferred 213 D-type flip-flop(s).
+	inferred  78 Multiplexer(s).
+Unit <usbf_rf> synthesized.
+
+Synthesizing Unit <usbf_ep_rf>.
+    Related source file is "/media/sf_Red/Projects/USB_Research/my_usb/usbf_ep_rf.v".
+    Found 1-bit register for signal <csr1<12>>.
+    Found 1-bit register for signal <csr1<11>>.
+    Found 1-bit register for signal <csr1<10>>.
+    Found 1-bit register for signal <csr1<9>>.
+    Found 1-bit register for signal <csr1<8>>.
+    Found 1-bit register for signal <csr1<7>>.
+    Found 1-bit register for signal <csr1<6>>.
+    Found 1-bit register for signal <csr1<5>>.
+    Found 1-bit register for signal <csr1<4>>.
+    Found 1-bit register for signal <csr1<3>>.
+    Found 1-bit register for signal <csr1<2>>.
+    Found 1-bit register for signal <csr1<1>>.
+    Found 1-bit register for signal <dma_en>.
+    Found 1-bit register for signal <ots_stop>.
+    Found 6-bit register for signal <ienb>.
+    Found 6-bit register for signal <iena>.
+    Found 32-bit register for signal <buf0>.
+    Found 32-bit register for signal <buf1>.
+    Found 32-bit register for signal <buf0_orig>.
+    Found 1-bit register for signal <ep_match_r>.
+    Found 1-bit register for signal <int_re>.
+    Found 7-bit register for signal <int_stat>.
+    Found 2-bit register for signal <uc_dpd>.
+    Found 2-bit register for signal <uc_bsel>.
+    Found 1-bit register for signal <inta>.
+    Found 1-bit register for signal <intb>.
+    Found 12-bit register for signal <dma_out_cnt>.
+    Found 1-bit register for signal <set_r>.
+    Found 1-bit register for signal <dma_req_out_hold>.
+    Found 12-bit register for signal <dma_in_cnt>.
+    Found 1-bit register for signal <dma_in_buf_sz1>.
+    Found 12-bit register for signal <dma_out_left>.
+    Found 1-bit register for signal <dma_out_buf_avail>.
+    Found 12-bit register for signal <buf0_orig_m3>.
+    Found 1-bit register for signal <dma_req_in_hold2>.
+    Found 1-bit register for signal <dma_req_in_hold>.
+    Found 1-bit register for signal <dma_req_r>.
+    Found 1-bit register for signal <r1>.
+    Found 1-bit register for signal <r2>.
+    Found 1-bit register for signal <dma_ack_wr1>.
+    Found 1-bit register for signal <dma_ack_clr1>.
+    Found 1-bit register for signal <r4>.
+    Found 1-bit register for signal <r5>.
+    Found 13-bit register for signal <csr0>.
+    Found 12-bit subtractor for signal <dma_out_cnt[11]_GND_13_o_sub_59_OUT> created at line 385.
+    Found 12-bit subtractor for signal <dma_in_cnt[11]_GND_13_o_sub_71_OUT> created at line 413.
+    Found 12-bit subtractor for signal <buf0_orig[30]_dma_out_cnt[11]_sub_80_OUT> created at line 424.
+    Found 12-bit subtractor for signal <buf0_orig[30]_GND_13_o_sub_86_OUT> created at line 440.
+    Found 12-bit adder for signal <dma_out_cnt[11]_GND_13_o_add_59_OUT> created at line 388.
+    Found 12-bit adder for signal <dma_in_cnt[11]_GND_13_o_add_69_OUT> created at line 410.
+    Found 32-bit 4-to-1 multiplexer for signal <dout> created at line 208.
+    Found 4-bit comparator equal for signal <ep_match> created at line 304
+    Found 12-bit comparator lessequal for signal <n0136> created at line 418
+    Found 12-bit comparator lessequal for signal <n0144> created at line 427
+    Found 12-bit comparator greater for signal <dma_in_cnt[11]_buf0_orig[30]_LessThan_84_o> created at line 436
+    Found 12-bit comparator greater for signal <dma_in_cnt[11]_buf0_orig_m3[11]_LessThan_89_o> created at line 445
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred 211 D-type flip-flop(s).
+	inferred   5 Comparator(s).
+	inferred  16 Multiplexer(s).
+Unit <usbf_ep_rf> synthesized.
+
+Synthesizing Unit <usbf_ep_rf_dummy>.
+    Related source file is "/media/sf_Red/Projects/USB_Research/my_usb/usbf_ep_rf_dummy.v".
+WARNING:Xst:647 - Input <adr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <din> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <idin> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ep_sel> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <wclk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <re> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <we> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <dma_ack> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <buf0_rl> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <buf0_set> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <buf1_set> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <uc_bsel_set> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <uc_dpd_set> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <int_buf1_set> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <int_buf0_set> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <int_upid_set> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <int_crc16_set> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <int_to_set> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <int_seqerr_set> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <out_to_small> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <usbf_ep_rf_dummy> synthesized.
+
+Synthesizing Unit <usbf_wb>.
+    Related source file is "/media/sf_Red/Projects/USB_Research/my_usb/usbf_wb.v".
+        IDLE = 6'b000001
+        MA_WR = 6'b000010
+        MA_RD = 6'b000100
+        W0 = 6'b001000
+        W1 = 6'b010000
+        W2 = 6'b100000
+WARNING:Xst:37 - Detected unknown constraint/property "enum". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "state". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "enum". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "state". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "state_vector". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "state". This constraint/property is not supported by the current software release and will be ignored.
+    Found 1-bit register for signal <wb_req_s1>.
+    Found 1-bit register for signal <wb_ack_s1>.
+    Found 1-bit register for signal <wb_ack_o>.
+    Found 1-bit register for signal <wb_ack_s1a>.
+    Found 1-bit register for signal <wb_ack_s2>.
+    Found 6-bit register for signal <state>.
+    Found 32-bit register for signal <wb_data_o>.
+    Found finite state machine <FSM_5> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 6                                              |
+    | Transitions        | 16                                             |
+    | Inputs             | 5                                              |
+    | Outputs            | 6                                              |
+    | Clock              | phy_clk (rising_edge)                          |
+    | Reset              | rst (negative)                                 |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 000001                                         |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred  37 D-type flip-flop(s).
+	inferred   4 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <usbf_wb> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 35
+ 11-bit adder                                          : 1
+ 12-bit adder                                          : 1
+ 12-bit addsub                                         : 8
+ 12-bit subtractor                                     : 8
+ 14-bit subtractor                                     : 2
+ 15-bit adder                                          : 1
+ 17-bit adder                                          : 2
+ 2-bit adder                                           : 1
+ 3-bit adder                                           : 2
+ 4-bit adder                                           : 2
+ 5-bit adder                                           : 1
+ 8-bit adder                                           : 6
+# Registers                                            : 393
+ 1-bit register                                        : 280
+ 11-bit register                                       : 2
+ 12-bit register                                       : 17
+ 13-bit register                                       : 4
+ 14-bit register                                       : 4
+ 15-bit register                                       : 2
+ 16-bit register                                       : 3
+ 17-bit register                                       : 2
+ 2-bit register                                        : 14
+ 3-bit register                                        : 2
+ 32-bit register                                       : 21
+ 4-bit register                                        : 8
+ 5-bit register                                        : 1
+ 6-bit register                                        : 8
+ 7-bit register                                        : 5
+ 8-bit register                                        : 18
+ 9-bit register                                        : 2
+# Comparators                                          : 42
+ 11-bit comparator equal                               : 1
+ 11-bit comparator greater                             : 2
+ 11-bit comparator not equal                           : 1
+ 12-bit comparator greater                             : 8
+ 12-bit comparator lessequal                           : 8
+ 14-bit comparator greater                             : 5
+ 15-bit comparator equal                               : 1
+ 4-bit comparator equal                                : 4
+ 4-bit comparator not equal                            : 1
+ 5-bit comparator not equal                            : 1
+ 7-bit comparator equal                                : 1
+ 8-bit comparator equal                                : 2
+ 8-bit comparator greater                              : 7
+# Multiplexers                                         : 295
+ 1-bit 2-to-1 multiplexer                              : 192
+ 12-bit 2-to-1 multiplexer                             : 8
+ 14-bit 2-to-1 multiplexer                             : 5
+ 15-bit 2-to-1 multiplexer                             : 3
+ 17-bit 2-to-1 multiplexer                             : 3
+ 2-bit 2-to-1 multiplexer                              : 7
+ 3-bit 2-to-1 multiplexer                              : 2
+ 32-bit 18-to-1 multiplexer                            : 1
+ 32-bit 2-to-1 multiplexer                             : 60
+ 32-bit 4-to-1 multiplexer                             : 4
+ 32-bit 6-to-1 multiplexer                             : 1
+ 7-bit 2-to-1 multiplexer                              : 4
+ 8-bit 2-to-1 multiplexer                              : 4
+ 8-bit 8-to-1 multiplexer                              : 1
+# FSMs                                                 : 6
+# Xors                                                 : 55
+ 1-bit xor2                                            : 26
+ 1-bit xor3                                            : 16
+ 1-bit xor4                                            : 9
+ 1-bit xor5                                            : 4
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+INFO:Xst:2261 - The FF/Latch <int_srca_4> in Unit <u4> is equivalent to the following 11 FFs/Latches, which will be removed : <int_srca_5> <int_srca_6> <int_srca_7> <int_srca_8> <int_srca_9> <int_srca_10> <int_srca_11> <int_srca_12> <int_srca_13> <int_srca_14> <int_srca_15> 
+WARNING:Xst:1710 - FF/Latch <int_srca_4> (without init value) has a constant value of 0 in block <u4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <OpMode_0> (without init value) has a constant value of 0 in block <u0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <csr_13> of sequential type is unconnected in block <u4>.
+WARNING:Xst:2677 - Node <csr_14> of sequential type is unconnected in block <u4>.
+WARNING:Xst:2677 - Node <csr_18> of sequential type is unconnected in block <u4>.
+WARNING:Xst:2677 - Node <csr_19> of sequential type is unconnected in block <u4>.
+WARNING:Xst:2677 - Node <csr_20> of sequential type is unconnected in block <u4>.
+WARNING:Xst:2677 - Node <csr_21> of sequential type is unconnected in block <u4>.
+
+Synthesizing (advanced) Unit <usbf_ep_rf>.
+The following registers are absorbed into accumulator <dma_in_cnt>: 1 register on signal <dma_in_cnt>.
+The following registers are absorbed into accumulator <dma_out_cnt>: 1 register on signal <dma_out_cnt>.
+Unit <usbf_ep_rf> synthesized (advanced).
+
+Synthesizing (advanced) Unit <usbf_idma>.
+The following registers are absorbed into counter <sizd_c>: 1 register on signal <sizd_c>.
+The following registers are absorbed into counter <sizu_c>: 1 register on signal <sizu_c>.
+Unit <usbf_idma> synthesized (advanced).
+
+Synthesizing (advanced) Unit <usbf_pe>.
+The following registers are absorbed into counter <rx_ack_to_cnt>: 1 register on signal <rx_ack_to_cnt>.
+The following registers are absorbed into counter <tx_data_to_cnt>: 1 register on signal <tx_data_to_cnt>.
+Unit <usbf_pe> synthesized (advanced).
+
+Synthesizing (advanced) Unit <usbf_pl>.
+The following registers are absorbed into counter <hms_cnt>: 1 register on signal <hms_cnt>.
+The following registers are absorbed into counter <sof_time>: 1 register on signal <sof_time>.
+The following registers are absorbed into counter <mfm_cnt>: 1 register on signal <mfm_cnt>.
+Unit <usbf_pl> synthesized (advanced).
+
+Synthesizing (advanced) Unit <usbf_utmi_ls>.
+The following registers are absorbed into counter <ps_cnt>: 1 register on signal <ps_cnt>.
+The following registers are absorbed into counter <me_ps>: 1 register on signal <me_ps>.
+The following registers are absorbed into counter <me_ps2>: 1 register on signal <me_ps2>.
+The following registers are absorbed into counter <me_cnt>: 1 register on signal <me_cnt>.
+The following registers are absorbed into counter <chirp_cnt>: 1 register on signal <chirp_cnt>.
+Unit <usbf_utmi_ls> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 15
+ 12-bit subtractor                                     : 8
+ 14-bit subtractor                                     : 1
+ 15-bit adder                                          : 2
+ 17-bit adder                                          : 1
+ 2-bit adder                                           : 1
+ 3-bit adder                                           : 1
+ 8-bit adder                                           : 1
+# Counters                                             : 12
+ 11-bit up counter                                     : 1
+ 12-bit up counter                                     : 1
+ 14-bit down counter                                   : 1
+ 3-bit up counter                                      : 1
+ 4-bit up counter                                      : 2
+ 5-bit up counter                                      : 1
+ 8-bit up counter                                      : 5
+# Accumulators                                         : 8
+ 12-bit updown accumulator                             : 8
+# Registers                                            : 1525
+ Flip-Flops                                            : 1525
+# Comparators                                          : 42
+ 11-bit comparator equal                               : 1
+ 11-bit comparator greater                             : 2
+ 11-bit comparator not equal                           : 1
+ 12-bit comparator greater                             : 8
+ 12-bit comparator lessequal                           : 8
+ 14-bit comparator greater                             : 5
+ 15-bit comparator equal                               : 1
+ 4-bit comparator equal                                : 4
+ 4-bit comparator not equal                            : 1
+ 5-bit comparator not equal                            : 1
+ 7-bit comparator equal                                : 1
+ 8-bit comparator equal                                : 2
+ 8-bit comparator greater                              : 7
+# Multiplexers                                         : 414
+ 1-bit 2-to-1 multiplexer                              : 189
+ 1-bit 4-to-1 multiplexer                              : 128
+ 12-bit 2-to-1 multiplexer                             : 8
+ 14-bit 2-to-1 multiplexer                             : 4
+ 15-bit 2-to-1 multiplexer                             : 3
+ 17-bit 2-to-1 multiplexer                             : 3
+ 2-bit 2-to-1 multiplexer                              : 7
+ 3-bit 2-to-1 multiplexer                              : 1
+ 32-bit 18-to-1 multiplexer                            : 1
+ 32-bit 2-to-1 multiplexer                             : 60
+ 32-bit 6-to-1 multiplexer                             : 1
+ 7-bit 2-to-1 multiplexer                              : 4
+ 8-bit 2-to-1 multiplexer                              : 4
+ 8-bit 8-to-1 multiplexer                              : 1
+# FSMs                                                 : 6
+# Xors                                                 : 55
+ 1-bit xor2                                            : 26
+ 1-bit xor3                                            : 16
+ 1-bit xor4                                            : 9
+ 1-bit xor5                                            : 4
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <OpMode_0> (without init value) has a constant value of 0 in block <usbf_utmi_ls>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <int_srca_4> in Unit <usbf_rf> is equivalent to the following 11 FFs/Latches, which will be removed : <int_srca_5> <int_srca_6> <int_srca_7> <int_srca_8> <int_srca_9> <int_srca_10> <int_srca_11> <int_srca_12> <int_srca_13> <int_srca_14> <int_srca_15> 
+WARNING:Xst:1710 - FF/Latch <int_srca_4> (without init value) has a constant value of 0 in block <usbf_rf>. This FF/Latch will be trimmed during the optimization process.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <u5/FSM_5> on signal <state[1:6]> with user encoding.
+--------------------
+ State  | Encoding
+--------------------
+ 000001 | 000001
+ 000010 | 000010
+ 000100 | 000100
+ 001000 | 001000
+ 010000 | 010000
+ 100000 | 100000
+--------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <u0/u0/FSM_0> on signal <state[1:15]> with user encoding.
+------------------------------------
+ State           | Encoding
+------------------------------------
+ 000000000000001 | 000000000000001
+ 000000000000010 | 000000000000010
+ 000000000000100 | 000000000000100
+ 000000000001000 | 000000000001000
+ 000000000010000 | 000000000010000
+ 000000001000000 | 000000001000000
+ 000000000100000 | 000000000100000
+ 000000010000000 | 000000010000000
+ 000000100000000 | 000000100000000
+ 000001000000000 | 000001000000000
+ 000010000000000 | 000010000000000
+ 000100000000000 | 000100000000000
+ 001000000000000 | 001000000000000
+ 010000000000000 | 010000000000000
+ 100000000000000 | 100000000000000
+------------------------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <u1/u0/FSM_1> on signal <state[1:2]> with sequential encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0001  | 00
+ 0010  | 01
+ 0100  | 10
+ 1000  | 11
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <u1/u2/FSM_3> on signal <state[1:3]> with gray encoding.
+----------------------
+ State    | Encoding
+----------------------
+ 00000001 | 000
+ 00000010 | 001
+ 00000100 | 011
+ 00001000 | 010
+ 00010000 | 110
+ 00100000 | 111
+ 01000000 | 101
+ 10000000 | 100
+----------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <u1/u3/FSM_4> on signal <state[1:4]> with sequential encoding.
+------------------------
+ State      | Encoding
+------------------------
+ 0000000001 | 0000
+ 0000000010 | 0001
+ 0000000100 | 0010
+ 0000001000 | 0011
+ 0000010000 | 0100
+ 0000100000 | 0101
+ 0001000000 | 0110
+ 0010000000 | 0111
+ 0100000000 | 1000
+ 1000000000 | 1001
+------------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <u1/u1/FSM_2> on signal <state[1:3]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00001 | 000
+ 00010 | 001
+ 10000 | 011
+ 00100 | 010
+ 01000 | 110
+-------------------
+WARNING:Xst:1710 - FF/Latch <csr_14> (without init value) has a constant value of 0 in block <usbf_rf>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <usbf_top> ...
+
+Optimizing unit <usbf_wb> ...
+
+Optimizing unit <usbf_rf> ...
+
+Optimizing unit <usbf_utmi_if> ...
+
+Optimizing unit <usbf_utmi_ls> ...
+
+Optimizing unit <usbf_mem_arb> ...
+
+Optimizing unit <usbf_pl> ...
+
+Optimizing unit <usbf_pd> ...
+
+Optimizing unit <usbf_idma> ...
+
+Optimizing unit <usbf_pe> ...
+
+Optimizing unit <usbf_pa> ...
+WARNING:Xst:2677 - Node <u4/csr_21> of sequential type is unconnected in block <usbf_top>.
+WARNING:Xst:2677 - Node <u4/csr_20> of sequential type is unconnected in block <usbf_top>.
+WARNING:Xst:2677 - Node <u4/csr_19> of sequential type is unconnected in block <usbf_top>.
+WARNING:Xst:2677 - Node <u4/csr_18> of sequential type is unconnected in block <usbf_top>.
+WARNING:Xst:2677 - Node <u4/csr_13> of sequential type is unconnected in block <usbf_top>.
+WARNING:Xst:2677 - Node <u4/rf_resume_req> of sequential type is unconnected in block <usbf_top>.
+WARNING:Xst:2677 - Node <u4/rf_resume_req_r> of sequential type is unconnected in block <usbf_top>.
+WARNING:Xst:1710 - FF/Latch <u1/u3/new_sizeb_13> (without init value) has a constant value of 0 in block <usbf_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u1/u3/new_sizeb_12> (without init value) has a constant value of 0 in block <usbf_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u1/u3/new_sizeb_11> (without init value) has a constant value of 0 in block <usbf_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u1/u3/size_next_r_13> (without init value) has a constant value of 0 in block <usbf_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u1/u3/size_next_r_12> (without init value) has a constant value of 0 in block <usbf_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u1/u3/size_next_r_11> (without init value) has a constant value of 0 in block <usbf_top>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <susp_o> in Unit <usbf_top> is equivalent to the following FF/Latch, which will be removed : <u4/suspend_r> 
+INFO:Xst:2261 - The FF/Latch <u4/u3/dma_in_cnt_0> in Unit <usbf_top> is equivalent to the following FF/Latch, which will be removed : <u4/u3/dma_out_cnt_0> 
+INFO:Xst:2261 - The FF/Latch <LineState_r_0> in Unit <usbf_top> is equivalent to the following FF/Latch, which will be removed : <u0/u0/line_state_r_0> 
+INFO:Xst:2261 - The FF/Latch <u4/u1/dma_in_cnt_0> in Unit <usbf_top> is equivalent to the following FF/Latch, which will be removed : <u4/u1/dma_out_cnt_0> 
+INFO:Xst:2261 - The FF/Latch <LineState_r_1> in Unit <usbf_top> is equivalent to the following FF/Latch, which will be removed : <u0/u0/line_state_r_1> 
+INFO:Xst:2261 - The FF/Latch <u4/u2/dma_in_cnt_0> in Unit <usbf_top> is equivalent to the following FF/Latch, which will be removed : <u4/u2/dma_out_cnt_0> 
+INFO:Xst:2261 - The FF/Latch <u4/u0/dma_in_cnt_0> in Unit <usbf_top> is equivalent to the following FF/Latch, which will be removed : <u4/u0/dma_out_cnt_0> 
+INFO:Xst:2261 - The FF/Latch <u1/u2/send_zero_length_r> in Unit <usbf_top> is equivalent to the following FF/Latch, which will be removed : <u1/u1/send_zero_length_r> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block usbf_top, actual ratio is 32.
+FlipFlop u1/u0/pid_0 has been replicated 1 time(s)
+FlipFlop u1/u0/pid_1 has been replicated 1 time(s)
+FlipFlop u1/u0/pid_2 has been replicated 1 time(s)
+FlipFlop u1/u0/pid_3 has been replicated 1 time(s)
+FlipFlop u1/u3/in_token has been replicated 1 time(s)
+FlipFlop u4/csr_15 has been replicated 1 time(s)
+FlipFlop u4/csr_26 has been replicated 1 time(s)
+FlipFlop u4/csr_27 has been replicated 1 time(s)
+FlipFlop susp_o has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop u4/utmi_vend_wr has been replicated 1 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+Processing Unit <usbf_top> :
+	Found 2-bit shift register for signal <u5/wb_ack_s2>.
+	Found 2-bit shift register for signal <u0/u0/resume_req_s>.
+	Found 3-bit shift register for signal <u1/u0/d2_7>.
+	Found 3-bit shift register for signal <u1/u0/d2_6>.
+	Found 3-bit shift register for signal <u1/u0/d2_5>.
+	Found 3-bit shift register for signal <u1/u0/d2_4>.
+	Found 3-bit shift register for signal <u1/u0/d2_3>.
+	Found 3-bit shift register for signal <u1/u0/d2_2>.
+	Found 3-bit shift register for signal <u1/u0/d2_1>.
+	Found 3-bit shift register for signal <u1/u0/d2_0>.
+	Found 2-bit shift register for signal <u1/u1/tx_valid_r>.
+Unit <usbf_top> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 1692
+ Flip-Flops                                            : 1692
+# Shift Registers                                      : 11
+ 2-bit shift register                                  : 3
+ 3-bit shift register                                  : 8
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : usbf_top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 2942
+#      GND                         : 1
+#      INV                         : 63
+#      LUT1                        : 85
+#      LUT2                        : 176
+#      LUT3                        : 471
+#      LUT4                        : 406
+#      LUT5                        : 273
+#      LUT6                        : 699
+#      MUXCY                       : 427
+#      MUXF7                       : 14
+#      VCC                         : 1
+#      XORCY                       : 326
+# FlipFlops/Latches                : 1695
+#      FD                          : 497
+#      FDE                         : 246
+#      FDR                         : 126
+#      FDRE                        : 390
+#      FDS                         : 2
+#      FDSE                        : 434
+# Shift Registers                  : 11
+#      SRLC16E                     : 11
+# Clock Buffers                    : 2
+#      BUFGP                       : 2
+# IO Buffers                       : 233
+#      IBUF                        : 112
+#      OBUF                        : 121
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            1681  out of  18224     9%  
+ Number of Slice LUTs:                 2184  out of   9112    23%  
+    Number used as Logic:              2173  out of   9112    23%  
+    Number used as Memory:               11  out of   2176     0%  
+       Number used as SRL:               11
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   2584
+   Number with an unused Flip Flop:     903  out of   2584    34%  
+   Number with an unused LUT:           400  out of   2584    15%  
+   Number of fully used LUT-FF pairs:  1281  out of   2584    49%  
+   Number of unique control sets:        72
+
+IO Utilization: 
+ Number of IOs:                         249
+ Number of bonded IOBs:                 235  out of    232   101% (*) 
+    IOB Flip Flops/Latches:              14
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+phy_clk_pad_i                      | BUFGP                  | 1484  |
+clk_i                              | BUFGP                  | 222   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 7.972ns (Maximum Frequency: 125.439MHz)
+   Minimum input arrival time before clock: 9.344ns
+   Maximum output required time after clock: 10.203ns
+   Maximum combinational path delay: 9.534ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'phy_clk_pad_i'
+  Clock period: 7.972ns (frequency: 125.439MHz)
+  Total number of paths / destination ports: 87398 / 2390
+-------------------------------------------------------------------------
+Delay:               7.972ns (Levels of Logic = 5)
+  Source:            u1/u0/pid_3 (FF)
+  Destination:       u1/u2/sizd_c_13 (FF)
+  Source Clock:      phy_clk_pad_i rising
+  Destination Clock: phy_clk_pad_i rising
+
+  Data Path: u1/u0/pid_3 to u1/u2/sizd_c_13
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            18   0.525   1.235  u1/u0/pid_3 (u1/u0/pid_3)
+     LUT4:I3->O           10   0.254   1.008  u1/u0/pid_IN1 (u1/pid_IN)
+     LUT6:I5->O            3   0.254   0.874  u1/u3/buf0_na_CTRL_ep_OR_364_o3 (u1/u3/buf0_na_CTRL_ep_OR_364_o)
+     LUT6:I4->O            7   0.250   0.910  u1/u3/Mmux_rx_dma_en1121 (u1/u3/Mmux_rx_dma_en112)
+     LUT6:I5->O            2   0.254   0.726  u1/u2/tx_dma_en_tx_dma_en_r_OR_216_o1 (u1/u2/tx_dma_en_tx_dma_en_r_OR_216_o)
+     LUT6:I5->O           14   0.254   1.126  u1/u2/_n0258_inv (u1/u2/_n0258_inv)
+     FDSE:CE                   0.302          u1/u2/sizd_c_0
+    ----------------------------------------
+    Total                      7.972ns (2.093ns logic, 5.879ns route)
+                                       (26.3% logic, 73.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_i'
+  Clock period: 4.595ns (frequency: 217.628MHz)
+  Total number of paths / destination ports: 306 / 96
+-------------------------------------------------------------------------
+Delay:               4.595ns (Levels of Logic = 4)
+  Source:            u4/funct_adr_5 (FF)
+  Destination:       u4/dout_5 (FF)
+  Source Clock:      clk_i rising
+  Destination Clock: clk_i rising
+
+  Data Path: u4/funct_adr_5 to u4/dout_5
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             2   0.525   0.834  u4/funct_adr_5 (u4/funct_adr_5)
+     LUT4:I2->O            1   0.250   0.682  u4/Mmux_adr[6]_X_12_o_wide_mux_32_OUT563 (u4/Mmux_adr[6]_X_12_o_wide_mux_32_OUT562)
+     LUT5:I4->O            1   0.254   0.682  u4/Mmux_adr[6]_X_12_o_wide_mux_32_OUT564 (u4/Mmux_adr[6]_X_12_o_wide_mux_32_OUT563)
+     LUT6:I5->O            1   0.254   0.790  u4/Mmux_adr[6]_X_12_o_wide_mux_32_OUT565 (u4/Mmux_adr[6]_X_12_o_wide_mux_32_OUT564)
+     LUT2:I0->O            1   0.250   0.000  u4/Mmux_adr[6]_X_12_o_wide_mux_32_OUT5610 (u4/adr[6]_X_12_o_wide_mux_32_OUT<5>)
+     FD:D                      0.074          u4/dout_5
+    ----------------------------------------
+    Total                      4.595ns (1.607ns logic, 2.988ns route)
+                                       (35.0% logic, 65.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'phy_clk_pad_i'
+  Total number of paths / destination ports: 8592 / 1912
+-------------------------------------------------------------------------
+Offset:              9.344ns (Levels of Logic = 4)
+  Source:            wb_addr_i<5> (PAD)
+  Destination:       u4/u0/buf0_0 (FF)
+  Destination Clock: phy_clk_pad_i rising
+
+  Data Path: wb_addr_i<5> to u4/u0/buf0_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            78   1.328   2.266  wb_addr_i_5_IBUF (wb_addr_i_5_IBUF)
+     LUT3:I0->O           11   0.235   1.267  u4/adr[6]_GND_12_o_equal_35_o<6>11 (u4/adr[6]_GND_12_o_equal_35_o<6>1)
+     LUT6:I3->O           65   0.235   1.937  u4/u1/we21 (u4/u1/we2)
+     LUT4:I3->O           32   0.254   1.519  u4/u1/_n0362_inv1 (u4/u1/_n0362_inv)
+     FDSE:CE                   0.302          u4/u1/buf0_0
+    ----------------------------------------
+    Total                      9.344ns (2.354ns logic, 6.990ns route)
+                                       (25.2% logic, 74.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_i'
+  Total number of paths / destination ports: 1049 / 181
+-------------------------------------------------------------------------
+Offset:              8.370ns (Levels of Logic = 5)
+  Source:            wb_addr_i<3> (PAD)
+  Destination:       u4/dout_4 (FF)
+  Destination Clock: clk_i rising
+
+  Data Path: wb_addr_i<3> to u4/dout_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           148   1.328   2.812  wb_addr_i_3_IBUF (wb_addr_i_3_IBUF)
+     LUT6:I0->O            1   0.254   0.910  u4/Mmux_adr[6]_X_12_o_wide_mux_32_OUT542 (u4/Mmux_adr[6]_X_12_o_wide_mux_32_OUT541)
+     LUT5:I2->O            1   0.235   1.112  u4/Mmux_adr[6]_X_12_o_wide_mux_32_OUT543 (u4/Mmux_adr[6]_X_12_o_wide_mux_32_OUT542)
+     LUT5:I0->O            1   0.254   1.137  u4/Mmux_adr[6]_X_12_o_wide_mux_32_OUT545 (u4/Mmux_adr[6]_X_12_o_wide_mux_32_OUT544)
+     LUT6:I0->O            1   0.254   0.000  u4/Mmux_adr[6]_X_12_o_wide_mux_32_OUT5410 (u4/adr[6]_X_12_o_wide_mux_32_OUT<4>)
+     FD:D                      0.074          u4/dout_4
+    ----------------------------------------
+    Total                      8.370ns (2.399ns logic, 5.971ns route)
+                                       (28.7% logic, 71.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_i'
+  Total number of paths / destination ports: 40 / 40
+-------------------------------------------------------------------------
+Offset:              4.162ns (Levels of Logic = 1)
+  Source:            u4/u3/dma_req_r (FF)
+  Destination:       dma_req_o<3> (PAD)
+  Source Clock:      clk_i rising
+
+  Data Path: u4/u3/dma_req_r to dma_req_o<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.525   0.725  u4/u3/dma_req_r (u4/u3/dma_req_r)
+     OBUF:I->O                 2.912          dma_req_o_3_OBUF (dma_req_o<3>)
+    ----------------------------------------
+    Total                      4.162ns (3.437ns logic, 0.725ns route)
+                                       (82.6% logic, 17.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'phy_clk_pad_i'
+  Total number of paths / destination ports: 940 / 66
+-------------------------------------------------------------------------
+Offset:              10.203ns (Levels of Logic = 5)
+  Source:            u1/u2/mack_r (FF)
+  Destination:       sram_we_o (PAD)
+  Source Clock:      phy_clk_pad_i rising
+
+  Data Path: u1/u2/mack_r to sram_we_o
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              36   0.525   1.587  u1/u2/mack_r (u1/u2/mack_r)
+     LUT6:I5->O            1   0.254   0.682  u1/u2/mreq1_1 (u1/u2/mreq1)
+     LUT2:I1->O            4   0.254   0.804  u2/wack1 (ma_ack)
+     LUT6:I5->O           48   0.254   2.016  u5/ma_req1 (ma_req)
+     LUT4:I1->O            1   0.235   0.681  u2/Mmux_sram_we11 (sram_we_o_OBUF)
+     OBUF:I->O                 2.912          sram_we_o_OBUF (sram_we_o)
+    ----------------------------------------
+    Total                     10.203ns (4.434ns logic, 5.769ns route)
+                                       (43.5% logic, 56.5% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 100 / 50
+-------------------------------------------------------------------------
+Delay:               9.534ns (Levels of Logic = 4)
+  Source:            wb_addr_i<17> (PAD)
+  Destination:       sram_we_o (PAD)
+
+  Data Path: wb_addr_i<17> to sram_we_o
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            40   1.328   2.109  wb_addr_i_17_IBUF (wb_addr_i_17_IBUF)
+     LUT6:I0->O           48   0.254   2.016  u5/ma_req1 (ma_req)
+     LUT4:I1->O            1   0.235   0.681  u2/Mmux_sram_we11 (sram_we_o_OBUF)
+     OBUF:I->O                 2.912          sram_we_o_OBUF (sram_we_o)
+    ----------------------------------------
+    Total                      9.534ns (4.729ns logic, 4.805ns route)
+                                       (49.6% logic, 50.4% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk_i
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_i          |    4.595|         |         |         |
+phy_clk_pad_i  |    5.855|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock phy_clk_pad_i
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_i          |    6.183|         |         |         |
+phy_clk_pad_i  |    7.972|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 21.00 secs
+Total CPU time to Xst completion: 12.54 secs
+ 
+--> 
+
+
+Total memory usage is 506472 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  127 (   0 filtered)
+Number of infos    :   13 (   0 filtered)
+

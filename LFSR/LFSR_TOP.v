@@ -49,7 +49,7 @@ module LFSR_TOP(
 	);
 	
 	// feedback and shift
-	always @(posedge clk_div[28]) begin
+	always @(posedge clk_div[27]) begin
 		out_reg[0] = feedback;
 		out_reg[7:1] = out_reg[6:0];
 		Led[7:0] = out_reg[7:0];

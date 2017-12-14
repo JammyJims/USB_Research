@@ -1,0 +1,24 @@
+xst -intstyle ise -ifn "U:/Xilinx/LFSR/LFSR_TOP.xst" -ofn "U:/Xilinx/LFSR/LFSR_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-2 LFSR_TOP.ngc LFSR_TOP.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LFSR_TOP_map.ncd LFSR_TOP.ngd LFSR_TOP.pcf 
+par -w -intstyle ise -ol high -mt off LFSR_TOP_map.ncd LFSR_TOP.ncd LFSR_TOP.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LFSR_TOP.twx LFSR_TOP.ncd -o LFSR_TOP.twr LFSR_TOP.pcf -ucf Nexys3_master.ucf 
+xst -intstyle ise -ifn "U:/Xilinx/LFSR/LFSR_TOP.xst" -ofn "U:/Xilinx/LFSR/LFSR_TOP.syr" 
+xst -intstyle ise -ifn "U:/Xilinx/LFSR/LFSR_TOP.xst" -ofn "U:/Xilinx/LFSR/LFSR_TOP.syr" 
+xst -intstyle ise -ifn "U:/Xilinx/LFSR/LFSR_TOP.xst" -ofn "U:/Xilinx/LFSR/LFSR_TOP.syr" 
+xst -intstyle ise -ifn "U:/Xilinx/LFSR/LFSR_TOP.xst" -ofn "U:/Xilinx/LFSR/LFSR_TOP.syr" 
+xst -intstyle ise -ifn "U:/Xilinx/LFSR/LFSR_TOP.xst" -ofn "U:/Xilinx/LFSR/LFSR_TOP.syr" 
+xst -intstyle ise -ifn "U:/Xilinx/LFSR/LFSR_TOP.xst" -ofn "U:/Xilinx/LFSR/LFSR_TOP.syr" 
+xst -intstyle ise -ifn "U:/Xilinx/LFSR/LFSR_TOP.xst" -ofn "U:/Xilinx/LFSR/LFSR_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-2 LFSR_TOP.ngc LFSR_TOP.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LFSR_TOP_map.ncd LFSR_TOP.ngd LFSR_TOP.pcf 
+par -w -intstyle ise -ol high -mt off LFSR_TOP_map.ncd LFSR_TOP.ncd LFSR_TOP.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LFSR_TOP.twx LFSR_TOP.ncd -o LFSR_TOP.twr LFSR_TOP.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f LFSR_TOP.ut LFSR_TOP.ncd 
+bitgen -intstyle ise -f LFSR_TOP.ut LFSR_TOP.ncd 
+xst -intstyle ise -ifn "U:/Xilinx/LFSR/LFSR_TOP.xst" -ofn "U:/Xilinx/LFSR/LFSR_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-2 LFSR_TOP.ngc LFSR_TOP.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LFSR_TOP_map.ncd LFSR_TOP.ngd LFSR_TOP.pcf 
+par -w -intstyle ise -ol high -mt off LFSR_TOP_map.ncd LFSR_TOP.ncd LFSR_TOP.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LFSR_TOP.twx LFSR_TOP.ncd -o LFSR_TOP.twr LFSR_TOP.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f LFSR_TOP.ut LFSR_TOP.ncd 

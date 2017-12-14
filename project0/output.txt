@@ -1,0 +1,10 @@
+Storage Target: SPI Flash Single FPGA
+Auto Select Storage Device
+FF
+counter
+/media/jimmy/Passport/Programs/XilinxLinux/14.7/ISE_DS/project0/
+
+UFP ('C' format)
+ ON)
+x8
+No

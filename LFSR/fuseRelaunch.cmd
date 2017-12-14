@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "U:/Xilinx/LFSR/LFSR_TOP_TEST_isim_beh.exe" -prj "U:/Xilinx/LFSR/LFSR_TOP_TEST_beh.prj" "work.LFSR_TOP_TEST" "work.glbl" 

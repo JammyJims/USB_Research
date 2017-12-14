@@ -1,0 +1,15 @@
+# Output products list for <project0_demo>
+project0_demo/blk_mem_gen_v7_3_readme.txt
+project0_demo/doc/blk_mem_gen_v7_3_vinfo.html
+project0_demo/doc/pg058-blk-mem-gen.pdf
+project0_demo.asy
+project0_demo.gise
+project0_demo.ngc
+project0_demo.sym
+project0_demo.v
+project0_demo.veo
+project0_demo.xco
+project0_demo.xise
+project0_demo_flist.txt
+project0_demo_xmdf.tcl
+summary.log

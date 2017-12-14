@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=/media/jimmy/Passport/Programs/XilinxLinux/14.7/ISE_DS/project0/impact.xsl
+OUTFILE=/media/jimmy/Passport/Programs/XilinxLinux/14.7/ISE_DS/project0/impact.xsl
+FAMILY=None
+PART=None
+WORKINGDIR=/media/jimmy/Passport/Programs/XilinxLinux/14.7/ISE_DS/project0
+LICENSE=iMPACT
+USER_INFO=iMPACT

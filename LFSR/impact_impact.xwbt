@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=U:\Xilinx\LFSR\impact.xsl
+OUTFILE=U:\Xilinx\LFSR\impact.xsl
+FAMILY=None
+PART=None
+WORKINGDIR=U:\Xilinx\LFSR
+LICENSE=iMPACT
+USER_INFO=iMPACT

@@ -1,0 +1,12 @@
+EN buf4_mxilinx_jc2_top NULL /media/jimmy/Passport/Programs/XilinxLinux/14.7/ISE_DS/project0/jc2_sch/jc2_top.vhf sub00/vhpl00 1511999762
+AR buf4_mxilinx_jc2_top behavioral /media/jimmy/Passport/Programs/XilinxLinux/14.7/ISE_DS/project0/jc2_sch/jc2_top.vhf sub00/vhpl01 1511999763
+EN fdc_mxilinx_jc2_top NULL /media/jimmy/Passport/Programs/XilinxLinux/14.7/ISE_DS/project0/jc2_sch/jc2_top.vhf sub00/vhpl02 1511999764
+EN sr4cled_mxilinx_jc2_top NULL /media/jimmy/Passport/Programs/XilinxLinux/14.7/ISE_DS/project0/jc2_sch/jc2_top.vhf sub00/vhpl08 1511999770
+EN m2_1_mxilinx_jc2_top NULL /media/jimmy/Passport/Programs/XilinxLinux/14.7/ISE_DS/project0/jc2_sch/jc2_top.vhf sub00/vhpl06 1511999768
+EN jc2_top NULL /media/jimmy/Passport/Programs/XilinxLinux/14.7/ISE_DS/project0/jc2_sch/jc2_top.vhf sub00/vhpl10 1511999772
+EN fjkc_mxilinx_jc2_top NULL /media/jimmy/Passport/Programs/XilinxLinux/14.7/ISE_DS/project0/jc2_sch/jc2_top.vhf sub00/vhpl04 1511999766
+AR m2_1_mxilinx_jc2_top behavioral /media/jimmy/Passport/Programs/XilinxLinux/14.7/ISE_DS/project0/jc2_sch/jc2_top.vhf sub00/vhpl07 1511999769
+AR jc2_top behavioral /media/jimmy/Passport/Programs/XilinxLinux/14.7/ISE_DS/project0/jc2_sch/jc2_top.vhf sub00/vhpl11 1511999773
+AR sr4cled_mxilinx_jc2_top behavioral /media/jimmy/Passport/Programs/XilinxLinux/14.7/ISE_DS/project0/jc2_sch/jc2_top.vhf sub00/vhpl09 1511999771
+AR fjkc_mxilinx_jc2_top behavioral /media/jimmy/Passport/Programs/XilinxLinux/14.7/ISE_DS/project0/jc2_sch/jc2_top.vhf sub00/vhpl05 1511999767
+AR fdc_mxilinx_jc2_top behavioral /media/jimmy/Passport/Programs/XilinxLinux/14.7/ISE_DS/project0/jc2_sch/jc2_top.vhf sub00/vhpl03 1511999765

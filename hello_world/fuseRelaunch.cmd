@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "/media/sf_Red/Xilinx/14.7/ISE_DS/hello_world/helloworld_top_tb_isim_beh.exe" -prj "/media/sf_Red/Xilinx/14.7/ISE_DS/hello_world/helloworld_top_tb_beh.prj" "work.helloworld_top_tb" "work.glbl" 

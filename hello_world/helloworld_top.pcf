@@ -1,0 +1,14 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon Dec 11 20:45:54 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "Switch" LOCATE = SITE "T10" LEVEL 1;
+COMP "clk" LOCATE = SITE "V10" LEVEL 1;
+COMP "LED_S" LOCATE = SITE "U16" LEVEL 1;
+COMP "LED_B" LOCATE = SITE "V16" LEVEL 1;
+COMP "Button" LOCATE = SITE "C9" LEVEL 1;
+TIMEGRP sys_clk_pin = BEL "LED_B" BEL "LED_S" BEL "clk_BUFGP/BUFG";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
+SCHEMATIC END;
+

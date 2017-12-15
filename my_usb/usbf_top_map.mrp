@@ -1,4 +1,4 @@
-Release 14.7 Map P.20131013 (lin64)
+Release 14.7 Map P.20131013 (nt64)
 Xilinx Mapping Report File for Design 'usbf_top'
 
 Design Information
@@ -10,7 +10,7 @@ Target Device  : xc6slx16
 Target Package : csg324
 Target Speed   : -2
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Thu Dec 14 15:45:42 2017
+Mapped Date    : Fri Dec 15 10:48:43 2017
 
 Interim Summary
 ---------------
@@ -106,9 +106,19 @@ ERROR:Map:237 - The design is too large to fit the device.  Please check the Des
 
 Section 2 - Warnings
 --------------------
+WARNING:Security:43 - No license file was found in the standard Xilinx license
+directory.
+WARNING:Security:44 - Since no license file was found,
+WARNING:Security:42 - Your software subscription period has lapsed. Your current
+version of Xilinx tools will continue to function, but you no longer qualify for
+Xilinx software updates or new releases.
 
 Section 3 - Informational
 -------------------------
+INFO:Security:51 - The XILINXD_LICENSE_FILE environment variable is not set.
+INFO:Security:52 - The LM_LICENSE_FILE environment variable is set to
+'27000@licserv2.mecheng.adelaide.edu.au;2100@xilinx.mecheng.adelaide.edu.au'.
+INFO:Security:54 - 'xc6slx16' is a WebPack part.
 INFO:LIT:243 - Logical network wb_addr_i<1> has no load.
 INFO:LIT:395 - The above info message is repeated 13 more times for the
    following (max. 5 shown):

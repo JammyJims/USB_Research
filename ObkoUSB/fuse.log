@@ -1,0 +1,21 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o U:/Desktop/XilinxProject/ObkoUSB/usb_flasher_tb_isim_beh.exe -prj U:/Desktop/XilinxProject/ObkoUSB/usb_flasher_tb_beh.prj work.usb_flasher_tb 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Parsing VHDL file "U:/Desktop/XilinxProject/ObkoUSB/usb_flasher_tb.vhdl" into library work
+Starting static elaboration
+WARNING:HDLCompiler:89 - "U:/Desktop/XilinxProject/ObkoUSB/usb_flasher_tb.vhdl" Line 118: <usb_flasher> remains a black-box since it has no binding entity.
+Completed static elaboration
+WARNING:Simulator:648 - "U:/Desktop/XilinxProject/ObkoUSB/usb_flasher_tb.vhdl" Line 118. Instance usb_flasher is unbound
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling package numeric_std
+Compiling architecture usb_flasher_tb of entity usb_flasher_tb
+Time Resolution for simulation is 1ps.
+Compiled 6 VHDL Units
+Built simulation executable U:/Desktop/XilinxProject/ObkoUSB/usb_flasher_tb_isim_beh.exe
+Fuse Memory Usage: 37724 KB
+Fuse CPU Usage: 951 ms

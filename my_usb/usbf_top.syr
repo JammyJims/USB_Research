@@ -1,21 +1,18 @@
-Release 14.7 - xst P.20131013 (lin64)
+Release 14.7 - xst P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
---> 
-Parameter TMPDIR set to xst/projnav.tmp
+--> Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total CPU time to Xst completion: 0.10 secs
  
---> 
-Parameter xsthdpdir set to xst
+--> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total CPU time to Xst completion: 0.11 secs
  
---> 
-Reading design: usbf_top.prj
+--> Reading design: usbf_top.prj
 
 TABLE OF CONTENTS
   1) Synthesis Options Summary
@@ -108,49 +105,49 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "/media/sf_Red/Projects/USB_Research/my_usb/usbf_crc5.v" into library work
+Analyzing Verilog file "\\uofa\users$\users6\a1687296\Desktop\XilinxProject\my_usb\usbf_crc5.v" into library work
 Parsing verilog file "usbf_defines.v" included at line 67.
 Parsing module <usbf_crc5>.
-Analyzing Verilog file "/media/sf_Red/Projects/USB_Research/my_usb/usbf_crc16.v" into library work
+Analyzing Verilog file "\\uofa\users$\users6\a1687296\Desktop\XilinxProject\my_usb\usbf_crc16.v" into library work
 Parsing verilog file "usbf_defines.v" included at line 67.
 Parsing module <usbf_crc16>.
-Analyzing Verilog file "/media/sf_Red/Projects/USB_Research/my_usb/usbf_utmi_ls.v" into library work
+Analyzing Verilog file "\\uofa\users$\users6\a1687296\Desktop\XilinxProject\my_usb\usbf_utmi_ls.v" into library work
 Parsing verilog file "usbf_defines.v" included at line 96.
 Parsing module <usbf_utmi_ls>.
-Analyzing Verilog file "/media/sf_Red/Projects/USB_Research/my_usb/usbf_pe.v" into library work
+Analyzing Verilog file "\\uofa\users$\users6\a1687296\Desktop\XilinxProject\my_usb\usbf_pe.v" into library work
 Parsing verilog file "usbf_defines.v" included at line 107.
 Parsing module <usbf_pe>.
-Analyzing Verilog file "/media/sf_Red/Projects/USB_Research/my_usb/usbf_pd.v" into library work
+Analyzing Verilog file "\\uofa\users$\users6\a1687296\Desktop\XilinxProject\my_usb\usbf_pd.v" into library work
 Parsing verilog file "usbf_defines.v" included at line 92.
 Parsing module <usbf_pd>.
-Analyzing Verilog file "/media/sf_Red/Projects/USB_Research/my_usb/usbf_pa.v" into library work
+Analyzing Verilog file "\\uofa\users$\users6\a1687296\Desktop\XilinxProject\my_usb\usbf_pa.v" into library work
 Parsing verilog file "usbf_defines.v" included at line 85.
 Parsing module <usbf_pa>.
-Analyzing Verilog file "/media/sf_Red/Projects/USB_Research/my_usb/usbf_idma.v" into library work
+Analyzing Verilog file "\\uofa\users$\users6\a1687296\Desktop\XilinxProject\my_usb\usbf_idma.v" into library work
 Parsing verilog file "usbf_defines.v" included at line 101.
 Parsing module <usbf_idma>.
-Analyzing Verilog file "/media/sf_Red/Projects/USB_Research/my_usb/usbf_ep_rf_dummy.v" into library work
+Analyzing Verilog file "\\uofa\users$\users6\a1687296\Desktop\XilinxProject\my_usb\usbf_ep_rf_dummy.v" into library work
 Parsing verilog file "usbf_defines.v" included at line 67.
 Parsing module <usbf_ep_rf_dummy>.
-Analyzing Verilog file "/media/sf_Red/Projects/USB_Research/my_usb/usbf_ep_rf.v" into library work
+Analyzing Verilog file "\\uofa\users$\users6\a1687296\Desktop\XilinxProject\my_usb\usbf_ep_rf.v" into library work
 Parsing verilog file "usbf_defines.v" included at line 84.
 Parsing module <usbf_ep_rf>.
-Analyzing Verilog file "/media/sf_Red/Projects/USB_Research/my_usb/usbf_wb.v" into library work
+Analyzing Verilog file "\\uofa\users$\users6\a1687296\Desktop\XilinxProject\my_usb\usbf_wb.v" into library work
 Parsing verilog file "usbf_defines.v" included at line 86.
 Parsing module <usbf_wb>.
-Analyzing Verilog file "/media/sf_Red/Projects/USB_Research/my_usb/usbf_utmi_if.v" into library work
+Analyzing Verilog file "\\uofa\users$\users6\a1687296\Desktop\XilinxProject\my_usb\usbf_utmi_if.v" into library work
 Parsing verilog file "usbf_defines.v" included at line 98.
 Parsing module <usbf_utmi_if>.
-Analyzing Verilog file "/media/sf_Red/Projects/USB_Research/my_usb/usbf_rf.v" into library work
+Analyzing Verilog file "\\uofa\users$\users6\a1687296\Desktop\XilinxProject\my_usb\usbf_rf.v" into library work
 Parsing verilog file "usbf_defines.v" included at line 99.
 Parsing module <usbf_rf>.
-Analyzing Verilog file "/media/sf_Red/Projects/USB_Research/my_usb/usbf_pl.v" into library work
+Analyzing Verilog file "\\uofa\users$\users6\a1687296\Desktop\XilinxProject\my_usb\usbf_pl.v" into library work
 Parsing verilog file "usbf_defines.v" included at line 91.
 Parsing module <usbf_pl>.
-Analyzing Verilog file "/media/sf_Red/Projects/USB_Research/my_usb/usbf_mem_arb.v" into library work
+Analyzing Verilog file "\\uofa\users$\users6\a1687296\Desktop\XilinxProject\my_usb\usbf_mem_arb.v" into library work
 Parsing verilog file "usbf_defines.v" included at line 81.
 Parsing module <usbf_mem_arb>.
-Analyzing Verilog file "/media/sf_Red/Projects/USB_Research/my_usb/usbf_top.v" into library work
+Analyzing Verilog file "\\uofa\users$\users6\a1687296\Desktop\XilinxProject\my_usb\usbf_top.v" into library work
 Parsing verilog file "usbf_defines.v" included at line 107.
 Parsing module <usbf_top>.
 
@@ -163,63 +160,63 @@ Elaborating module <usbf_top>.
 Elaborating module <usbf_utmi_if>.
 
 Elaborating module <usbf_utmi_ls>.
-WARNING:HDLCompiler:1127 - "/media/sf_Red/Projects/USB_Research/my_usb/usbf_utmi_ls.v" Line 267: Assignment to ls_se1 ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/media/sf_Red/Projects/USB_Research/my_usb/usbf_utmi_ls.v" Line 343: Assignment to T1_gt_3_125_mS ignored, since the identifier is never used
-WARNING:HDLCompiler:1308 - "/media/sf_Red/Projects/USB_Research/my_usb/usbf_utmi_ls.v" Line 445: Found full_case directive in module usbf_utmi_ls. Use of full_case directives may cause differences between RTL and post-synthesis simulation
+WARNING:HDLCompiler:1127 - "\\uofa\users$\users6\a1687296\Desktop\XilinxProject\my_usb\usbf_utmi_ls.v" Line 267: Assignment to ls_se1 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "\\uofa\users$\users6\a1687296\Desktop\XilinxProject\my_usb\usbf_utmi_ls.v" Line 343: Assignment to T1_gt_3_125_mS ignored, since the identifier is never used
+WARNING:HDLCompiler:1308 - "\\uofa\users$\users6\a1687296\Desktop\XilinxProject\my_usb\usbf_utmi_ls.v" Line 445: Found full_case directive in module usbf_utmi_ls. Use of full_case directives may cause differences between RTL and post-synthesis simulation
 
 Elaborating module <usbf_pl(SSRAM_HADR=14)>.
 
 Elaborating module <usbf_pd>.
-WARNING:HDLCompiler:1127 - "/media/sf_Red/Projects/USB_Research/my_usb/usbf_pd.v" Line 232: Assignment to pid_RES ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "\\uofa\users$\users6\a1687296\Desktop\XilinxProject\my_usb\usbf_pd.v" Line 232: Assignment to pid_RES ignored, since the identifier is never used
 
 Elaborating module <usbf_crc5>.
 
 Elaborating module <usbf_crc16>.
-WARNING:HDLCompiler:1309 - "/media/sf_Red/Projects/USB_Research/my_usb/usbf_pd.v" Line 364: Found full_case directive. Use of full_case directives may cause differences between RTL and post-synthesis simulation
-WARNING:HDLCompiler:1127 - "/media/sf_Red/Projects/USB_Research/my_usb/usbf_pl.v" Line 360: Assignment to rx_seq_err ignored, since the identifier is never used
+WARNING:HDLCompiler:1309 - "\\uofa\users$\users6\a1687296\Desktop\XilinxProject\my_usb\usbf_pd.v" Line 364: Found full_case directive. Use of full_case directives may cause differences between RTL and post-synthesis simulation
+WARNING:HDLCompiler:1127 - "\\uofa\users$\users6\a1687296\Desktop\XilinxProject\my_usb\usbf_pl.v" Line 360: Assignment to rx_seq_err ignored, since the identifier is never used
 
 Elaborating module <usbf_pa>.
-WARNING:HDLCompiler:1308 - "/media/sf_Red/Projects/USB_Research/my_usb/usbf_pa.v" Line 305: Found full_case directive in module usbf_pa. Use of full_case directives may cause differences between RTL and post-synthesis simulation
+WARNING:HDLCompiler:1308 - "\\uofa\users$\users6\a1687296\Desktop\XilinxProject\my_usb\usbf_pa.v" Line 305: Found full_case directive in module usbf_pa. Use of full_case directives may cause differences between RTL and post-synthesis simulation
 
 Elaborating module <usbf_idma(SSRAM_HADR=14)>.
-WARNING:HDLCompiler:413 - "/media/sf_Red/Projects/USB_Research/my_usb/usbf_idma.v" Line 280: Result of 17-bit expression is truncated to fit in 15-bit target.
-WARNING:HDLCompiler:1308 - "/media/sf_Red/Projects/USB_Research/my_usb/usbf_idma.v" Line 453: Found full_case directive in module usbf_idma. Use of full_case directives may cause differences between RTL and post-synthesis simulation
+WARNING:HDLCompiler:413 - "\\uofa\users$\users6\a1687296\Desktop\XilinxProject\my_usb\usbf_idma.v" Line 280: Result of 17-bit expression is truncated to fit in 15-bit target.
+WARNING:HDLCompiler:1308 - "\\uofa\users$\users6\a1687296\Desktop\XilinxProject\my_usb\usbf_idma.v" Line 453: Found full_case directive in module usbf_idma. Use of full_case directives may cause differences between RTL and post-synthesis simulation
 
 Elaborating module <usbf_pe(SSRAM_HADR=14)>.
-WARNING:HDLCompiler:1127 - "/media/sf_Red/Projects/USB_Research/my_usb/usbf_pe.v" Line 359: Assignment to txfr_bulk ignored, since the identifier is never used
-WARNING:HDLCompiler:1308 - "/media/sf_Red/Projects/USB_Research/my_usb/usbf_pe.v" Line 429: Found full_case directive in module usbf_pe. Use of full_case directives may cause differences between RTL and post-synthesis simulation
-WARNING:HDLCompiler:1308 - "/media/sf_Red/Projects/USB_Research/my_usb/usbf_pe.v" Line 437: Found full_case directive in module usbf_pe. Use of full_case directives may cause differences between RTL and post-synthesis simulation
-WARNING:HDLCompiler:1308 - "/media/sf_Red/Projects/USB_Research/my_usb/usbf_pe.v" Line 444: Found full_case directive in module usbf_pe. Use of full_case directives may cause differences between RTL and post-synthesis simulation
-WARNING:HDLCompiler:1308 - "/media/sf_Red/Projects/USB_Research/my_usb/usbf_pe.v" Line 451: Found full_case directive in module usbf_pe. Use of full_case directives may cause differences between RTL and post-synthesis simulation
-WARNING:HDLCompiler:1308 - "/media/sf_Red/Projects/USB_Research/my_usb/usbf_pe.v" Line 470: Found full_case directive in module usbf_pe. Use of full_case directives may cause differences between RTL and post-synthesis simulation
-WARNING:HDLCompiler:1308 - "/media/sf_Red/Projects/USB_Research/my_usb/usbf_pe.v" Line 415: Found full_case directive in module usbf_pe. Use of full_case directives may cause differences between RTL and post-synthesis simulation
-WARNING:HDLCompiler:1308 - "/media/sf_Red/Projects/USB_Research/my_usb/usbf_pe.v" Line 484: Found full_case directive in module usbf_pe. Use of full_case directives may cause differences between RTL and post-synthesis simulation
-WARNING:HDLCompiler:1308 - "/media/sf_Red/Projects/USB_Research/my_usb/usbf_pe.v" Line 523: Found full_case directive in module usbf_pe. Use of full_case directives may cause differences between RTL and post-synthesis simulation
-WARNING:HDLCompiler:1308 - "/media/sf_Red/Projects/USB_Research/my_usb/usbf_pe.v" Line 492: Found full_case directive in module usbf_pe. Use of full_case directives may cause differences between RTL and post-synthesis simulation
-WARNING:HDLCompiler:1308 - "/media/sf_Red/Projects/USB_Research/my_usb/usbf_pe.v" Line 836: Found full_case directive in module usbf_pe. Use of full_case directives may cause differences between RTL and post-synthesis simulation
+WARNING:HDLCompiler:1127 - "\\uofa\users$\users6\a1687296\Desktop\XilinxProject\my_usb\usbf_pe.v" Line 359: Assignment to txfr_bulk ignored, since the identifier is never used
+WARNING:HDLCompiler:1308 - "\\uofa\users$\users6\a1687296\Desktop\XilinxProject\my_usb\usbf_pe.v" Line 429: Found full_case directive in module usbf_pe. Use of full_case directives may cause differences between RTL and post-synthesis simulation
+WARNING:HDLCompiler:1308 - "\\uofa\users$\users6\a1687296\Desktop\XilinxProject\my_usb\usbf_pe.v" Line 437: Found full_case directive in module usbf_pe. Use of full_case directives may cause differences between RTL and post-synthesis simulation
+WARNING:HDLCompiler:1308 - "\\uofa\users$\users6\a1687296\Desktop\XilinxProject\my_usb\usbf_pe.v" Line 444: Found full_case directive in module usbf_pe. Use of full_case directives may cause differences between RTL and post-synthesis simulation
+WARNING:HDLCompiler:1308 - "\\uofa\users$\users6\a1687296\Desktop\XilinxProject\my_usb\usbf_pe.v" Line 451: Found full_case directive in module usbf_pe. Use of full_case directives may cause differences between RTL and post-synthesis simulation
+WARNING:HDLCompiler:1308 - "\\uofa\users$\users6\a1687296\Desktop\XilinxProject\my_usb\usbf_pe.v" Line 470: Found full_case directive in module usbf_pe. Use of full_case directives may cause differences between RTL and post-synthesis simulation
+WARNING:HDLCompiler:1308 - "\\uofa\users$\users6\a1687296\Desktop\XilinxProject\my_usb\usbf_pe.v" Line 415: Found full_case directive in module usbf_pe. Use of full_case directives may cause differences between RTL and post-synthesis simulation
+WARNING:HDLCompiler:1308 - "\\uofa\users$\users6\a1687296\Desktop\XilinxProject\my_usb\usbf_pe.v" Line 484: Found full_case directive in module usbf_pe. Use of full_case directives may cause differences between RTL and post-synthesis simulation
+WARNING:HDLCompiler:1308 - "\\uofa\users$\users6\a1687296\Desktop\XilinxProject\my_usb\usbf_pe.v" Line 523: Found full_case directive in module usbf_pe. Use of full_case directives may cause differences between RTL and post-synthesis simulation
+WARNING:HDLCompiler:1308 - "\\uofa\users$\users6\a1687296\Desktop\XilinxProject\my_usb\usbf_pe.v" Line 492: Found full_case directive in module usbf_pe. Use of full_case directives may cause differences between RTL and post-synthesis simulation
+WARNING:HDLCompiler:1308 - "\\uofa\users$\users6\a1687296\Desktop\XilinxProject\my_usb\usbf_pe.v" Line 836: Found full_case directive in module usbf_pe. Use of full_case directives may cause differences between RTL and post-synthesis simulation
 
 Elaborating module <usbf_mem_arb(SSRAM_HADR=14)>.
 
 Elaborating module <usbf_rf>.
-WARNING:HDLCompiler:1308 - "/media/sf_Red/Projects/USB_Research/my_usb/usbf_rf.v" Line 298: Found full_case directive in module usbf_rf. Use of full_case directives may cause differences between RTL and post-synthesis simulation
-WARNING:HDLCompiler:1308 - "/media/sf_Red/Projects/USB_Research/my_usb/usbf_rf.v" Line 382: Found full_case directive in module usbf_rf. Use of full_case directives may cause differences between RTL and post-synthesis simulation
+WARNING:HDLCompiler:1308 - "\\uofa\users$\users6\a1687296\Desktop\XilinxProject\my_usb\usbf_rf.v" Line 298: Found full_case directive in module usbf_rf. Use of full_case directives may cause differences between RTL and post-synthesis simulation
+WARNING:HDLCompiler:1308 - "\\uofa\users$\users6\a1687296\Desktop\XilinxProject\my_usb\usbf_rf.v" Line 382: Found full_case directive in module usbf_rf. Use of full_case directives may cause differences between RTL and post-synthesis simulation
 
 Elaborating module <usbf_ep_rf>.
 
 Elaborating module <usbf_ep_rf_dummy>.
-WARNING:HDLCompiler:1127 - "/media/sf_Red/Projects/USB_Research/my_usb/usbf_top.v" Line 454: Assignment to rf_resume_req ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "\\uofa\users$\users6\a1687296\Desktop\XilinxProject\my_usb\usbf_top.v" Line 454: Assignment to rf_resume_req ignored, since the identifier is never used
 
 Elaborating module <usbf_wb>.
-WARNING:HDLCompiler:1308 - "/media/sf_Red/Projects/USB_Research/my_usb/usbf_wb.v" Line 200: Found full_case directive in module usbf_wb. Use of full_case directives may cause differences between RTL and post-synthesis simulation
+WARNING:HDLCompiler:1308 - "\\uofa\users$\users6\a1687296\Desktop\XilinxProject\my_usb\usbf_wb.v" Line 200: Found full_case directive in module usbf_wb. Use of full_case directives may cause differences between RTL and post-synthesis simulation
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <usbf_top>.
-    Related source file is "/media/sf_Red/Projects/USB_Research/my_usb/usbf_top.v".
+    Related source file is "\\uofa\users$\users6\a1687296\Desktop\XilinxProject\my_usb\usbf_top.v".
         SSRAM_HADR = 14
-INFO:Xst:3210 - "/media/sf_Red/Projects/USB_Research/my_usb/usbf_top.v" line 405: Output port <rf_resume_req> of the instance <u4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\uofa\users$\users6\a1687296\Desktop\XilinxProject\my_usb\usbf_top.v" line 405: Output port <rf_resume_req> of the instance <u4> is unconnected or connected to loadless signal.
     Found 2-bit register for signal <LineState_r>.
     Found 8-bit register for signal <VStatus_r>.
     Found 1-bit register for signal <suspend_clr_wr>.
@@ -230,7 +227,7 @@ INFO:Xst:3210 - "/media/sf_Red/Projects/USB_Research/my_usb/usbf_top.v" line 405
 Unit <usbf_top> synthesized.
 
 Synthesizing Unit <usbf_utmi_if>.
-    Related source file is "/media/sf_Red/Projects/USB_Research/my_usb/usbf_utmi_if.v".
+    Related source file is "\\uofa\users$\users6\a1687296\Desktop\XilinxProject\my_usb\usbf_utmi_if.v".
     Found 1-bit register for signal <rx_active>.
     Found 1-bit register for signal <rx_err>.
     Found 8-bit register for signal <rx_data>.
@@ -244,7 +241,7 @@ Synthesizing Unit <usbf_utmi_if>.
 Unit <usbf_utmi_if> synthesized.
 
 Synthesizing Unit <usbf_utmi_ls>.
-    Related source file is "/media/sf_Red/Projects/USB_Research/my_usb/usbf_utmi_ls.v".
+    Related source file is "\\uofa\users$\users6\a1687296\Desktop\XilinxProject\my_usb\usbf_utmi_ls.v".
         POR = 15'b000000000000001
         NORMAL = 15'b000000000000010
         RES_SUSP = 15'b000000000000100
@@ -341,12 +338,12 @@ WARNING:Xst:647 - Input <tx_ready> is never used. This port will be preserved an
 Unit <usbf_utmi_ls> synthesized.
 
 Synthesizing Unit <usbf_pl>.
-    Related source file is "/media/sf_Red/Projects/USB_Research/my_usb/usbf_pl.v".
+    Related source file is "\\uofa\users$\users6\a1687296\Desktop\XilinxProject\my_usb\usbf_pl.v".
         SSRAM_HADR = 14
 WARNING:Xst:647 - Input <usb_reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <usb_suspend> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <usb_attached> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "/media/sf_Red/Projects/USB_Research/my_usb/usbf_pl.v" line 328: Output port <seq_err> of the instance <u0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\uofa\users$\users6\a1687296\Desktop\XilinxProject\my_usb\usbf_pl.v" line 328: Output port <seq_err> of the instance <u0> is unconnected or connected to loadless signal.
     Register <frame_no_we_r> equivalent to <clr_sof_time> has been removed
     Found 11-bit register for signal <frame_no_r>.
     Found 1-bit register for signal <frame_no_same>.
@@ -367,7 +364,7 @@ INFO:Xst:3210 - "/media/sf_Red/Projects/USB_Research/my_usb/usbf_pl.v" line 328:
 Unit <usbf_pl> synthesized.
 
 Synthesizing Unit <usbf_pd>.
-    Related source file is "/media/sf_Red/Projects/USB_Research/my_usb/usbf_pd.v".
+    Related source file is "\\uofa\users$\users6\a1687296\Desktop\XilinxProject\my_usb\usbf_pd.v".
         IDLE = 4'b0001
         ACTIVE = 4'b0010
         TOKEN = 4'b0100
@@ -415,17 +412,17 @@ WARNING:Xst:37 - Detected unknown constraint/property "state". This constraint/p
 Unit <usbf_pd> synthesized.
 
 Synthesizing Unit <usbf_crc5>.
-    Related source file is "/media/sf_Red/Projects/USB_Research/my_usb/usbf_crc5.v".
+    Related source file is "\\uofa\users$\users6\a1687296\Desktop\XilinxProject\my_usb\usbf_crc5.v".
     Summary:
 Unit <usbf_crc5> synthesized.
 
 Synthesizing Unit <usbf_crc16>.
-    Related source file is "/media/sf_Red/Projects/USB_Research/my_usb/usbf_crc16.v".
+    Related source file is "\\uofa\users$\users6\a1687296\Desktop\XilinxProject\my_usb\usbf_crc16.v".
     Summary:
 Unit <usbf_crc16> synthesized.
 
 Synthesizing Unit <usbf_pa>.
-    Related source file is "/media/sf_Red/Projects/USB_Research/my_usb/usbf_pa.v".
+    Related source file is "\\uofa\users$\users6\a1687296\Desktop\XilinxProject\my_usb\usbf_pa.v".
         IDLE = 5'b00001
         DATA = 5'b00010
         CRC1 = 5'b00100
@@ -467,7 +464,7 @@ WARNING:Xst:37 - Detected unknown constraint/property "state". This constraint/p
 Unit <usbf_pa> synthesized.
 
 Synthesizing Unit <usbf_idma>.
-    Related source file is "/media/sf_Red/Projects/USB_Research/my_usb/usbf_idma.v".
+    Related source file is "\\uofa\users$\users6\a1687296\Desktop\XilinxProject\my_usb\usbf_idma.v".
         SSRAM_HADR = 14
         IDLE = 8'b00000001
         WAIT_MRD = 8'b00000010
@@ -542,7 +539,7 @@ WARNING:Xst:37 - Detected unknown constraint/property "state". This constraint/p
 Unit <usbf_idma> synthesized.
 
 Synthesizing Unit <usbf_pe>.
-    Related source file is "/media/sf_Red/Projects/USB_Research/my_usb/usbf_pe.v".
+    Related source file is "\\uofa\users$\users6\a1687296\Desktop\XilinxProject\my_usb\usbf_pe.v".
         SSRAM_HADR = 14
         ACK = 0
         NACK = 1
@@ -693,7 +690,7 @@ WARNING:Xst:647 - Input <fsel> is never used. This port will be preserved and le
 Unit <usbf_pe> synthesized.
 
 Synthesizing Unit <usbf_mem_arb>.
-    Related source file is "/media/sf_Red/Projects/USB_Research/my_usb/usbf_mem_arb.v".
+    Related source file is "\\uofa\users$\users6\a1687296\Desktop\XilinxProject\my_usb\usbf_mem_arb.v".
         SSRAM_HADR = 14
 WARNING:Xst:647 - Input <wclk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 1-bit register for signal <wack_r>.
@@ -703,7 +700,7 @@ WARNING:Xst:647 - Input <wclk> is never used. This port will be preserved and le
 Unit <usbf_mem_arb> synthesized.
 
 Synthesizing Unit <usbf_rf>.
-    Related source file is "/media/sf_Red/Projects/USB_Research/my_usb/usbf_rf.v".
+    Related source file is "\\uofa\users$\users6\a1687296\Desktop\XilinxProject\my_usb\usbf_rf.v".
 WARNING:Xst:647 - Input <attached> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 8-bit register for signal <utmi_vend_stat_r>.
     Found 1-bit register for signal <utmi_vend_wr_r>.
@@ -752,7 +749,7 @@ WARNING:Xst:647 - Input <attached> is never used. This port will be preserved an
 Unit <usbf_rf> synthesized.
 
 Synthesizing Unit <usbf_ep_rf>.
-    Related source file is "/media/sf_Red/Projects/USB_Research/my_usb/usbf_ep_rf.v".
+    Related source file is "\\uofa\users$\users6\a1687296\Desktop\XilinxProject\my_usb\usbf_ep_rf.v".
     Found 1-bit register for signal <csr1<12>>.
     Found 1-bit register for signal <csr1<11>>.
     Found 1-bit register for signal <csr1<10>>.
@@ -817,7 +814,7 @@ Synthesizing Unit <usbf_ep_rf>.
 Unit <usbf_ep_rf> synthesized.
 
 Synthesizing Unit <usbf_ep_rf_dummy>.
-    Related source file is "/media/sf_Red/Projects/USB_Research/my_usb/usbf_ep_rf_dummy.v".
+    Related source file is "\\uofa\users$\users6\a1687296\Desktop\XilinxProject\my_usb\usbf_ep_rf_dummy.v".
 WARNING:Xst:647 - Input <adr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <din> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <idin> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -845,7 +842,7 @@ WARNING:Xst:647 - Input <out_to_small> is never used. This port will be preserve
 Unit <usbf_ep_rf_dummy> synthesized.
 
 Synthesizing Unit <usbf_wb>.
-    Related source file is "/media/sf_Red/Projects/USB_Research/my_usb/usbf_wb.v".
+    Related source file is "\\uofa\users$\users6\a1687296\Desktop\XilinxProject\my_usb\usbf_wb.v".
         IDLE = 6'b000001
         MA_WR = 6'b000010
         MA_RD = 6'b000100
@@ -1543,13 +1540,12 @@ phy_clk_pad_i  |    7.972|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 21.00 secs
-Total CPU time to Xst completion: 12.54 secs
+Total REAL time to Xst completion: 22.00 secs
+Total CPU time to Xst completion: 22.45 secs
  
 --> 
 
-
-Total memory usage is 506472 kilobytes
+Total memory usage is 278176 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  127 (   0 filtered)

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=U:\Desktop\XilinxProject\ObkoUSB\usb_tlp.ncd
+OUTFILE=U:\Desktop\XilinxProject\ObkoUSB\usb_tlp.bit
+FAMILY=Spartan6
+PART=xc6slx16-2csg324
+WORKINGDIR=U:\Desktop\XilinxProject\ObkoUSB
+LICENSE=ISE
+USER_INFO=179605157_174133816_210554760_208

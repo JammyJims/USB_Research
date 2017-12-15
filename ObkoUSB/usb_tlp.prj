@@ -1,0 +1,6 @@
+vhdl work "core_pkg.vhdl"
+vhdl work "usb_xfer.vhdl"
+vhdl work "usb_std_request.vhdl"
+vhdl work "usb_packet.vhdl"
+vhdl work "ulpi_port.vhdl"
+vhdl work "usb_tlp.vhdl"

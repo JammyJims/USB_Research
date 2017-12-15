@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "U:/Desktop/XilinxProject/ObkoUSB/usb_tlp.xst" -ofn "U:/Desktop/XilinxProject/ObkoUSB/usb_tlp.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-2 usb_tlp.ngc usb_tlp.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o usb_tlp_map.ncd usb_tlp.ngd usb_tlp.pcf 
+par -w -intstyle ise -ol high -mt off usb_tlp_map.ncd usb_tlp.ncd usb_tlp.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml usb_tlp.twx usb_tlp.ncd -o usb_tlp.twr usb_tlp.pcf 
+bitgen -intstyle ise -f usb_tlp.ut usb_tlp.ncd 

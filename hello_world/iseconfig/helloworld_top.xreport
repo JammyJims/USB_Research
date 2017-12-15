@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-12-12T11:37:02</DateModified>
+  <DateModified>2017-12-15T12:10:22</DateModified>
   <ModuleName>helloworld_top</ModuleName>
   <SummaryTimeStamp>2017-12-07T16:38:27</SummaryTimeStamp>
-  <SavedFilePath>/media/sf_Research/Xilinx/14.7/ISE_DS/hello_world/iseconfig/helloworld_top.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/media/sf_Research/Xilinx/14.7/ISE_DS/hello_world/</ImplementationReportsDirectory>
+  <SavedFilePath>U:/Desktop/XilinxProject/hello_world/iseconfig/helloworld_top.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>U:/Desktop/XilinxProject/hello_world\</ImplementationReportsDirectory>
   <DateInitialized>2017-12-07T15:34:32</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

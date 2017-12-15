@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "U:/Desktop/XilinxProject/ObkoUSB/usb_flasher_tb_isim_beh.exe" -prj "U:/Desktop/XilinxProject/ObkoUSB/usb_flasher_tb_beh.prj" "work.usb_flasher_tb" 

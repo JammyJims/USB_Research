@@ -1,0 +1,220 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 2
+-n 3 -fastpaths -xml usb_tlp.twx usb_tlp.ncd -o usb_tlp.twr usb_tlp.pcf
+
+Design file:              usb_tlp.ncd
+Physical constraint file: usb_tlp.pcf
+Device,package,speed:     xc6slx16,csg324,C,-2 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock ulpi_clk60
+-----------------------+------------+------------+------------+------------+------------------+--------+
+                       |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source                 | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+-----------------------+------------+------------+------------+------------+------------------+--------+
+blk_xfer_in_data<0>    |    5.452(R)|      SLOW  |   -1.941(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+blk_xfer_in_data<1>    |    4.772(R)|      SLOW  |   -1.667(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+blk_xfer_in_data<2>    |    5.508(R)|      SLOW  |   -1.961(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+blk_xfer_in_data<3>    |    5.617(R)|      SLOW  |   -1.807(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+blk_xfer_in_data<4>    |    5.012(R)|      SLOW  |   -1.610(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+blk_xfer_in_data<5>    |    5.789(R)|      SLOW  |   -1.610(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+blk_xfer_in_data<6>    |    5.879(R)|      SLOW  |   -2.278(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+blk_xfer_in_data<7>    |    4.314(R)|      SLOW  |   -1.564(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+blk_xfer_in_data_last  |    5.662(R)|      SLOW  |   -1.614(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+blk_xfer_in_data_valid |    5.813(R)|      SLOW  |   -1.494(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+blk_xfer_in_has_data   |    6.992(R)|      SLOW  |   -0.182(R)|      SLOW  |usb_clk_OBUF_BUFG |   0.000|
+blk_xfer_out_ready_read|    3.681(R)|      SLOW  |   -0.875(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_accept        |    4.132(R)|      SLOW  |   -1.624(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_data_in<0>    |    4.794(R)|      SLOW  |   -1.614(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_data_in<1>    |    4.529(R)|      SLOW  |   -1.451(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_data_in<2>    |    5.433(R)|      SLOW  |   -1.906(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_data_in<3>    |    5.124(R)|      SLOW  |   -1.507(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_data_in<4>    |    4.701(R)|      SLOW  |   -1.422(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_data_in<5>    |    5.787(R)|      SLOW  |   -1.515(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_data_in<6>    |    6.453(R)|      SLOW  |   -2.672(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_data_in<7>    |    4.082(R)|      SLOW  |   -1.385(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_data_in_last  |    4.524(R)|      SLOW  |   -1.571(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_data_in_valid |    7.118(R)|      SLOW  |   -1.838(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_done          |    4.314(R)|      SLOW  |   -0.763(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ulpi_data_in<0>        |    3.485(R)|      SLOW  |   -0.419(R)|      SLOW  |usb_clk_OBUF_BUFG |   0.000|
+ulpi_data_in<1>        |    3.924(R)|      SLOW  |   -0.547(R)|      SLOW  |usb_clk_OBUF_BUFG |   0.000|
+ulpi_data_in<2>        |    1.488(R)|      SLOW  |   -0.425(R)|      SLOW  |usb_clk_OBUF_BUFG |   0.000|
+ulpi_data_in<3>        |    1.618(R)|      SLOW  |   -0.545(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ulpi_data_in<4>        |    2.977(R)|      SLOW  |   -0.355(R)|      SLOW  |usb_clk_OBUF_BUFG |   0.000|
+ulpi_data_in<5>        |    1.422(R)|      SLOW  |   -0.363(R)|      SLOW  |usb_clk_OBUF_BUFG |   0.000|
+ulpi_data_in<6>        |    1.009(R)|      SLOW  |    0.029(R)|      SLOW  |usb_clk_OBUF_BUFG |   0.000|
+ulpi_data_in<7>        |    0.953(R)|      SLOW  |    0.082(R)|      SLOW  |usb_clk_OBUF_BUFG |   0.000|
+ulpi_dir               |    6.051(R)|      SLOW  |   -0.470(R)|      SLOW  |usb_clk_OBUF_BUFG |   0.000|
+ulpi_nxt               |    6.992(R)|      SLOW  |   -1.538(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+-----------------------+------------+------------+------------+------------+------------------+--------+
+
+Clock ulpi_clk60 to Pad
+-----------------------+-----------------+------------+-----------------+------------+------------------+--------+
+                       |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination            |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+-----------------------+-----------------+------------+-----------------+------------+------------------+--------+
+blk_in_xfer            |         8.953(R)|      SLOW  |         3.720(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+blk_out_xfer           |         9.929(R)|      SLOW  |         4.294(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+blk_xfer_endpoint<0>   |        10.563(R)|      SLOW  |         4.663(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+blk_xfer_endpoint<1>   |        10.361(R)|      SLOW  |         4.470(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+blk_xfer_endpoint<2>   |        10.965(R)|      SLOW  |         4.922(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+blk_xfer_endpoint<3>   |         9.839(R)|      SLOW  |         4.131(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+blk_xfer_in_data_ready |        12.618(R)|      SLOW  |         4.396(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+blk_xfer_out_data<0>   |         9.416(R)|      SLOW  |         3.920(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+blk_xfer_out_data<1>   |        11.800(R)|      SLOW  |         5.234(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+blk_xfer_out_data<2>   |         8.654(R)|      SLOW  |         3.487(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+blk_xfer_out_data<3>   |        11.644(R)|      SLOW  |         5.193(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+blk_xfer_out_data<4>   |         9.300(R)|      SLOW  |         3.835(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+blk_xfer_out_data<5>   |         9.267(R)|      SLOW  |         3.841(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+blk_xfer_out_data<6>   |         8.977(R)|      SLOW  |         3.668(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+blk_xfer_out_data<7>   |         9.399(R)|      SLOW  |         3.896(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+blk_xfer_out_data_valid|        13.219(R)|      SLOW  |         4.927(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer               |        11.783(R)|      SLOW  |         4.796(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_data_in_ready |        13.575(R)|      SLOW  |         4.892(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_data_out<0>   |        12.933(R)|      SLOW  |         6.087(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_data_out<1>   |        14.171(R)|      SLOW  |         6.740(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_data_out<2>   |        13.968(R)|      SLOW  |         6.647(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_data_out<3>   |        13.620(R)|      SLOW  |         6.393(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_data_out<4>   |        13.212(R)|      SLOW  |         6.245(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_data_out<5>   |        13.150(R)|      SLOW  |         6.246(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_data_out<6>   |        12.888(R)|      SLOW  |         6.028(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_data_out<7>   |        13.253(R)|      SLOW  |         6.283(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_data_out_valid|        13.296(R)|      SLOW  |         4.766(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_endpoint<0>   |        11.596(R)|      SLOW  |         5.129(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_endpoint<1>   |        11.167(R)|      SLOW  |         4.933(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_endpoint<2>   |        11.592(R)|      SLOW  |         5.174(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_endpoint<3>   |        11.651(R)|      SLOW  |         5.174(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_index<0>      |         8.787(R)|      SLOW  |         3.549(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_index<1>      |         8.971(R)|      SLOW  |         3.647(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_index<2>      |         8.963(R)|      SLOW  |         3.639(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_index<3>      |         8.910(R)|      SLOW  |         3.620(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_index<4>      |         8.913(R)|      SLOW  |         3.633(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_index<5>      |         8.941(R)|      SLOW  |         3.646(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_index<6>      |         8.761(R)|      SLOW  |         3.560(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_index<7>      |         9.993(R)|      SLOW  |         4.205(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_index<8>      |        10.213(R)|      SLOW  |         4.356(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_index<9>      |         9.862(R)|      SLOW  |         4.165(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_index<10>     |         9.817(R)|      SLOW  |         4.185(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_index<11>     |        10.461(R)|      SLOW  |         4.468(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_index<12>     |        10.039(R)|      SLOW  |         4.306(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_index<13>     |         9.920(R)|      SLOW  |         4.201(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_index<14>     |        10.176(R)|      SLOW  |         4.356(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_index<15>     |        10.855(R)|      SLOW  |         4.738(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_length<0>     |        10.036(R)|      SLOW  |         4.341(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_length<1>     |        10.335(R)|      SLOW  |         4.517(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_length<2>     |        10.025(R)|      SLOW  |         4.320(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_length<3>     |        10.036(R)|      SLOW  |         4.341(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_length<4>     |        10.053(R)|      SLOW  |         4.409(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_length<5>     |        10.010(R)|      SLOW  |         4.327(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_length<6>     |         9.739(R)|      SLOW  |         4.169(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_length<7>     |        10.053(R)|      SLOW  |         4.409(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_length<8>     |         9.697(R)|      SLOW  |         4.125(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_length<9>     |         9.869(R)|      SLOW  |         4.260(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_length<10>    |         9.688(R)|      SLOW  |         4.116(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_length<11>    |         9.673(R)|      SLOW  |         4.140(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_length<12>    |        10.643(R)|      SLOW  |         4.703(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_length<13>    |        10.740(R)|      SLOW  |         4.788(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_length<14>    |        10.400(R)|      SLOW  |         4.568(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_length<15>    |        12.030(R)|      SLOW  |         5.483(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_request<0>    |         8.979(R)|      SLOW  |         3.685(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_request<1>    |         9.353(R)|      SLOW  |         3.895(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_request<2>    |         9.393(R)|      SLOW  |         3.944(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_request<3>    |         9.128(R)|      SLOW  |         3.780(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_request<4>    |         8.960(R)|      SLOW  |         3.677(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_request<5>    |         8.960(R)|      SLOW  |         3.677(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_request<6>    |         8.958(R)|      SLOW  |         3.697(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_request<7>    |         9.168(R)|      SLOW  |         3.774(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_type<0>       |         8.997(R)|      SLOW  |         3.736(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_type<1>       |         9.069(R)|      SLOW  |         3.723(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_type<2>       |         9.161(R)|      SLOW  |         3.791(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_type<3>       |         9.196(R)|      SLOW  |         3.851(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_type<4>       |        10.342(R)|      SLOW  |         4.470(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_type<5>       |        10.109(R)|      SLOW  |         4.338(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_type<6>       |        10.160(R)|      SLOW  |         4.363(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_type<7>       |        10.084(R)|      SLOW  |         4.328(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_value<0>      |        10.629(R)|      SLOW  |         4.672(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_value<1>      |        11.735(R)|      SLOW  |         5.335(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_value<2>      |        11.450(R)|      SLOW  |         5.157(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_value<3>      |        11.734(R)|      SLOW  |         5.360(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_value<4>      |        11.046(R)|      SLOW  |         4.928(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_value<5>      |        11.277(R)|      SLOW  |         5.079(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_value<6>      |        10.463(R)|      SLOW  |         4.602(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_value<7>      |        11.292(R)|      SLOW  |         5.029(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_value<8>      |        10.164(R)|      SLOW  |         4.430(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_value<9>      |        10.902(R)|      SLOW  |         4.846(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_value<10>     |        10.135(R)|      SLOW  |         4.416(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_value<11>     |        10.125(R)|      SLOW  |         4.395(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_value<12>     |        10.115(R)|      SLOW  |         4.396(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_value<13>     |        10.063(R)|      SLOW  |         4.377(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_value<14>     |        10.162(R)|      SLOW  |         4.504(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ctl_xfer_value<15>     |        10.077(R)|      SLOW  |         4.372(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ulpi_data_out<0>       |        10.151(R)|      SLOW  |         4.471(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ulpi_data_out<1>       |        10.077(R)|      SLOW  |         4.463(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ulpi_data_out<2>       |         9.364(R)|      SLOW  |         3.960(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ulpi_data_out<3>       |         9.500(R)|      SLOW  |         4.029(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ulpi_data_out<4>       |         9.095(R)|      SLOW  |         3.813(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ulpi_data_out<5>       |         9.402(R)|      SLOW  |         3.948(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ulpi_data_out<6>       |         9.280(R)|      SLOW  |         3.908(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ulpi_data_out<7>       |         9.417(R)|      SLOW  |         4.012(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+ulpi_stp               |        11.607(R)|      SLOW  |         4.759(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+usb_configured         |        10.048(R)|      SLOW  |         4.364(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+usb_crc_error          |        10.796(R)|      SLOW  |         4.782(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+usb_idle               |        10.795(R)|      SLOW  |         4.624(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+usb_reset              |        10.204(R)|      SLOW  |         4.476(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+usb_sof                |        10.522(R)|      SLOW  |         4.646(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+usb_suspend            |        11.350(R)|      SLOW  |         5.054(R)|      FAST  |usb_clk_OBUF_BUFG |   0.000|
+-----------------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock ulpi_clk60
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+ulpi_clk60     |    7.880|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+----------------------+---------+
+Source Pad     |Destination Pad       |  Delay  |
+---------------+----------------------+---------+
+ulpi_clk60     |usb_clk               |    7.861|
+ulpi_dir       |blk_xfer_in_data_ready|   12.221|
+ulpi_dir       |ctl_xfer_data_in_ready|   12.520|
+---------------+----------------------+---------+
+
+
+Analysis completed Fri Dec 15 11:35:51 2017 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 230 MB
+
+
+

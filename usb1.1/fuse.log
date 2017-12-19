@@ -1,0 +1,9 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o U:/Desktop/XilinxProject/usb1.1/usb1_ctrl_isim_beh.exe -prj U:/Desktop/XilinxProject/usb1.1/usb1_ctrl_beh.prj work.usb1_ctrl work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "U:/Desktop/XilinxProject/usb1.1/usb1_rom1.v" into library work
+ERROR:HDLCompiler:870 - "usb1_defines.v" Line 66: Macro <USB1_ISO_CHUNKS> is not defined.
+ERROR:HDLCompiler:598 - "U:/Desktop/XilinxProject/usb1.1/usb1_rom1.v" Line 59: Module <usb1_rom1> ignored due to previous errors.
+Verilog file U:/Desktop/XilinxProject/usb1.1/usb1_rom1.v ignored due to errors

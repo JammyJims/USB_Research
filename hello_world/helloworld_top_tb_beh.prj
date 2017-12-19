@@ -1,3 +1,0 @@
-verilog work "helloworld_top.v"
-verilog work "helloworld_top_tb.v"
-verilog work "/media/sf_Red/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

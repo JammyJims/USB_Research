@@ -28,6 +28,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="usb1_core.prj"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="usb1_core.syr"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="usb1_core.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="usb1_core_envsettings.html"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="usb1_core_summary.html"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="usb1_core_xst.xrpt"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
@@ -63,7 +64,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1513296847" xil_pn:in_ck="165888030895769500" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-6017843915399938347" xil_pn:start_ts="1513296837">
+    <transform xil_pn:end_ts="1513554137" xil_pn:in_ck="165888030895769500" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-6017843915399938347" xil_pn:start_ts="1513554126">
       <status xil_pn:value="FailedRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>

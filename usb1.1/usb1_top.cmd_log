@@ -1,0 +1,11 @@
+xst -intstyle ise -ifn "U:/Desktop/XilinxProject/usb1.1/usb1_top.xst" -ofn "U:/Desktop/XilinxProject/usb1.1/usb1_top.syr" 
+xst -intstyle ise -ifn "U:/Desktop/XilinxProject/usb1.1/usb1_top.xst" -ofn "U:/Desktop/XilinxProject/usb1.1/usb1_top.syr" 
+xst -intstyle ise -ifn "U:/Desktop/XilinxProject/usb1.1/usb1_top.xst" -ofn "U:/Desktop/XilinxProject/usb1.1/usb1_top.syr" 
+xst -intstyle ise -ifn "U:/Desktop/XilinxProject/usb1.1/usb1_top.xst" -ofn "U:/Desktop/XilinxProject/usb1.1/usb1_top.syr" 
+xst -intstyle ise -ifn "U:/Desktop/XilinxProject/usb1.1/usb1_top.xst" -ofn "U:/Desktop/XilinxProject/usb1.1/usb1_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-2 usb1_top.ngc usb1_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o usb1_top_map.ncd usb1_top.ngd usb1_top.pcf 
+par -w -intstyle ise -ol high -mt off usb1_top_map.ncd usb1_top.ncd usb1_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml usb1_top.twx usb1_top.ncd -o usb1_top.twr usb1_top.pcf 
+bitgen -intstyle ise -f usb1_top.ut usb1_top.ncd 
+bitgen -intstyle ise -f usb1_top.ut usb1_top.ncd 

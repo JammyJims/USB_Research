@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.36 secs
+Total CPU time to Xst completion: 0.15 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.37 secs
+Total CPU time to Xst completion: 0.16 secs
  
 --> Reading design: usb1_core.prj
 
@@ -161,7 +161,7 @@ Module usb1_core remains a blackbox, due to errors in its contents
 WARNING:HDLCompiler:1499 - "\\uofa\users$\users6\a1687296\Desktop\XilinxProject\my_usb1\usb1_core.v" Line 134: Empty module <usb1_core> remains a black box.
 --> 
 
-Total memory usage is 205796 kilobytes
+Total memory usage is 205668 kilobytes
 
 Number of errors   :    1 (   0 filtered)
 Number of warnings :    1 (   0 filtered)

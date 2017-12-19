@@ -5,10 +5,10 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="error" file="HDLCompiler" num="1654" delta="new" >"\\uofa\users$\users6\a1687296\Desktop\XilinxProject\my_usb1\usb1_core.v" Line 352: Instantiating &lt;<arg fmt="%s" index="1">phy</arg>&gt; from unknown module &lt;<arg fmt="%s" index="2">usb_phy</arg>&gt;
+<msg type="error" file="HDLCompiler" num="1654" delta="old" >"\\uofa\users$\users6\a1687296\Desktop\XilinxProject\my_usb1\usb1_core.v" Line 352: Instantiating &lt;<arg fmt="%s" index="1">phy</arg>&gt; from unknown module &lt;<arg fmt="%s" index="2">usb_phy</arg>&gt;
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1499" delta="new" >"\\uofa\users$\users6\a1687296\Desktop\XilinxProject\my_usb1\usb1_core.v" Line 134: Empty module &lt;<arg fmt="%s" index="1">usb1_core</arg>&gt; remains a black box.
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"\\uofa\users$\users6\a1687296\Desktop\XilinxProject\my_usb1\usb1_core.v" Line 134: Empty module &lt;<arg fmt="%s" index="1">usb1_core</arg>&gt; remains a black box.
 </msg>
 
 </messages>

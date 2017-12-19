@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="1308" delta="new" >"\\uofa\users$\users6\a1687296\Desktop\XilinxProject\usb1.1\usb_tx_phy.v" Line 424: Found full_case directive in module <arg fmt="%s" index="1">usb_tx_phy</arg>. Use of full_case directives may cause differences between RTL and post-synthesis simulation
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"\\uofa\users$\users6\a1687296\Desktop\XilinxProject\usb1.1\usb1_top.v" Line 258: Assignment to <arg fmt="%s" index="1">LineState</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"\\uofa\users$\users6\a1687296\Desktop\XilinxProject\usb1.1\usb1_pd.v" Line 195: Assignment to <arg fmt="%s" index="1">pid_RES</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"\\uofa\users$\users6\a1687296\Desktop\XilinxProject\usb1.1\usb1_pd.v" Line 213: Assignment to <arg fmt="%s" index="1">token_valid_str2</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1309" delta="new" >"\\uofa\users$\users6\a1687296\Desktop\XilinxProject\usb1.1\usb1_pd.v" Line 318: Found full_case directive. Use of full_case directives may cause differences between RTL and post-synthesis simulation
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"\\uofa\users$\users6\a1687296\Desktop\XilinxProject\usb1.1\usb1_pl.v" Line 301: Assignment to <arg fmt="%s" index="1">rx_seq_err</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1308" delta="new" >"\\uofa\users$\users6\a1687296\Desktop\XilinxProject\usb1.1\usb1_pa.v" Line 267: Found full_case directive in module <arg fmt="%s" index="1">usb1_pa</arg>. Use of full_case directives may cause differences between RTL and post-synthesis simulation
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"\\uofa\users$\users6\a1687296\Desktop\XilinxProject\usb1.1\usb1_idma.v" Line 244: Assignment to <arg fmt="%s" index="1">rx_data_valid_r</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"\\uofa\users$\users6\a1687296\Desktop\XilinxProject\usb1.1\usb1_idma.v" Line 260: Assignment to <arg fmt="%s" index="1">tx_dma_en_r3</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"\\uofa\users$\users6\a1687296\Desktop\XilinxProject\usb1.1\usb1_idma.v" Line 317: Assignment to <arg fmt="%s" index="1">tx_valid_e</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"\\uofa\users$\users6\a1687296\Desktop\XilinxProject\usb1.1\usb1_pe.v" Line 243: Assignment to <arg fmt="%s" index="1">txfr_bulk</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1308" delta="new" >"\\uofa\users$\users6\a1687296\Desktop\XilinxProject\usb1.1\usb1_pe.v" Line 344: Found full_case directive in module <arg fmt="%s" index="1">usb1_pe</arg>. Use of full_case directives may cause differences between RTL and post-synthesis simulation
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1308" delta="new" >"\\uofa\users$\users6\a1687296\Desktop\XilinxProject\usb1.1\usb1_pe.v" Line 352: Found full_case directive in module <arg fmt="%s" index="1">usb1_pe</arg>. Use of full_case directives may cause differences between RTL and post-synthesis simulation
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1308" delta="new" >"\\uofa\users$\users6\a1687296\Desktop\XilinxProject\usb1.1\usb1_pe.v" Line 359: Found full_case directive in module <arg fmt="%s" index="1">usb1_pe</arg>. Use of full_case directives may cause differences between RTL and post-synthesis simulation
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1308" delta="new" >"\\uofa\users$\users6\a1687296\Desktop\XilinxProject\usb1.1\usb1_pe.v" Line 366: Found full_case directive in module <arg fmt="%s" index="1">usb1_pe</arg>. Use of full_case directives may cause differences between RTL and post-synthesis simulation
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1308" delta="new" >"\\uofa\users$\users6\a1687296\Desktop\XilinxProject\usb1.1\usb1_pe.v" Line 385: Found full_case directive in module <arg fmt="%s" index="1">usb1_pe</arg>. Use of full_case directives may cause differences between RTL and post-synthesis simulation
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1308" delta="new" >"\\uofa\users$\users6\a1687296\Desktop\XilinxProject\usb1.1\usb1_pe.v" Line 330: Found full_case directive in module <arg fmt="%s" index="1">usb1_pe</arg>. Use of full_case directives may cause differences between RTL and post-synthesis simulation
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1308" delta="new" >"\\uofa\users$\users6\a1687296\Desktop\XilinxProject\usb1.1\usb1_pe.v" Line 399: Found full_case directive in module <arg fmt="%s" index="1">usb1_pe</arg>. Use of full_case directives may cause differences between RTL and post-synthesis simulation
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1308" delta="new" >"\\uofa\users$\users6\a1687296\Desktop\XilinxProject\usb1.1\usb1_pe.v" Line 438: Found full_case directive in module <arg fmt="%s" index="1">usb1_pe</arg>. Use of full_case directives may cause differences between RTL and post-synthesis simulation
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1308" delta="new" >"\\uofa\users$\users6\a1687296\Desktop\XilinxProject\usb1.1\usb1_pe.v" Line 407: Found full_case directive in module <arg fmt="%s" index="1">usb1_pe</arg>. Use of full_case directives may cause differences between RTL and post-synthesis simulation
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1308" delta="new" >"\\uofa\users$\users6\a1687296\Desktop\XilinxProject\usb1.1\usb1_pe.v" Line 625: Found full_case directive in module <arg fmt="%s" index="1">usb1_pe</arg>. Use of full_case directives may cause differences between RTL and post-synthesis simulation
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"\\uofa\users$\users6\a1687296\Desktop\XilinxProject\usb1.1\usb1_pl.v" Line 377: Assignment to <arg fmt="%s" index="1">abort</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"\\uofa\users$\users6\a1687296\Desktop\XilinxProject\usb1.1\usb1_pl.v" Line 385: Assignment to <arg fmt="%s" index="1">int_upid_set</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"\\uofa\users$\users6\a1687296\Desktop\XilinxProject\usb1.1\usb1_top.v" Line 296: Assignment to <arg fmt="%s" index="1">token_valid</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"\\uofa\users$\users6\a1687296\Desktop\XilinxProject\usb1.1\usb1_top.v" Line 300: Assignment to <arg fmt="%s" index="1">int_to_set</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"\\uofa\users$\users6\a1687296\Desktop\XilinxProject\usb1.1\usb1_top.v" Line 301: Assignment to <arg fmt="%s" index="1">int_seqerr_set</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"\\uofa\users$\users6\a1687296\Desktop\XilinxProject\usb1.1\usb1_top.v" Line 303: Assignment to <arg fmt="%s" index="1">pid_cs_err</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"\\uofa\users$\users6\a1687296\Desktop\XilinxProject\usb1.1\usb1_top.v" Line 304: Assignment to <arg fmt="%s" index="1">nse_err</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"\\uofa\users$\users6\a1687296\Desktop\XilinxProject\usb1.1\usb1_top.v" Line 305: Assignment to <arg fmt="%s" index="1">crc5_err</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"\\uofa\users$\users6\a1687296\Desktop\XilinxProject\usb1.1\usb1_top.v" Line 306: Assignment to <arg fmt="%s" index="1">rx_size</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"\\uofa\users$\users6\a1687296\Desktop\XilinxProject\usb1.1\usb1_top.v" Line 307: Assignment to <arg fmt="%s" index="1">rx_done</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"\\uofa\users$\users6\a1687296\Desktop\XilinxProject\usb1.1\usb1_ctrl.v" Line 183: Assignment to <arg fmt="%s" index="1">addressed</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1308" delta="new" >"\\uofa\users$\users6\a1687296\Desktop\XilinxProject\usb1.1\usb1_rom1.v" Line 67: Found full_case directive in module <arg fmt="%s" index="1">usb1_rom1</arg>. Use of full_case directives may cause differences between RTL and post-synthesis simulation
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"\\uofa\users$\users6\a1687296\Desktop\XilinxProject\usb1.1\usb1_ctrl.v" Line 274: Result of <arg fmt="%d" index="1">8</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">7</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1309" delta="new" >"\\uofa\users$\users6\a1687296\Desktop\XilinxProject\usb1.1\usb1_ctrl.v" Line 353: Found full_case directive. Use of full_case directives may cause differences between RTL and post-synthesis simulation
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"\\uofa\users$\users6\a1687296\Desktop\XilinxProject\usb1.1\usb1_ctrl.v" Line 402: Assignment to <arg fmt="%s" index="1">bm_req_dir</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1309" delta="new" >"\\uofa\users$\users6\a1687296\Desktop\XilinxProject\usb1.1\usb1_ctrl.v" Line 516: Found full_case directive. Use of full_case directives may cause differences between RTL and post-synthesis simulation
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1309" delta="new" >"\\uofa\users$\users6\a1687296\Desktop\XilinxProject\usb1.1\usb1_top.v" Line 353: Found full_case directive. Use of full_case directives may cause differences between RTL and post-synthesis simulation
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1309" delta="new" >"\\uofa\users$\users6\a1687296\Desktop\XilinxProject\usb1.1\usb1_top.v" Line 364: Found full_case directive. Use of full_case directives may cause differences between RTL and post-synthesis simulation
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1309" delta="new" >"\\uofa\users$\users6\a1687296\Desktop\XilinxProject\usb1.1\usb1_top.v" Line 373: Found full_case directive. Use of full_case directives may cause differences between RTL and post-synthesis simulation
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1309" delta="new" >"\\uofa\users$\users6\a1687296\Desktop\XilinxProject\usb1.1\usb1_top.v" Line 383: Found full_case directive. Use of full_case directives may cause differences between RTL and post-synthesis simulation
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">\\uofa\users$\users6\a1687296\Desktop\XilinxProject\usb1.1\usb1_top.v</arg>&quot; line <arg fmt="%s" index="2">236</arg>: Output port &lt;<arg fmt="%s" index="3">LineState_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">phy</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">\\uofa\users$\users6\a1687296\Desktop\XilinxProject\usb1.1\usb1_top.v</arg>&quot; line <arg fmt="%s" index="2">284</arg>: Output port &lt;<arg fmt="%s" index="3">rx_size</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">\\uofa\users$\users6\a1687296\Desktop\XilinxProject\usb1.1\usb1_top.v</arg>&quot; line <arg fmt="%s" index="2">284</arg>: Output port &lt;<arg fmt="%s" index="3">token_valid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">\\uofa\users$\users6\a1687296\Desktop\XilinxProject\usb1.1\usb1_top.v</arg>&quot; line <arg fmt="%s" index="2">284</arg>: Output port &lt;<arg fmt="%s" index="3">int_to_set</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">\\uofa\users$\users6\a1687296\Desktop\XilinxProject\usb1.1\usb1_top.v</arg>&quot; line <arg fmt="%s" index="2">284</arg>: Output port &lt;<arg fmt="%s" index="3">int_seqerr_set</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">\\uofa\users$\users6\a1687296\Desktop\XilinxProject\usb1.1\usb1_top.v</arg>&quot; line <arg fmt="%s" index="2">284</arg>: Output port &lt;<arg fmt="%s" index="3">pid_cs_err</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">\\uofa\users$\users6\a1687296\Desktop\XilinxProject\usb1.1\usb1_top.v</arg>&quot; line <arg fmt="%s" index="2">284</arg>: Output port &lt;<arg fmt="%s" index="3">nse_err</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">\\uofa\users$\users6\a1687296\Desktop\XilinxProject\usb1.1\usb1_top.v</arg>&quot; line <arg fmt="%s" index="2">284</arg>: Output port &lt;<arg fmt="%s" index="3">crc5_err</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">\\uofa\users$\users6\a1687296\Desktop\XilinxProject\usb1.1\usb1_top.v</arg>&quot; line <arg fmt="%s" index="2">284</arg>: Output port &lt;<arg fmt="%s" index="3">rx_done</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">\\uofa\users$\users6\a1687296\Desktop\XilinxProject\usb1.1\usb1_top.v</arg>&quot; line <arg fmt="%s" index="2">323</arg>: Output port &lt;<arg fmt="%s" index="3">configured</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u4</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">\\uofa\users$\users6\a1687296\Desktop\XilinxProject\usb1.1\usb1_top.v</arg>&quot; line <arg fmt="%s" index="2">323</arg>: Output port &lt;<arg fmt="%s" index="3">halt</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u4</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">\\uofa\users$\users6\a1687296\Desktop\XilinxProject\usb1.1\usb1_pl.v</arg>&quot; line <arg fmt="%s" index="2">268</arg>: Output port &lt;<arg fmt="%s" index="3">seq_err</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">\\uofa\users$\users6\a1687296\Desktop\XilinxProject\usb1.1\usb1_pl.v</arg>&quot; line <arg fmt="%s" index="2">354</arg>: Output port &lt;<arg fmt="%s" index="3">abort</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u3</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">\\uofa\users$\users6\a1687296\Desktop\XilinxProject\usb1.1\usb1_pl.v</arg>&quot; line <arg fmt="%s" index="2">354</arg>: Output port &lt;<arg fmt="%s" index="3">int_upid_set</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u3</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">enum</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">state</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">enum</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">state</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">state_vector</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">state</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">enum</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">state</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">enum</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">state</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">state_vector</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">state</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">enum</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">state</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">enum</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">state</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">state_vector</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">state</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">csr&lt;8:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="new" >State <arg fmt="%s" index="1">0001000000</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">ep0_stat&lt;0:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">ep0_stat&lt;3:3&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">\\uofa\users$\users6\a1687296\Desktop\XilinxProject\usb1.1\usb1_ep.v</arg>&quot; line <arg fmt="%s" index="2">107</arg>: Output port &lt;<arg fmt="%s" index="3">full_n</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">f0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">\\uofa\users$\users6\a1687296\Desktop\XilinxProject\usb1.1\usb1_ep.v</arg>&quot; line <arg fmt="%s" index="2">107</arg>: Output port &lt;<arg fmt="%s" index="3">empty_n</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">f0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">\\uofa\users$\users6\a1687296\Desktop\XilinxProject\usb1.1\usb1_ep.v</arg>&quot; line <arg fmt="%s" index="2">122</arg>: Output port &lt;<arg fmt="%s" index="3">full_n</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">f1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">\\uofa\users$\users6\a1687296\Desktop\XilinxProject\usb1.1\usb1_ep.v</arg>&quot; line <arg fmt="%s" index="2">122</arg>: Output port &lt;<arg fmt="%s" index="3">empty_n</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">f1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">rrst</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">oe</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">wrst</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">rrst</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">oe</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">wrst</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">rrst</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">oe</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">wrst</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="1767" delta="new" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">hdr0_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">u4</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">hdr6_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">u4</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pid_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">u0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pid_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">u0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pid_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">u0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">pid_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">u0</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="3212" delta="new" >HDL ADVISOR - Asynchronous or synchronous initialization of the register &lt;<arg fmt="%s" index="1">wp</arg>&gt; prevents it from being combined with the RAM &lt;<arg fmt="%s" index="2">Mram_mem</arg>&gt; for implementation as read-only block RAM.
+</msg>
+
+<msg type="info" file="Xst" num="3231" delta="new" >The small RAM &lt;<arg fmt="%s" index="1">Mram__n0408</arg>&gt; will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="new" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_mem</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3226" delta="new" >The RAM &lt;<arg fmt="%s" index="1">u0/Mram_mem</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+
+<msg type="info" file="Xst" num="3212" delta="new" >HDL ADVISOR - Asynchronous or synchronous initialization of the register &lt;<arg fmt="%s" index="1">wp</arg>&gt; prevents it from being combined with the RAM &lt;<arg fmt="%s" index="2">u0/Mram_mem</arg>&gt; for implementation as read-only block RAM.
+</msg>
+
+<msg type="info" file="Xst" num="3226" delta="new" >The RAM &lt;<arg fmt="%s" index="1">u0/Mram_mem</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+
+<msg type="info" file="Xst" num="3212" delta="new" >HDL ADVISOR - Asynchronous or synchronous initialization of the register &lt;<arg fmt="%s" index="1">wp</arg>&gt; prevents it from being combined with the RAM &lt;<arg fmt="%s" index="2">u0/Mram_mem</arg>&gt; for implementation as read-only block RAM.
+</msg>
+
+<msg type="info" file="Xst" num="3226" delta="new" >The RAM &lt;<arg fmt="%s" index="1">u0/Mram_mem</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+
+<msg type="info" file="Xst" num="3226" delta="new" >The RAM &lt;<arg fmt="%s" index="1">u0/Mram_mem</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+
+<msg type="info" file="Xst" num="3226" delta="new" >The RAM &lt;<arg fmt="%s" index="1">Mram_adr[6]_X_15_o_wide_mux_1_OUT</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">hdr0_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">usb1_ctrl</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">hdr6_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">usb1_ctrl</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">ep0_size_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">usb1_ctrl</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">ep0_size_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">usb1_ctrl</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">ep0_size_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">usb1_ctrl</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u1/hms_cnt_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">usb1_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u1/hms_cnt_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">usb1_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u1/hms_cnt_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">usb1_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u1/hms_cnt_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">usb1_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u1/hms_cnt_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">usb1_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u1/sof_time_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">usb1_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u1/sof_time_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">usb1_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u1/sof_time_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">usb1_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u1/sof_time_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">usb1_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u1/sof_time_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">usb1_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u1/sof_time_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">usb1_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u1/sof_time_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">usb1_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u1/sof_time_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">usb1_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u1/sof_time_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">usb1_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u1/sof_time_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">usb1_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u1/sof_time_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">usb1_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u1/sof_time_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">usb1_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u1/hms_clk</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">usb1_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u1/u0/pid_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">usb1_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u1/u0/pid_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">usb1_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u1/u0/pid_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">usb1_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u1/u0/pid_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">usb1_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u1/u3/int_seqerr_set</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">usb1_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u1/u3/int_upid_set</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">usb1_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u1/u3/pid_PING_r</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">usb1_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u1/u3/pid_IN_r</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">usb1_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u1/u3/pid_SETUP_r</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">usb1_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u1/u3/pid_OUT_r</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">usb1_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u1/u3/nse_err</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">usb1_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u1/u2/rx_cnt_r_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">usb1_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u1/u2/rx_cnt_r_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">usb1_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u1/u2/rx_cnt_r_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">usb1_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u1/u2/rx_cnt_r_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">usb1_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u1/u2/rx_cnt_r_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">usb1_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u1/u2/rx_cnt_r_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">usb1_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u1/u2/rx_cnt_r_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">usb1_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u1/u2/rx_cnt_r_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">usb1_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u1/u2/rx_cnt_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">usb1_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u1/u2/rx_cnt_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">usb1_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u1/u2/rx_cnt_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">usb1_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u1/u2/rx_cnt_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">usb1_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u1/u2/rx_cnt_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">usb1_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u1/u2/rx_cnt_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">usb1_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u1/u2/rx_cnt_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">usb1_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u1/u2/rx_cnt_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">usb1_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u10/f0/cnt_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">usb1_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u10/f0/cnt_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">usb1_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u10/f0/cnt_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">usb1_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u10/f0/cnt_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">usb1_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u10/f0/cnt_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">usb1_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u10/f0/cnt_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">usb1_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u10/f0/cnt_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">usb1_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u10/f1/cnt_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">usb1_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u10/f1/cnt_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">usb1_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u10/f1/cnt_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">usb1_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u10/f1/cnt_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">usb1_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u10/f1/cnt_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">usb1_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u10/f1/cnt_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">usb1_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u10/f1/cnt_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">usb1_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">u1/u2/rc_cnt_5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">usb1_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+</messages>
+

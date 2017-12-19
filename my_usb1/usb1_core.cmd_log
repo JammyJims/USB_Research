@@ -1,1 +1,2 @@
 xst -intstyle ise -ifn "U:/Desktop/XilinxProject/my_usb1/usb1_core.xst" -ofn "U:/Desktop/XilinxProject/my_usb1/usb1_core.syr" 
+xst -intstyle ise -ifn "U:/Desktop/XilinxProject/my_usb1/usb1_core.xst" -ofn "U:/Desktop/XilinxProject/my_usb1/usb1_core.syr" 

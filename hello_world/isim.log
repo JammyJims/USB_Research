@@ -1,14 +1,20 @@
 ISim log file
-Running: /media/sf_Red/Xilinx/14.7/ISE_DS/hello_world/helloworld_top_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /media/sf_Red/Xilinx/14.7/ISE_DS/hello_world/helloworld_top_tb_isim_beh.wdb 
-ISim P.20131013 (signature 0xfbc00daa)
-WARNING: A WEBPACK license was found.
-WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
-WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
-This is a Lite version of ISim.
+Running: U:\Desktop\XilinxProject\hello_world\test_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb U:/Desktop/XilinxProject/hello_world/test_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+----------------------------------------------------------------------
+WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
+
+
+----------------------------------------------------------------------
+This is a Full version of ISim.
 Time resolution is 1 ps
 # onerror resume
 # wave add /
 # run 1000 ns
 Simulator is doing circuit initialization process.
+          5
+Hello world!
+          4
+          4
+No feature
 Finished circuit initialization process.
-# exit 0

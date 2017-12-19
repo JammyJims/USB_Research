@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=U:\Desktop\XilinxProject\usb1.1\usb1_top.ncd
+OUTFILE=U:\Desktop\XilinxProject\usb1.1\usb1_top.bit
+FAMILY=Spartan6
+PART=xc6slx16-2csg324
+WORKINGDIR=U:\Desktop\XilinxProject\usb1.1
+LICENSE=WebPack
+USER_INFO=179605157_174133816_210554760_208

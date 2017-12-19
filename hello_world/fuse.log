@@ -1,25 +1,16 @@
-Running: /media/sf_Red/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o /media/sf_Red/Xilinx/14.7/ISE_DS/hello_world/helloworld_top_tb_isim_beh.exe -prj /media/sf_Red/Xilinx/14.7/ISE_DS/hello_world/helloworld_top_tb_beh.prj work.helloworld_top_tb work.glbl 
-ISim P.20131013 (signature 0xfbc00daa)
-Number of CPUs detected in this system: 4
-Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o U:/Desktop/XilinxProject/hello_world/test_isim_beh.exe -prj U:/Desktop/XilinxProject/hello_world/test_beh.prj work.test work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
 Determining compilation order of HDL files
-Analyzing Verilog file "/media/sf_Red/Xilinx/14.7/ISE_DS/hello_world/helloworld_top.v" into library work
-Analyzing Verilog file "/media/sf_Red/Xilinx/14.7/ISE_DS/hello_world/helloworld_top_tb.v" into library work
-Analyzing Verilog file "/media/sf_Red/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Analyzing Verilog file "U:/Desktop/XilinxProject/hello_world/helloworld_top.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
-WARNING:HDLCompiler:329 - "/media/sf_Red/Xilinx/14.7/ISE_DS/hello_world/helloworld_top_tb.v" Line 39: Target <LED_B> of concurrent assignment or output port connection should be a net type.
-WARNING:HDLCompiler:329 - "/media/sf_Red/Xilinx/14.7/ISE_DS/hello_world/helloworld_top_tb.v" Line 40: Target <LED_S> of concurrent assignment or output port connection should be a net type.
-WARNING:HDLCompiler:1016 - "/media/sf_Red/Xilinx/14.7/ISE_DS/hello_world/helloworld_top_tb.v" Line 36: Port clk is not connected to this instance
 Completed static elaboration
-Fuse Memory Usage: 93780 KB
-Fuse CPU Usage: 1520 ms
-Compiling module helloworld_top
-Compiling module helloworld_top_tb
+Compiling module test
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Waiting for 1 sub-compilation(s) to finish...
-Compiled 3 Verilog Units
-Built simulation executable /media/sf_Red/Xilinx/14.7/ISE_DS/hello_world/helloworld_top_tb_isim_beh.exe
-Fuse Memory Usage: 651900 KB
-Fuse CPU Usage: 1570 ms
-GCC CPU Usage: 360 ms
+Compiled 2 Verilog Units
+Built simulation executable U:/Desktop/XilinxProject/hello_world/test_isim_beh.exe
+Fuse Memory Usage: 28808 KB
+Fuse CPU Usage: 530 ms

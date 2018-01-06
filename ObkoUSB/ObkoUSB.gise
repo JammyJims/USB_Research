@@ -82,6 +82,7 @@
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
     <transform xil_pn:end_ts="1513301277" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1513301277">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1513301278" xil_pn:in_ck="8825180982073337475" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1513301277">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -120,6 +121,7 @@
     <transform xil_pn:end_ts="1513301289" xil_pn:in_ck="8825180982073337475" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="7641697768649250063" xil_pn:start_ts="1513301278">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="usb_flasher_tb_beh.prj"/>
@@ -129,6 +131,8 @@
     <transform xil_pn:end_ts="1513301290" xil_pn:in_ck="-2027896225882238670" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-3239942524760067022" xil_pn:start_ts="1513301289">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="isim.cmd"/>
@@ -136,6 +140,7 @@
     </transform>
     <transform xil_pn:end_ts="1513299796" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1513299796">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1513299796" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="2946252087083209760" xil_pn:start_ts="1513299796">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -230,6 +235,7 @@
     <transform xil_pn:end_ts="1513300013" xil_pn:in_ck="184674092950341820" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="396117104113915555" xil_pn:start_ts="1513299973">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="usb_tlp.bgn"/>

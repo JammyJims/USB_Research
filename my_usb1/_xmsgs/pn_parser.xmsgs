@@ -8,13 +8,130 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;U:/Desktop/XilinxProject/my_usb1/usb1_pl.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/jimmy/Desktop/USB_Research/my_usb1/usb1_core.v&quot; into library work</arg>
 </msg>
 
-<msg type="error" file="ProjectMgmt" num="870" >&quot;<arg fmt="%s" index="1">U:/Desktop/XilinxProject/my_usb1/usb1_pl.v</arg>&quot; Line <arg fmt="%d" index="2">261</arg>. <arg fmt="%s" index="3">Macro &lt;USBF_HMS_DEL&gt; is not defined.</arg>
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">C:/Users/jimmy/Desktop/USB_Research/my_usb1/usb1_core.v</arg>&quot; Line <arg fmt="%d" index="2">63</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/jimmy/Desktop/USB_Research/my_usb1/usb1_defines.v&apos; in file &quot;C:/Users/jimmy/Desktop/USB_Research/my_usb1/usb1_core.v&quot; line 63
+</arg>
 </msg>
 
-<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">U:/Desktop/XilinxProject/my_usb1/usb1_pl.v</arg>&quot; Line <arg fmt="%d" index="2">261</arg>. <arg fmt="%s" index="3">Syntax error near &quot;)&quot;.</arg>
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">usb1_defines.v</arg>&quot; Line <arg fmt="%d" index="2">65</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/jimmy/Desktop/USB_Research/my_usb1/timescale.v&apos; in file &quot;usb1_defines.v&quot; line 65
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/jimmy/Desktop/USB_Research/my_usb1/usb1_crc16.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">C:/Users/jimmy/Desktop/USB_Research/my_usb1/usb1_crc16.v</arg>&quot; Line <arg fmt="%d" index="2">59</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/jimmy/Desktop/USB_Research/my_usb1/usb1_defines.v&apos; in file &quot;C:/Users/jimmy/Desktop/USB_Research/my_usb1/usb1_crc16.v&quot; line 59
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">usb1_defines.v</arg>&quot; Line <arg fmt="%d" index="2">65</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/jimmy/Desktop/USB_Research/my_usb1/timescale.v&apos; in file &quot;usb1_defines.v&quot; line 65
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/jimmy/Desktop/USB_Research/my_usb1/usb1_crc5.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">C:/Users/jimmy/Desktop/USB_Research/my_usb1/usb1_crc5.v</arg>&quot; Line <arg fmt="%d" index="2">59</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/jimmy/Desktop/USB_Research/my_usb1/usb1_defines.v&apos; in file &quot;C:/Users/jimmy/Desktop/USB_Research/my_usb1/usb1_crc5.v&quot; line 59
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">usb1_defines.v</arg>&quot; Line <arg fmt="%d" index="2">65</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/jimmy/Desktop/USB_Research/my_usb1/timescale.v&apos; in file &quot;usb1_defines.v&quot; line 65
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/jimmy/Desktop/USB_Research/my_usb1/usb1_ctrl.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">C:/Users/jimmy/Desktop/USB_Research/my_usb1/usb1_ctrl.v</arg>&quot; Line <arg fmt="%d" index="2">60</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/jimmy/Desktop/USB_Research/my_usb1/usb1_defines.v&apos; in file &quot;C:/Users/jimmy/Desktop/USB_Research/my_usb1/usb1_ctrl.v&quot; line 60
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">usb1_defines.v</arg>&quot; Line <arg fmt="%d" index="2">65</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/jimmy/Desktop/USB_Research/my_usb1/timescale.v&apos; in file &quot;usb1_defines.v&quot; line 65
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/jimmy/Desktop/USB_Research/my_usb1/usb1_fifo2.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">C:/Users/jimmy/Desktop/USB_Research/my_usb1/usb1_fifo2.v</arg>&quot; Line <arg fmt="%d" index="2">57</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/jimmy/Desktop/USB_Research/my_usb1/timescale.v&apos; in file &quot;C:/Users/jimmy/Desktop/USB_Research/my_usb1/usb1_fifo2.v&quot; line 57
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/jimmy/Desktop/USB_Research/my_usb1/usb1_idma.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">C:/Users/jimmy/Desktop/USB_Research/my_usb1/usb1_idma.v</arg>&quot; Line <arg fmt="%d" index="2">60</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/jimmy/Desktop/USB_Research/my_usb1/usb1_defines.v&apos; in file &quot;C:/Users/jimmy/Desktop/USB_Research/my_usb1/usb1_idma.v&quot; line 60
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">usb1_defines.v</arg>&quot; Line <arg fmt="%d" index="2">65</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/jimmy/Desktop/USB_Research/my_usb1/timescale.v&apos; in file &quot;usb1_defines.v&quot; line 65
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/jimmy/Desktop/USB_Research/my_usb1/usb1_pa.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">C:/Users/jimmy/Desktop/USB_Research/my_usb1/usb1_pa.v</arg>&quot; Line <arg fmt="%d" index="2">58</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/jimmy/Desktop/USB_Research/my_usb1/usb1_defines.v&apos; in file &quot;C:/Users/jimmy/Desktop/USB_Research/my_usb1/usb1_pa.v&quot; line 58
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">usb1_defines.v</arg>&quot; Line <arg fmt="%d" index="2">65</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/jimmy/Desktop/USB_Research/my_usb1/timescale.v&apos; in file &quot;usb1_defines.v&quot; line 65
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/jimmy/Desktop/USB_Research/my_usb1/usb1_pd.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">C:/Users/jimmy/Desktop/USB_Research/my_usb1/usb1_pd.v</arg>&quot; Line <arg fmt="%d" index="2">62</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/jimmy/Desktop/USB_Research/my_usb1/usb1_defines.v&apos; in file &quot;C:/Users/jimmy/Desktop/USB_Research/my_usb1/usb1_pd.v&quot; line 62
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">usb1_defines.v</arg>&quot; Line <arg fmt="%d" index="2">65</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/jimmy/Desktop/USB_Research/my_usb1/timescale.v&apos; in file &quot;usb1_defines.v&quot; line 65
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/jimmy/Desktop/USB_Research/my_usb1/usb1_pe.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">C:/Users/jimmy/Desktop/USB_Research/my_usb1/usb1_pe.v</arg>&quot; Line <arg fmt="%d" index="2">58</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/jimmy/Desktop/USB_Research/my_usb1/usb1_defines.v&apos; in file &quot;C:/Users/jimmy/Desktop/USB_Research/my_usb1/usb1_pe.v&quot; line 58
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">usb1_defines.v</arg>&quot; Line <arg fmt="%d" index="2">65</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/jimmy/Desktop/USB_Research/my_usb1/timescale.v&apos; in file &quot;usb1_defines.v&quot; line 65
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/jimmy/Desktop/USB_Research/my_usb1/usb1_pl.v&quot; into library work</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="870" >&quot;<arg fmt="%s" index="1">C:/Users/jimmy/Desktop/USB_Research/my_usb1/usb1_pl.v</arg>&quot; Line <arg fmt="%d" index="2">261</arg>. <arg fmt="%s" index="3">Macro &lt;USBF_HMS_DEL&gt; is not defined.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">C:/Users/jimmy/Desktop/USB_Research/my_usb1/usb1_pl.v</arg>&quot; Line <arg fmt="%d" index="2">261</arg>. <arg fmt="%s" index="3">Syntax error near &quot;)&quot;.</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/jimmy/Desktop/USB_Research/my_usb1/usb1_rom1.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">C:/Users/jimmy/Desktop/USB_Research/my_usb1/usb1_rom1.v</arg>&quot; Line <arg fmt="%d" index="2">57</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/jimmy/Desktop/USB_Research/my_usb1/usb1_defines.v&apos; in file &quot;C:/Users/jimmy/Desktop/USB_Research/my_usb1/usb1_rom1.v&quot; line 57
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">usb1_defines.v</arg>&quot; Line <arg fmt="%d" index="2">65</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/jimmy/Desktop/USB_Research/my_usb1/timescale.v&apos; in file &quot;usb1_defines.v&quot; line 65
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/jimmy/Desktop/USB_Research/my_usb1/usb1_utmi_if.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">C:/Users/jimmy/Desktop/USB_Research/my_usb1/usb1_utmi_if.v</arg>&quot; Line <arg fmt="%d" index="2">59</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/jimmy/Desktop/USB_Research/my_usb1/usb1_defines.v&apos; in file &quot;C:/Users/jimmy/Desktop/USB_Research/my_usb1/usb1_utmi_if.v&quot; line 59
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">usb1_defines.v</arg>&quot; Line <arg fmt="%d" index="2">65</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/jimmy/Desktop/USB_Research/my_usb1/timescale.v&apos; in file &quot;usb1_defines.v&quot; line 65
+</arg>
 </msg>
 
 </messages>

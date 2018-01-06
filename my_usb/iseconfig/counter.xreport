@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-12-18T10:11:46</DateModified>
+  <DateModified>2018-01-02T11:56:25</DateModified>
   <ModuleName>counter</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>U:/Desktop/XilinxProject/my_usb/iseconfig/counter.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>U:/Desktop/XilinxProject/my_usb</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/jimmy/Desktop/USB_Research/my_usb/iseconfig/counter.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/jimmy/Desktop/USB_Research/my_usb\</ImplementationReportsDirectory>
   <DateInitialized>2017-12-18T10:11:45</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

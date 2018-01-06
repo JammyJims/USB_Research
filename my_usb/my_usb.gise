@@ -220,6 +220,7 @@
     <transform xil_pn:end_ts="1513311137" xil_pn:in_ck="8358979004409320431" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-8729871344611717308" xil_pn:start_ts="1513311129">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
@@ -230,6 +231,7 @@
     <transform xil_pn:end_ts="1513311157" xil_pn:in_ck="-8419875554347246223" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="-3180699873896808002" xil_pn:start_ts="1513311137">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>

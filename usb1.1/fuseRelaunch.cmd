@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/Xilinx_Projects/USB_Research/usb1.1/usb1_ep_TEST_isim_beh.exe" -prj "D:/Xilinx_Projects/USB_Research/usb1.1/usb1_ep_TEST_beh.prj" "work.usb1_ep_TEST" "work.glbl" 
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/jimmy/Desktop/USB_Research/usb1.1/TEST_PHY_isim_beh.exe" -prj "C:/Users/jimmy/Desktop/USB_Research/usb1.1/TEST_PHY_beh.prj" "work.TEST_PHY" "work.glbl" 

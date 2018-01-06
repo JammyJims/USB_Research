@@ -57,6 +57,10 @@
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="Nexys3_USB_Interface_summary.xml"/>
     <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="Nexys3_USB_Interface_usage.xml"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Nexys3_USB_Interface_xst.xrpt"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="TEST_CRC5_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="TEST_PHY_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="TEST_PHY_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="TEST_PHY_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
@@ -64,10 +68,14 @@
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="nexys3_usb_interface.bgn" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="nexys3_usb_interface.bit" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="nexys3_usb_interface.drc" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="test_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="usb1_ep_TEST_stx_beh.prj"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="usb1_top.bgn" xil_pn:subbranch="FPGAConfiguration"/>
@@ -90,9 +98,9 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="usb1_top.unroutes" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="usb1_top.ut" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="usb1_top.xst"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="usb1_top_beh.prj"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="usb1_top_envsettings.html"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="usb1_top_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="usb1_top_isim_beh.exe"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="usb1_top_map.map" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="usb1_top_map.mrp" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="usb1_top_map.ncd" xil_pn:subbranch="Map"/>
@@ -103,7 +111,7 @@
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="usb1_top_xst.xrpt"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
-    <file xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
@@ -117,19 +125,41 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1515218400" xil_pn:in_ck="-4387676109490591223" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1515218400">
+    <transform xil_pn:end_ts="1515238131" xil_pn:in_ck="3692705515598261887" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1515238131">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="Nexys3_USB_Interface.v"/>
+      <outfile xil_pn:name="TEST_CRC5.v"/>
+      <outfile xil_pn:name="TEST_PHY.v"/>
+      <outfile xil_pn:name="generic_dpram.v"/>
+      <outfile xil_pn:name="test.v"/>
+      <outfile xil_pn:name="timescale.v"/>
+      <outfile xil_pn:name="usb1_crc16.v"/>
+      <outfile xil_pn:name="usb1_crc5.v"/>
+      <outfile xil_pn:name="usb1_ctrl.v"/>
+      <outfile xil_pn:name="usb1_defines.v"/>
+      <outfile xil_pn:name="usb1_ep.v"/>
+      <outfile xil_pn:name="usb1_ep_in.v"/>
+      <outfile xil_pn:name="usb1_ep_out.v"/>
+      <outfile xil_pn:name="usb1_fifo.v"/>
+      <outfile xil_pn:name="usb1_fifo2.v"/>
+      <outfile xil_pn:name="usb1_idma.v"/>
+      <outfile xil_pn:name="usb1_pa.v"/>
+      <outfile xil_pn:name="usb1_pd.v"/>
+      <outfile xil_pn:name="usb1_pe.v"/>
+      <outfile xil_pn:name="usb1_pl.v"/>
+      <outfile xil_pn:name="usb1_rom1.v"/>
+      <outfile xil_pn:name="usb1_top.v"/>
+      <outfile xil_pn:name="usb1_utmi_if.v"/>
+      <outfile xil_pn:name="usb_phy.v"/>
+      <outfile xil_pn:name="usb_rx_phy.v"/>
+      <outfile xil_pn:name="usb_tx_phy.v"/>
     </transform>
-    <transform xil_pn:end_ts="1515225723" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-168769217305238779" xil_pn:start_ts="1515225723">
+    <transform xil_pn:end_ts="1515237529" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="6201453567149686695" xil_pn:start_ts="1515237529">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1515225723" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="8289606934397560003" xil_pn:start_ts="1515225723">
+    <transform xil_pn:end_ts="1515237529" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-2255366345929276059" xil_pn:start_ts="1515237529">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -137,21 +167,56 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1515218407" xil_pn:in_ck="-4387676109490591223" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1515218407">
+    <transform xil_pn:end_ts="1515238131" xil_pn:in_ck="3692705515598261887" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1515238131">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="Nexys3_USB_Interface.v"/>
+      <outfile xil_pn:name="TEST_CRC5.v"/>
+      <outfile xil_pn:name="TEST_PHY.v"/>
+      <outfile xil_pn:name="generic_dpram.v"/>
+      <outfile xil_pn:name="test.v"/>
+      <outfile xil_pn:name="timescale.v"/>
+      <outfile xil_pn:name="usb1_crc16.v"/>
+      <outfile xil_pn:name="usb1_crc5.v"/>
+      <outfile xil_pn:name="usb1_ctrl.v"/>
+      <outfile xil_pn:name="usb1_defines.v"/>
+      <outfile xil_pn:name="usb1_ep.v"/>
+      <outfile xil_pn:name="usb1_ep_in.v"/>
+      <outfile xil_pn:name="usb1_ep_out.v"/>
+      <outfile xil_pn:name="usb1_fifo.v"/>
+      <outfile xil_pn:name="usb1_fifo2.v"/>
+      <outfile xil_pn:name="usb1_idma.v"/>
+      <outfile xil_pn:name="usb1_pa.v"/>
+      <outfile xil_pn:name="usb1_pd.v"/>
+      <outfile xil_pn:name="usb1_pe.v"/>
+      <outfile xil_pn:name="usb1_pl.v"/>
+      <outfile xil_pn:name="usb1_rom1.v"/>
+      <outfile xil_pn:name="usb1_top.v"/>
+      <outfile xil_pn:name="usb1_utmi_if.v"/>
+      <outfile xil_pn:name="usb_phy.v"/>
+      <outfile xil_pn:name="usb_rx_phy.v"/>
+      <outfile xil_pn:name="usb_tx_phy.v"/>
     </transform>
-    <transform xil_pn:end_ts="1515230119" xil_pn:in_ck="-4387676109490591223" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="1316771544543720521" xil_pn:start_ts="1515230115">
-      <status xil_pn:value="FailedRun"/>
-      <status xil_pn:value="NotReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="InputRemoved"/>
+    <transform xil_pn:end_ts="1515238134" xil_pn:in_ck="3692705515598261887" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-42101254131205427" xil_pn:start_ts="1515238131">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="TEST_PHY_beh.prj"/>
+      <outfile xil_pn:name="TEST_PHY_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1515238135" xil_pn:in_ck="937802101850745637" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="2213744352388453072" xil_pn:start_ts="1515238134">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="TEST_PHY_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
     </transform>
     <transform xil_pn:end_ts="1513559700" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1513559700">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -181,13 +246,20 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1515218332" xil_pn:in_ck="-8396037238211841609" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-2012986920546421611" xil_pn:start_ts="1515218321">
+    <transform xil_pn:end_ts="1515232334" xil_pn:in_ck="-8396037238211841609" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-2012986920546421611" xil_pn:start_ts="1515232309">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="Nexys3_USB_Interface.lso"/>
+      <outfile xil_pn:name="Nexys3_USB_Interface.ngc"/>
+      <outfile xil_pn:name="Nexys3_USB_Interface.ngr"/>
+      <outfile xil_pn:name="Nexys3_USB_Interface.prj"/>
+      <outfile xil_pn:name="Nexys3_USB_Interface.stx"/>
+      <outfile xil_pn:name="Nexys3_USB_Interface.syr"/>
+      <outfile xil_pn:name="Nexys3_USB_Interface.xst"/>
+      <outfile xil_pn:name="Nexys3_USB_Interface_xst.xrpt"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="usb1_top.ngr"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
@@ -197,16 +269,16 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1515218336" xil_pn:in_ck="-8031948580497896195" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="3565525050712806567" xil_pn:start_ts="1515218332">
+    <transform xil_pn:end_ts="1515232352" xil_pn:in_ck="-8031948580497896195" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="3565525050712806567" xil_pn:start_ts="1515232344">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputRemoved"/>
     </transform>
-    <transform xil_pn:end_ts="1515218343" xil_pn:in_ck="4238718732724185247" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="-3180699873896808002" xil_pn:start_ts="1515218336">
+    <transform xil_pn:end_ts="1515232365" xil_pn:in_ck="4238718732724185247" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="-3180699873896808002" xil_pn:start_ts="1515232352">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
@@ -216,7 +288,7 @@
       <status xil_pn:value="OutputChanged"/>
       <status xil_pn:value="OutputRemoved"/>
     </transform>
-    <transform xil_pn:end_ts="1515218355" xil_pn:in_ck="-5775791472989824399" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-1178055513630676559" xil_pn:start_ts="1515218343">
+    <transform xil_pn:end_ts="1515232378" xil_pn:in_ck="-5775791472989824399" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-1178055513630676559" xil_pn:start_ts="1515232365">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
@@ -225,7 +297,7 @@
       <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputRemoved"/>
     </transform>
-    <transform xil_pn:end_ts="1515218391" xil_pn:in_ck="-1959072145856777066" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1515218358">
+    <transform xil_pn:end_ts="1515232397" xil_pn:in_ck="-1959072145856777066" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1515232382">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
@@ -234,7 +306,7 @@
       <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputRemoved"/>
     </transform>
-    <transform xil_pn:end_ts="1515218355" xil_pn:in_ck="7824111873849977111" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416184" xil_pn:start_ts="1515218350">
+    <transform xil_pn:end_ts="1515232378" xil_pn:in_ck="7824111873849977111" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416184" xil_pn:start_ts="1515232373">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>

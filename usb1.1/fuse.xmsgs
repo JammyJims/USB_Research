@@ -5,10 +5,7 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="error" file="HDLCompiler" num="870" delta="unknown" >"usb1_defines.v" Line 66: Macro &lt;<arg fmt="%s" index="1">USB1_ISO_CHUNKS</arg>&gt; is not defined.
-</msg>
-
-<msg type="error" file="HDLCompiler" num="598" delta="unknown" >"U:/Desktop/XilinxProject/usb1.1/usb1_rom1.v" Line 59: Module &lt;<arg fmt="%s" index="1">usb1_rom1</arg>&gt; ignored due to previous errors.
+<msg type="error" file="Simulator" num="861" delta="unknown" >Failed to link the design
 </msg>
 
 </messages>

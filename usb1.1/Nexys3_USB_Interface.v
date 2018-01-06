@@ -53,10 +53,14 @@ module Nexys3_USB_Interface(
 	input reset,
 	
 	// Pmod outputs
-	output reg [7:0]JA,
-	output reg [7:0]JB,
-	output reg [7:0]JC,
-	output reg [7:0]JD
+	//output reg [7:0]JA,
+	//output reg [7:0]JB,
+	//output reg [7:0]JC,
+	//output reg [7:0]JD
+	output tx_dp,
+	output tx_dn,
+	input  rx_dp,
+	input  rx_dn
 	);
 	
 	// input/output 
@@ -75,35 +79,34 @@ module Nexys3_USB_Interface(
    .crc16_err           (),
    .v_set_int           (),
    .v_set_feature       (), 
-   .wValue              (),
-   .wIndex              (),
-   .vendor_data         (),
-   .tx_dp               (),
-   .tx_dn               (),
+   .wValue              (), // [15:0] 
+   .wIndex              (), // [15:0] 
+   .vendor_data         (), // [15:0]
+   .tx_dp               (tx_dp),
+   .tx_dn               (tx_dn),
    .tx_oe               (),
    .rx_d                (),
-   .rx_dp               (),
-   .rx_dn               (),
-   .ep1_din             (),  
+   .rx_dp               (rx_dp),
+   .rx_dn               (rx_dn),
+   .ep1_din             (), // [7:0]  
    .ep1_we              (),
-   .ep1_stat            (),
-   .ep2_dout            (),
+   .ep1_stat            (), // [3:0]
+   .ep2_dout            (), // [7:0]  
    .ep2_re              (),
-   .ep2_stat            (),
-   .ep3_din             (),
+   .ep2_stat            (), // [3:0]
+   .ep3_din             (), // [7:0]  
    .ep3_we              (),
-   .ep3_stat            (),
-   .ep4_dout            (),
+   .ep3_stat            (), // [3:0]
+   .ep4_dout            (), // [7:0]  
    .ep4_re              (),
-   .ep4_stat            (),
-   .ep5_din             (),
+   .ep4_stat            (), // [3:0]
+   .ep5_din             (), // [7:0]  
    .ep5_we              (),
-   .ep5_stat            (),
+   .ep5_stat            (), // [3:0]
    .iso_idle            (),
    .bulk_idle           (),
    .clr_iso             (),
    .clr_bulk            ()
    );
-
-
+	
 endmodule

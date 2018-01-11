@@ -19,94 +19,75 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
-/*
-	// USB Misc
-	phy_tx_mode, usb_rst, loop,
-
-	// Interrupts
-	dropped_frame, misaligned_frame,
-	crc16_err,
-
-	// Vendor Features
-	v_set_int, v_set_feature, wValue,
-	wIndex, vendor_data,
-
-	// USB PHY Interface
-	tx_dp, tx_dn, tx_oe,
-	rx_d, rx_dp, rx_dn,
-
-	// Endpoint Interface
-	ep1_din,  ep1_we, ep1_stat,
-	ep2_dout, ep2_re, ep2_stat,
-	ep3_din,  ep3_we, ep3_stat,
-	ep4_dout, ep4_re, ep4_stat,
-	ep5_din,  ep5_we, ep5_stat,
-
-	// Clearing FIFOs
-	iso_idle, bulk_idle,
-	clr_iso, clr_bulk	
-*/
-
 module Nexys3_USB_Interface(
-	input clk,
-	input reset,
+	input clk_i,
+	input rst_i,
 	
 	// Pmod outputs
-	//output reg [7:0]JA,
-	//output reg [7:0]JB,
-	//output reg [7:0]JC,
-	//output reg [7:0]JD
-	output tx_dp,
-	output tx_dn,
-	input  rx_dp,
-	input  rx_dn
+	
+	inout JA_dp,
+	inout JA_dn
 	);
 	
-	// input/output 
+	wire tx_dp;
+	wire tx_dn;
+	wire tx_oe;
+	reg rx_d;
+	reg rx_dp;
+	reg rx_dn;
 	
-	// Endpoint Interfaces
+	// tristate buffer to handle bi-directional data lines.
+	assign JA_dp = rx_d ? rx_dp : 1'hZ;
+	assign JA_dn = rx_d ? rx_dn : 1'hZ;
+	assign tx_dp = JA_dp;
+	assign tx_dn = JA_dn;
 	
-	// local wire and registers 
+	initial begin
+		rx_d = 1'b0;
+		rx_dp = 1'b0;
+		rx_dn = 1'b0;
+	end
 	
-   // instantiations
-   usb1_top usb (
-   .phy_tx_mode         (),
-   .usb_rst             (),
-   .loop                (),
-   .dropped_frame       (),
-   .misaligned_frame    (),
-   .crc16_err           (),
-   .v_set_int           (),
-   .v_set_feature       (), 
-   .wValue              (), // [15:0] 
-   .wIndex              (), // [15:0] 
-   .vendor_data         (), // [15:0]
-   .tx_dp               (tx_dp),
-   .tx_dn               (tx_dn),
-   .tx_oe               (),
-   .rx_d                (),
-   .rx_dp               (rx_dp),
-   .rx_dn               (rx_dn),
-   .ep1_din             (), // [7:0]  
-   .ep1_we              (),
-   .ep1_stat            (), // [3:0]
-   .ep2_dout            (), // [7:0]  
-   .ep2_re              (),
-   .ep2_stat            (), // [3:0]
-   .ep3_din             (), // [7:0]  
-   .ep3_we              (),
-   .ep3_stat            (), // [3:0]
-   .ep4_dout            (), // [7:0]  
-   .ep4_re              (),
-   .ep4_stat            (), // [3:0]
-   .ep5_din             (), // [7:0]  
-   .ep5_we              (),
-   .ep5_stat            (), // [3:0]
-   .iso_idle            (),
-   .bulk_idle           (),
-   .clr_iso             (),
-   .clr_bulk            ()
-   );
-	
+	// Instantiate the module
+	usb1_top usb (
+		 .clk_i(clk_i), 
+		 .rst_i(rst_i), 
+//		 .phy_tx_mode(phy_tx_mode), 
+//		 .usb_rst(usb_rst), 
+//		 .loop(loop), 
+//		 .dropped_frame(dropped_frame), 
+//		 .misaligned_frame(misaligned_frame), 
+//		 .crc16_err(crc16_err), 
+//		 .v_set_int(v_set_int), 
+//		 .v_set_feature(v_set_feature), 
+//		 .wValue(wValue), 
+//		 .wIndex(wIndex), 
+//		 .vendor_data(vendor_data), 
+		 .tx_dp(tx_dp), 
+		 .tx_dn(tx_dn), 
+		 .tx_oe(tx_oe), 
+		 .rx_d(rx_d), 
+		 .rx_dp(rx_dp), 
+		 .rx_dn(rx_dn)
+//		 .ep1_din(ep1_din), 
+//		 .ep1_we(ep1_we), 
+//		 .ep1_stat(ep1_stat), 
+//		 .ep2_dout(ep2_dout), 
+//		 .ep2_re(ep2_re), 
+//		 .ep2_stat(ep2_stat), 
+//		 .ep3_din(ep3_din), 
+//		 .ep3_we(ep3_we), 
+//		 .ep3_stat(ep3_stat), 
+//		 .ep4_dout(ep4_dout), 
+//		 .ep4_re(ep4_re), 
+//		 .ep4_stat(ep4_stat), 
+//		 .ep5_din(ep5_din), 
+//		 .ep5_we(ep5_we), 
+//		 .ep5_stat(ep5_stat), 
+//		 .iso_idle(iso_idle), 
+//		 .bulk_idle(bulk_idle), 
+//		 .clr_iso(clr_iso), 
+//		 .clr_bulk(clr_bulk)
+		 );
+
 endmodule

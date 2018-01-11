@@ -1,0 +1,30 @@
+Command line:
+   Physical_Transfer_TEST_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49443
+
+Wed Jan 10 13:34:25 2018
+
+
+ Elaboration Time: 0.0624 sec
+
+ Current Memory Usage: 663.335 Meg
+
+ Total Signals          : 24
+ Total Nets             : 29
+ Total Signal Drivers   : 14
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 20
+ Total Traceable Variables  : 28
+ Total Scalar Nets and Variables : 164
+In process physical_transfer.vCont_47_5 
+ FATAL ERROR:ISim: This application has discovered an exceptional condition from which it cannot recover. Process will terminate. To search for possible resolutions to this issue, refer to the Xilinx answer database by going to http://www.xilinx.com/support/answers/index.htm and search with keywords 'ISim' and 'FATAL ERROR'. For technical support on this issue, please open a WebCase with this project attached at http://www.xilinx.com/support.
+
+ Total Simulation Time: 0.655203 sec
+
+ Current Memory Usage: 698.683 Meg
+
+Wed Jan 10 13:34:33 2018
+

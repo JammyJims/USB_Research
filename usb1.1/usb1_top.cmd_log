@@ -9,3 +9,7 @@ par -w -intstyle ise -ol high -mt off usb1_top_map.ncd usb1_top.ncd usb1_top.pcf
 trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml usb1_top.twx usb1_top.ncd -o usb1_top.twr usb1_top.pcf 
 bitgen -intstyle ise -f usb1_top.ut usb1_top.ncd 
 bitgen -intstyle ise -f usb1_top.ut usb1_top.ncd 
+vhdtdtfi -lang verilog -prj usb1.1 -o C:/Users/jimmy/Desktop/USB_Research/usb1.1/usb1_top.tfi -lib work C:/Users/jimmy/Desktop/USB_Research/usb1.1//usb1_top.v -module usb1_top -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 
+vhdtdtfi -lib work C:/Users/jimmy/Desktop/USB_Research/usb1.1/usb1_top.v -lang verilog -prj usb1.1 -o usb1_top.spl -module usb1_top -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 usb1_top.spl C:/Users/jimmy/Desktop/USB_Research/usb1.1/usb1_top.sym 
+vhdtdtfi -lang verilog -prj usb1.1 -o C:/Users/jimmy/Desktop/USB_Research/usb1.1/usb1_top.tfi -lib work C:/Users/jimmy/Desktop/USB_Research/usb1.1//usb1_top.v -module usb1_top -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

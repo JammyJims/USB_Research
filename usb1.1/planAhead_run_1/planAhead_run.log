@@ -1,0 +1,202 @@
+
+****** PlanAhead v14.7 (64-bit)
+  **** Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+    ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source C:/Users/jimmy/Desktop/USB_Research/usb1.1/pa.fromHdl.tcl
+# create_project -name usb1.1 -dir "C:/Users/jimmy/Desktop/USB_Research/usb1.1/planAhead_run_1" -part xc6slx16csg324-2
+create_project: Time (s): elapsed = 00:00:06 . Memory (MB): peak = 409.938 ; gain = 61.223
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "Nexys3_master.ucf" [current_fileset -constrset]
+Adding file 'C:/Users/jimmy/Desktop/USB_Research/usb1.1/Nexys3_master.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {usb1_fifo2.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {usb1_crc5.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {usb1_crc16.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {generic_dpram.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {usb_tx_phy.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {usb_rx_phy.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {usb1_rom1.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {usb1_pe.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {usb1_pd.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {usb1_pa.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {usb1_idma.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {usb1_fifo.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {usb_phy.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {usb1_utmi_if.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {usb1_pl.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {usb1_ep_out.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {usb1_ep_in.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {usb1_ep.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {usb1_ctrl.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {usb1_top.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {Nexys3_USB_Interface.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set_property top Nexys3_USB_Interface $srcset
+# add_files [list {Nexys3_master.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc6slx16csg324-2
+Using Verific elaboration
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Analyzing Verilog file "C:/Users/jimmy/Desktop/USB_Research/usb1.1/usb1_fifo2.v" into library work
+Parsing verilog file "timescale.v" included at line 57. [C:/Users/jimmy/Desktop/USB_Research/usb1.1/usb1_fifo2.v:57]
+Analyzing Verilog file "C:/Users/jimmy/Desktop/USB_Research/usb1.1/usb1_crc5.v" into library work
+Parsing verilog file "usb1_defines.v" included at line 59. [C:/Users/jimmy/Desktop/USB_Research/usb1.1/usb1_crc5.v:59]
+Parsing verilog file "timescale.v" included at line 59. [usb1_defines.v:59]
+Analyzing Verilog file "C:/Users/jimmy/Desktop/USB_Research/usb1.1/usb1_crc16.v" into library work
+Parsing verilog file "usb1_defines.v" included at line 59. [C:/Users/jimmy/Desktop/USB_Research/usb1.1/usb1_crc16.v:59]
+Parsing verilog file "timescale.v" included at line 59. [usb1_defines.v:59]
+Analyzing Verilog file "C:/Users/jimmy/Desktop/USB_Research/usb1.1/generic_dpram.v" into library work
+Analyzing Verilog file "C:/Users/jimmy/Desktop/USB_Research/usb1.1/usb_tx_phy.v" into library work
+Parsing verilog file "timescale.v" included at line 72. [C:/Users/jimmy/Desktop/USB_Research/usb1.1/usb_tx_phy.v:72]
+Analyzing Verilog file "C:/Users/jimmy/Desktop/USB_Research/usb1.1/usb_rx_phy.v" into library work
+Parsing verilog file "timescale.v" included at line 74. [C:/Users/jimmy/Desktop/USB_Research/usb1.1/usb_rx_phy.v:74]
+Analyzing Verilog file "C:/Users/jimmy/Desktop/USB_Research/usb1.1/usb1_rom1.v" into library work
+Parsing verilog file "usb1_defines.v" included at line 57. [C:/Users/jimmy/Desktop/USB_Research/usb1.1/usb1_rom1.v:57]
+Parsing verilog file "timescale.v" included at line 59. [usb1_defines.v:59]
+Analyzing Verilog file "C:/Users/jimmy/Desktop/USB_Research/usb1.1/usb1_pe.v" into library work
+Parsing verilog file "usb1_defines.v" included at line 58. [C:/Users/jimmy/Desktop/USB_Research/usb1.1/usb1_pe.v:58]
+Parsing verilog file "timescale.v" included at line 59. [usb1_defines.v:59]
+Analyzing Verilog file "C:/Users/jimmy/Desktop/USB_Research/usb1.1/usb1_pd.v" into library work
+Parsing verilog file "usb1_defines.v" included at line 59. [C:/Users/jimmy/Desktop/USB_Research/usb1.1/usb1_pd.v:59]
+Parsing verilog file "timescale.v" included at line 59. [usb1_defines.v:59]
+Analyzing Verilog file "C:/Users/jimmy/Desktop/USB_Research/usb1.1/usb1_pa.v" into library work
+Parsing verilog file "usb1_defines.v" included at line 58. [C:/Users/jimmy/Desktop/USB_Research/usb1.1/usb1_pa.v:58]
+Parsing verilog file "timescale.v" included at line 59. [usb1_defines.v:59]
+Analyzing Verilog file "C:/Users/jimmy/Desktop/USB_Research/usb1.1/usb1_idma.v" into library work
+Parsing verilog file "usb1_defines.v" included at line 57. [C:/Users/jimmy/Desktop/USB_Research/usb1.1/usb1_idma.v:57]
+Parsing verilog file "timescale.v" included at line 59. [usb1_defines.v:59]
+Analyzing Verilog file "C:/Users/jimmy/Desktop/USB_Research/usb1.1/usb1_fifo.v" into library work
+Analyzing Verilog file "C:/Users/jimmy/Desktop/USB_Research/usb1.1/usb_phy.v" into library work
+Parsing verilog file "timescale.v" included at line 70. [C:/Users/jimmy/Desktop/USB_Research/usb1.1/usb_phy.v:70]
+Analyzing Verilog file "C:/Users/jimmy/Desktop/USB_Research/usb1.1/usb1_utmi_if.v" into library work
+Parsing verilog file "usb1_defines.v" included at line 59. [C:/Users/jimmy/Desktop/USB_Research/usb1.1/usb1_utmi_if.v:59]
+Parsing verilog file "timescale.v" included at line 59. [usb1_defines.v:59]
+Analyzing Verilog file "C:/Users/jimmy/Desktop/USB_Research/usb1.1/usb1_pl.v" into library work
+Parsing verilog file "usb1_defines.v" included at line 61. [C:/Users/jimmy/Desktop/USB_Research/usb1.1/usb1_pl.v:61]
+Parsing verilog file "timescale.v" included at line 59. [usb1_defines.v:59]
+Analyzing Verilog file "C:/Users/jimmy/Desktop/USB_Research/usb1.1/usb1_ep_out.v" into library work
+Parsing verilog file "usb1_defines.v" included at line 57. [C:/Users/jimmy/Desktop/USB_Research/usb1.1/usb1_ep_out.v:57]
+Parsing verilog file "timescale.v" included at line 59. [usb1_defines.v:59]
+Analyzing Verilog file "C:/Users/jimmy/Desktop/USB_Research/usb1.1/usb1_ep_in.v" into library work
+Parsing verilog file "usb1_defines.v" included at line 57. [C:/Users/jimmy/Desktop/USB_Research/usb1.1/usb1_ep_in.v:57]
+Parsing verilog file "timescale.v" included at line 59. [usb1_defines.v:59]
+Analyzing Verilog file "C:/Users/jimmy/Desktop/USB_Research/usb1.1/usb1_ep.v" into library work
+Parsing verilog file "usb1_defines.v" included at line 57. [C:/Users/jimmy/Desktop/USB_Research/usb1.1/usb1_ep.v:57]
+Parsing verilog file "timescale.v" included at line 59. [usb1_defines.v:59]
+Analyzing Verilog file "C:/Users/jimmy/Desktop/USB_Research/usb1.1/usb1_ctrl.v" into library work
+Parsing verilog file "usb1_defines.v" included at line 57. [C:/Users/jimmy/Desktop/USB_Research/usb1.1/usb1_ctrl.v:57]
+Parsing verilog file "timescale.v" included at line 59. [usb1_defines.v:59]
+Analyzing Verilog file "C:/Users/jimmy/Desktop/USB_Research/usb1.1/usb1_top.v" into library work
+Parsing verilog file "usb1_defines.v" included at line 57. [C:/Users/jimmy/Desktop/USB_Research/usb1.1/usb1_top.v:57]
+Parsing verilog file "timescale.v" included at line 59. [usb1_defines.v:59]
+Analyzing Verilog file "C:/Users/jimmy/Desktop/USB_Research/usb1.1/Nexys3_USB_Interface.v" into library work
+WARNING: [HDL 9-806] Syntax error near "]". [C:/Users/jimmy/Desktop/USB_Research/usb1.1/Nexys3_USB_Interface.v:70]
+WARNING: [HDL 9-806] Syntax error near "]". [C:/Users/jimmy/Desktop/USB_Research/usb1.1/Nexys3_USB_Interface.v:71]
+WARNING: [HDL 9-806] Syntax error near "]". [C:/Users/jimmy/Desktop/USB_Research/usb1.1/Nexys3_USB_Interface.v:72]
+WARNING: [HDL 9-806] Syntax error near "]". [C:/Users/jimmy/Desktop/USB_Research/usb1.1/Nexys3_USB_Interface.v:73]
+Loading clock regions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/ClockBuffers.xml
+Loading package pin functions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/csg324/Package.xml
+Loading io standards from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [C:/Users/jimmy/Desktop/USB_Research/usb1.1/Nexys3_master.ucf]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'Led<0>' [C:/Users/jimmy/Desktop/USB_Research/usb1.1/Nexys3_master.ucf:126]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'Led<0>' [C:/Users/jimmy/Desktop/USB_Research/usb1.1/Nexys3_master.ucf:126]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'Led<1>' [C:/Users/jimmy/Desktop/USB_Research/usb1.1/Nexys3_master.ucf:127]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'Led<1>' [C:/Users/jimmy/Desktop/USB_Research/usb1.1/Nexys3_master.ucf:127]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'Led<2>' [C:/Users/jimmy/Desktop/USB_Research/usb1.1/Nexys3_master.ucf:128]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'Led<2>' [C:/Users/jimmy/Desktop/USB_Research/usb1.1/Nexys3_master.ucf:128]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'Led<3>' [C:/Users/jimmy/Desktop/USB_Research/usb1.1/Nexys3_master.ucf:129]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'Led<3>' [C:/Users/jimmy/Desktop/USB_Research/usb1.1/Nexys3_master.ucf:129]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'Led<4>' [C:/Users/jimmy/Desktop/USB_Research/usb1.1/Nexys3_master.ucf:130]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'Led<4>' [C:/Users/jimmy/Desktop/USB_Research/usb1.1/Nexys3_master.ucf:130]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'Led<5>' [C:/Users/jimmy/Desktop/USB_Research/usb1.1/Nexys3_master.ucf:131]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'Led<5>' [C:/Users/jimmy/Desktop/USB_Research/usb1.1/Nexys3_master.ucf:131]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'Led<6>' [C:/Users/jimmy/Desktop/USB_Research/usb1.1/Nexys3_master.ucf:132]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'Led<6>' [C:/Users/jimmy/Desktop/USB_Research/usb1.1/Nexys3_master.ucf:132]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'Led<7>' [C:/Users/jimmy/Desktop/USB_Research/usb1.1/Nexys3_master.ucf:133]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'Led<7>' [C:/Users/jimmy/Desktop/USB_Research/usb1.1/Nexys3_master.ucf:133]
+Finished Parsing UCF File [C:/Users/jimmy/Desktop/USB_Research/usb1.1/Nexys3_master.ucf]
+INFO: [Designutils 20-20] Invalid constraints found, use command 'write_ucf -constraints invalid <file>' to save all the invalid constraints to a file
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 41c841e3
+open_rtl_design: Time (s): elapsed = 00:00:31 . Memory (MB): peak = 622.500 ; gain = 205.430
+update_compile_order -fileset sim_1
+create_interface gnd
+startgroup
+create_interface interface_1
+set_property interface interface_1 [get_interfaces { gnd}]
+endgroup
+startgroup
+delete_interface interface_1
+delete_interface gnd
+endgroup
+startgroup
+create_interface USB_VBus
+set_property interface USB_VBus [get_ports [list  {JA[7]} {JA[6]} {JA[5]} {JA[4]} {JA[3]} {JA[2]} {JA[1]} {JA[0]}]]
+set_property interface USB_VBus [get_ports [list  clk_i rst_i]]
+endgroup
+delete_interface USB_VBus
+create_interface USB_VBus
+create_interface USB_GND
+create_interface interface_1
+delete_interface interface_1
+create_interface interface_1
+delete_interface interface_1
+delete_interface USB_VBus
+delete_interface USB_GND
+exit
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Tue Jan 09 17:09:27 2018...
+INFO: [Common 17-83] Releasing license: PlanAhead

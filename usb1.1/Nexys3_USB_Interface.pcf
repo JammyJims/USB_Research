@@ -1,4 +1,9 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Sat Jan 06 20:22:43 2018
+// Written by: Map P.20131013 on Tue Jan 09 18:02:41 2018
 //! **************************************************************************
+
+SCHEMATIC START;
+COMP "JA_dn" LOCATE = SITE "V12" LEVEL 1;
+COMP "JA_dp" LOCATE = SITE "T12" LEVEL 1;
+SCHEMATIC END;
 

@@ -1,9 +1,6 @@
-set -tmpdir "xst/projnav.tmp"
-set -xsthdpdir "xst"
-run
--ifn usb1_top.prj
--ofn usb1_top
--ofmt NGC
+set -tmpdir "C:/Users/jimmy/Desktop/USB_Research/usb1.1/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/jimmy/Desktop/USB_Research/usb1.1/xst"
+run -compileonly yes
 -p xc6slx16-2-csg324
 -top usb1_top
 -opt_mode Speed
@@ -50,3 +47,4 @@ run
 -iob Auto
 -equivalent_register_removal YES
 -slice_utilization_ratio_maxmargin 5
+-ifn usb1_top.prj

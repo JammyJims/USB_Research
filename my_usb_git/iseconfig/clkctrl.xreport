@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-01-09T16:41:41</DateModified>
+  <DateModified>2018-01-21T22:20:36</DateModified>
   <ModuleName>clkctrl</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/jimmy/Desktop/USB_Research/my_usb_git/iseconfig/clkctrl.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/jimmy/Desktop/USB_Research/my_usb_git\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/Jimmy/Desktop/USB_Research/my_usb_git/iseconfig/clkctrl.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/Jimmy/Desktop/USB_Research/my_usb_git\</ImplementationReportsDirectory>
   <DateInitialized>2017-12-15T11:05:04</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

@@ -26,9 +26,13 @@ module Nexys3_USB_Interface(
 	// Pmod outputs
 	
 	inout JA_dp,
-	inout JA_dn
+	inout JA_dn,
+	
+	// LEDS
+	output reg [7:0] Led
 	);
 	
+	// Physical interface wires
 	wire tx_dp;
 	wire tx_dn;
 	wire tx_oe;
@@ -36,11 +40,22 @@ module Nexys3_USB_Interface(
 	reg rx_dp;
 	reg rx_dn;
 	
+	// endpoint wires
+	wire ep1_din;
+	wire ep1_we; 
+	wire ep1_stat;
+	wire ep2_dout;
+	wire ep2_re;
+	wire ep2_stat;
+	
+	// turn on LEDs
+	always begin
+		Led <= 8'b1000_0001;
+	end
+	
 	// tristate buffer to handle bi-directional data lines.
-	assign JA_dp = rx_d ? rx_dp : 1'hZ;
-	assign JA_dn = rx_d ? rx_dn : 1'hZ;
-	assign tx_dp = JA_dp;
-	assign tx_dn = JA_dn;
+	assign JA_dp = tx_oe ? rx_dp : tx_dp;
+	assign JP_dn = tx_oe ? rx_dn : tx_dn;
 	
 	initial begin
 		rx_d = 1'b0;
@@ -68,13 +83,13 @@ module Nexys3_USB_Interface(
 		 .tx_oe(tx_oe), 
 		 .rx_d(rx_d), 
 		 .rx_dp(rx_dp), 
-		 .rx_dn(rx_dn)
-//		 .ep1_din(ep1_din), 
-//		 .ep1_we(ep1_we), 
-//		 .ep1_stat(ep1_stat), 
-//		 .ep2_dout(ep2_dout), 
-//		 .ep2_re(ep2_re), 
-//		 .ep2_stat(ep2_stat), 
+		 .rx_dn(rx_dn),
+		 .ep1_din(ep1_din), 
+		 .ep1_we(ep1_we), 
+		 .ep1_stat(ep1_stat), 
+		 .ep2_dout(ep2_dout), 
+		 .ep2_re(ep2_re), 
+		 .ep2_stat(ep2_stat)
 //		 .ep3_din(ep3_din), 
 //		 .ep3_we(ep3_we), 
 //		 .ep3_stat(ep3_stat), 

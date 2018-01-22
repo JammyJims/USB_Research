@@ -7,6 +7,7 @@
    <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/Nexys3_USB_Interface C:|Users|Jimmy|Desktop|USB_Research|usb1.1|Nexys3_USB_Interface.v/usb - usb1_top</ClosedNode>
          <ClosedNode>/Nexys3_USB_Interface C:|Users|jimmy|Desktop|USB_Research|usb1.1|Nexys3_USB_Interface.v/instance_name - usb1_top</ClosedNode>
          <ClosedNode>/Nexys3_USB_Interface C:|Users|jimmy|Desktop|USB_Research|usb1.1|Nexys3_USB_Interface.v/usb - usb1_top/phy - usb_phy</ClosedNode>
          <ClosedNode>/Nexys3_USB_Interface C:|Users|jimmy|Desktop|USB_Research|usb1.1|Nexys3_USB_Interface.v/usb - usb1_top/u1 - usb1_pl</ClosedNode>
@@ -47,13 +48,13 @@
          <ClosedNode>/usb1_top U:|Desktop|XilinxProject|usb1.1|usb1_top.v/u4 - usb1_ctrl</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Nexys3_USB_Interface (C:/Users/jimmy/Desktop/USB_Research/usb1.1/Nexys3_USB_Interface.v)</SelectedItem>
+         <SelectedItem>Nexys3_USB_Interface (C:/Users/Jimmy/Desktop/USB_Research/usb1.1/Nexys3_USB_Interface.v)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000014c000000020000000000000000000000000200000064ffffffff0000008100000003000000020000014c0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>Nexys3_USB_Interface (C:/Users/jimmy/Desktop/USB_Research/usb1.1/Nexys3_USB_Interface.v)</CurrentItem>
+      <CurrentItem>Nexys3_USB_Interface (C:/Users/Jimmy/Desktop/USB_Research/usb1.1/Nexys3_USB_Interface.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -65,7 +66,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001ab000000010000000100000000000000000000000064ffffffff000000810000000000000001000001ab0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000012b000000010000000100000000000000000000000064ffffffff0000008100000000000000010000012b0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>
@@ -100,13 +101,13 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem>Generate Programming File</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >5</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000019a000000010000000100000000000000000000000064ffffffff0000008100000000000000010000019a0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000011a000000010000000100000000000000000000000064ffffffff0000008100000000000000010000011a0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>Generate Programming File</CurrentItem>
    </ItemView>
    <SourceProcessView>000000ff0000000000000002000000b4000000ae01000000050100000002</SourceProcessView>
    <CurrentView>Implementation</CurrentView>
@@ -183,7 +184,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001ab000000010000000100000000000000000000000064ffffffff000000810000000000000001000001ab0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000012b000000010000000100000000000000000000000064ffffffff0000008100000000000000010000012b0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>

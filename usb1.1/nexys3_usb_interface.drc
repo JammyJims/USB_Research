@@ -1,7 +1,7 @@
 Release 14.7 Drc P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Tue Jan 09 18:03:20 2018
+Mon Jan 22 14:08:14 2018
 
 drc -z Nexys3_USB_Interface.ncd Nexys3_USB_Interface.pcf
 

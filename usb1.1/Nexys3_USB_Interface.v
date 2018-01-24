@@ -54,8 +54,14 @@ module Nexys3_USB_Interface(
 	end
 	
 	// tristate buffer to handle bi-directional data lines.
-	assign JA_dp = tx_oe ? rx_dp : tx_dp;
-	assign JP_dn = tx_oe ? rx_dn : tx_dn;
+	assign JA_dp = tx_oe ? tx_dp : rx_dp ;
+	assign JA_dn = tx_oe ? tx_dn : rx_dn ;
+	
+	// input wires to USB 1.1 Function Core
+	always begin
+		rx_dp <= JA_dp;
+		rx_dn <= JA_dn;
+	end
 	
 	initial begin
 		rx_d = 1'b0;

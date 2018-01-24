@@ -65,3 +65,32 @@ map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -re
 par -w -intstyle ise -ol high -mt off Nexys3_USB_Interface_map.ncd Nexys3_USB_Interface.ncd Nexys3_USB_Interface.pcf 
 trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Nexys3_USB_Interface.twx Nexys3_USB_Interface.ncd -o Nexys3_USB_Interface.twr Nexys3_USB_Interface.pcf -ucf Nexys3_master.ucf 
 bitgen -intstyle ise -f Nexys3_USB_Interface.ut Nexys3_USB_Interface.ncd 
+xst -intstyle ise -ifn "C:/Users/root/Desktop/USB_Research/usb1.1/Nexys3_USB_Interface.xst" -ofn "C:/Users/root/Desktop/USB_Research/usb1.1/Nexys3_USB_Interface.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-2 Nexys3_USB_Interface.ngc Nexys3_USB_Interface.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Nexys3_USB_Interface_map.ncd Nexys3_USB_Interface.ngd Nexys3_USB_Interface.pcf 
+par -w -intstyle ise -ol high -mt off Nexys3_USB_Interface_map.ncd Nexys3_USB_Interface.ncd Nexys3_USB_Interface.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Nexys3_USB_Interface.twx Nexys3_USB_Interface.ncd -o Nexys3_USB_Interface.twr Nexys3_USB_Interface.pcf -ucf Nexys3_master.ucf 
+xst -intstyle ise -ifn "C:/Users/root/Desktop/USB_Research/usb1.1/Nexys3_USB_Interface.xst" -ofn "C:/Users/root/Desktop/USB_Research/usb1.1/Nexys3_USB_Interface.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-2 Nexys3_USB_Interface.ngc Nexys3_USB_Interface.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Nexys3_USB_Interface_map.ncd Nexys3_USB_Interface.ngd Nexys3_USB_Interface.pcf 
+par -w -intstyle ise -ol high -mt off Nexys3_USB_Interface_map.ncd Nexys3_USB_Interface.ncd Nexys3_USB_Interface.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Nexys3_USB_Interface.twx Nexys3_USB_Interface.ncd -o Nexys3_USB_Interface.twr Nexys3_USB_Interface.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f Nexys3_USB_Interface.ut Nexys3_USB_Interface.ncd 
+xst -intstyle ise -ifn "C:/Users/root/Desktop/USB_Research/usb1.1/Nexys3_USB_Interface.xst" -ofn "C:/Users/root/Desktop/USB_Research/usb1.1/Nexys3_USB_Interface.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-2 Nexys3_USB_Interface.ngc Nexys3_USB_Interface.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Nexys3_USB_Interface_map.ncd Nexys3_USB_Interface.ngd Nexys3_USB_Interface.pcf 
+par -w -intstyle ise -ol high -mt off Nexys3_USB_Interface_map.ncd Nexys3_USB_Interface.ncd Nexys3_USB_Interface.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Nexys3_USB_Interface.twx Nexys3_USB_Interface.ncd -o Nexys3_USB_Interface.twr Nexys3_USB_Interface.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f Nexys3_USB_Interface.ut Nexys3_USB_Interface.ncd 
+xst -intstyle ise -ifn "C:/Users/root/Desktop/USB_Research/usb1.1/Nexys3_USB_Interface.xst" -ofn "C:/Users/root/Desktop/USB_Research/usb1.1/Nexys3_USB_Interface.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-2 Nexys3_USB_Interface.ngc Nexys3_USB_Interface.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Nexys3_USB_Interface_map.ncd Nexys3_USB_Interface.ngd Nexys3_USB_Interface.pcf 
+par -w -intstyle ise -ol high -mt off Nexys3_USB_Interface_map.ncd Nexys3_USB_Interface.ncd Nexys3_USB_Interface.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Nexys3_USB_Interface.twx Nexys3_USB_Interface.ncd -o Nexys3_USB_Interface.twr Nexys3_USB_Interface.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f Nexys3_USB_Interface.ut Nexys3_USB_Interface.ncd 
+xst -intstyle ise -ifn "C:/Users/root/Desktop/USB_Research/usb1.1/Nexys3_USB_Interface.xst" -ofn "C:/Users/root/Desktop/USB_Research/usb1.1/Nexys3_USB_Interface.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-2 Nexys3_USB_Interface.ngc Nexys3_USB_Interface.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Nexys3_USB_Interface_map.ncd Nexys3_USB_Interface.ngd Nexys3_USB_Interface.pcf 
+par -w -intstyle ise -ol high -mt off Nexys3_USB_Interface_map.ncd Nexys3_USB_Interface.ncd Nexys3_USB_Interface.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Nexys3_USB_Interface.twx Nexys3_USB_Interface.ncd -o Nexys3_USB_Interface.twr Nexys3_USB_Interface.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f Nexys3_USB_Interface.ut Nexys3_USB_Interface.ncd 

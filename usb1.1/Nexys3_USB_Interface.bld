@@ -6,7 +6,7 @@ Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
 Nexys3_USB_Interface.ngc Nexys3_USB_Interface.ngd
 
 Reading NGO file
-"C:/Users/Jimmy/Desktop/USB_Research/usb1.1/Nexys3_USB_Interface.ngc" ...
+"C:/Users/root/Desktop/USB_Research/usb1.1/Nexys3_USB_Interface.ngc" ...
 Gathering constraint information from source properties...
 Done.
 
@@ -16,7 +16,6 @@ Checking Constraint Associations...
 Done...
 
 Checking expanded design ...
-WARNING:NgdBuild:470 - bidirect pad net 'JA_dn' has no legal driver
 
 Partition Implementation Status
 -------------------------------
@@ -27,12 +26,12 @@ Partition Implementation Status
 
 NGDBUILD Design Results Summary:
   Number of errors:     0
-  Number of warnings:   1
+  Number of warnings:   0
 
-Total memory usage is 162840 kilobytes
+Total memory usage is 166376 kilobytes
 
 Writing NGD file "Nexys3_USB_Interface.ngd" ...
-Total REAL time to NGDBUILD completion:  3 sec
-Total CPU time to NGDBUILD completion:   3 sec
+Total REAL time to NGDBUILD completion:  6 sec
+Total CPU time to NGDBUILD completion:   6 sec
 
 Writing NGDBUILD log file "Nexys3_USB_Interface.bld"...

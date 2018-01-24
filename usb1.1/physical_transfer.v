@@ -32,10 +32,10 @@ module physical_transfer(
 	wire tx_dp;
 	wire tx_dn;
 	wire tx_oe;
-	reg rx_d;
+	wire rx_d;
 	reg rx_dp;
 	reg rx_dn;
-	reg [7:0] byte_i;
+	//reg [7:0] byte_i;
 	reg [7:0] byte_o;
 	wire data_bit = JA_dp;
 

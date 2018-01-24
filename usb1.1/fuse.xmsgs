@@ -5,5 +5,11 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<msg type="warning" file="HDLCompiler" num="751" delta="unknown" >"C:/Users/root/Desktop/USB_Research/usb1.1/physical_transfer.v" Line 38: Redeclaration of ansi port <arg fmt="%s" index="1">byte_i</arg> is not allowed
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="329" delta="unknown" >"C:/Users/root/Desktop/USB_Research/usb1.1/physical_transfer.v" Line 47: Target &lt;<arg fmt="%s" index="1">rx_d</arg>&gt; of concurrent assignment or output port connection should be a net type.
+</msg>
+
 </messages>
 

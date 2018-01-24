@@ -1,0 +1,99 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 2
+-n 3 -fastpaths -xml input_output_example.twx input_output_example.ncd -o
+input_output_example.twr input_output_example.pcf
+
+Design file:              input_output_example.ncd
+Physical constraint file: input_output_example.pcf
+Device,package,speed:     xc6slx16,csg324,C,-2 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock clk_i to Pad
+---------------+-----------------+------------+-----------------+------------+------------------+--------+
+               |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination    |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+---------------+-----------------+------------+-----------------+------------+------------------+--------+
+b_o<0>         |         8.742(R)|      SLOW  |         3.564(R)|      FAST  |clk_i_BUFGP       |   0.000|
+b_o<1>         |         8.571(R)|      SLOW  |         3.478(R)|      FAST  |clk_i_BUFGP       |   0.000|
+b_o<2>         |         8.810(R)|      SLOW  |         3.617(R)|      FAST  |clk_i_BUFGP       |   0.000|
+b_o<3>         |         9.015(R)|      SLOW  |         3.746(R)|      FAST  |clk_i_BUFGP       |   0.000|
+b_o<4>         |         8.499(R)|      SLOW  |         3.418(R)|      FAST  |clk_i_BUFGP       |   0.000|
+b_o<5>         |         8.737(R)|      SLOW  |         3.568(R)|      FAST  |clk_i_BUFGP       |   0.000|
+b_o<6>         |         8.384(R)|      SLOW  |         3.399(R)|      FAST  |clk_i_BUFGP       |   0.000|
+b_o<7>         |         8.794(R)|      SLOW  |         3.657(R)|      FAST  |clk_i_BUFGP       |   0.000|
+data_line_io<0>|         9.213(R)|      SLOW  |         3.788(R)|      FAST  |clk_i_BUFGP       |   0.000|
+data_line_io<1>|         9.454(R)|      SLOW  |         3.897(R)|      FAST  |clk_i_BUFGP       |   0.000|
+data_line_io<2>|         8.984(R)|      SLOW  |         3.626(R)|      FAST  |clk_i_BUFGP       |   0.000|
+data_line_io<3>|         9.090(R)|      SLOW  |         3.711(R)|      FAST  |clk_i_BUFGP       |   0.000|
+data_line_io<4>|        10.184(R)|      SLOW  |         4.341(R)|      FAST  |clk_i_BUFGP       |   0.000|
+data_line_io<5>|         9.904(R)|      SLOW  |         4.160(R)|      FAST  |clk_i_BUFGP       |   0.000|
+data_line_io<6>|         9.644(R)|      SLOW  |         4.003(R)|      FAST  |clk_i_BUFGP       |   0.000|
+data_line_io<7>|         9.606(R)|      SLOW  |         4.000(R)|      FAST  |clk_i_BUFGP       |   0.000|
+---------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk_i
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_i          |    1.827|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+a_i<0>         |data_line_io<0>|    8.797|
+a_i<1>         |data_line_io<1>|    8.933|
+a_i<2>         |data_line_io<2>|    8.399|
+a_i<3>         |data_line_io<3>|    8.709|
+a_i<4>         |data_line_io<4>|    8.756|
+a_i<5>         |data_line_io<5>|    8.763|
+a_i<6>         |data_line_io<6>|    9.078|
+a_i<7>         |data_line_io<7>|    8.739|
+tx_oe          |data_line_io<0>|    8.076|
+tx_oe          |data_line_io<1>|    8.317|
+tx_oe          |data_line_io<2>|    8.434|
+tx_oe          |data_line_io<3>|    8.540|
+tx_oe          |data_line_io<4>|    8.996|
+tx_oe          |data_line_io<5>|    8.716|
+tx_oe          |data_line_io<6>|    8.917|
+tx_oe          |data_line_io<7>|    8.879|
+---------------+---------------+---------+
+
+
+Analysis completed Wed Jan 24 14:51:46 2018 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 217 MB
+
+
+

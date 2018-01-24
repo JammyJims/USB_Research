@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\root\Desktop\USB_Research\inout\input_output_example.ncd
+OUTFILE=C:\Users\root\Desktop\USB_Research\inout\input_output_example.bit
+FAMILY=Spartan6
+PART=xc6slx16-2csg324
+WORKINGDIR=C:\Users\root\Desktop\USB_Research\inout
+LICENSE=WebPack
+USER_INFO=211445683_0_0_755

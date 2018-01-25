@@ -1,19 +1,11 @@
-Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/root/Desktop/USB_Research/inout/input_output_tb_isim_beh.exe -prj C:/Users/root/Desktop/USB_Research/inout/input_output_tb_beh.prj work.input_output_tb work.glbl 
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/root/Desktop/USB_Research/inout/Device_tb_isim_beh.exe -prj C:/Users/root/Desktop/USB_Research/inout/Device_tb_beh.prj work.Device_tb work.glbl 
 ISim P.20131013 (signature 0x7708f090)
 Number of CPUs detected in this system: 2
 Turning on mult-threading, number of parallel sub-compilation jobs: 4 
 Determining compilation order of HDL files
-Analyzing Verilog file "C:/Users/root/Desktop/USB_Research/inout/inout.v" into library work
-Analyzing Verilog file "C:/Users/root/Desktop/USB_Research/inout/input_output_tb.v" into library work
-Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
-Starting static elaboration
-Completed static elaboration
-Compiling module input_output_example
-Compiling module input_output_tb
-Compiling module glbl
-Time Resolution for simulation is 1ps.
-Waiting for 1 sub-compilation(s) to finish...
-Compiled 3 Verilog Units
-Built simulation executable C:/Users/root/Desktop/USB_Research/inout/input_output_tb_isim_beh.exe
-Fuse Memory Usage: 26524 KB
-Fuse CPU Usage: 826 ms
+Analyzing Verilog file "C:/Users/root/Desktop/USB_Research/inout/Memory.v" into library work
+WARNING:HDLCompiler:1490 - "C:/Users/root/Desktop/USB_Research/inout/Memory.v" Line 43: Loop valiable declaration is not allowed in this mode of verilog
+WARNING:HDLCompiler:1490 - "C:/Users/root/Desktop/USB_Research/inout/Memory.v" Line 53: Loop valiable declaration is not allowed in this mode of verilog
+ERROR:HDLCompiler:1439 - "C:/Users/root/Desktop/USB_Research/inout/Memory.v" Line 32: Multiple packed dimensions are not allowed in this mode of verilog
+ERROR:HDLCompiler:598 - "C:/Users/root/Desktop/USB_Research/inout/Memory.v" Line 22: Module <Memory> ignored due to previous errors.
+Verilog file C:/Users/root/Desktop/USB_Research/inout/Memory.v ignored due to errors

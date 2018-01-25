@@ -7,3 +7,4 @@ map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -re
 par -w -intstyle ise -ol high -mt off input_output_example_map.ncd input_output_example.ncd input_output_example.pcf 
 trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml input_output_example.twx input_output_example.ncd -o input_output_example.twr input_output_example.pcf 
 bitgen -intstyle ise -f input_output_example.ut input_output_example.ncd 
+vhdtdtfi -lang verilog -prj inout -o C:/Users/root/Desktop/USB_Research/inout/input_output_example.tfi -lib work C:/Users/root/Desktop/USB_Research/inout//inout.v -module input_output_example -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

@@ -25,6 +25,41 @@
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name=".prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name=".stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name=".xst"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="Device.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Device.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Device.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="Device.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Device.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="Device.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Device.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="Device.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="Device.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="Device.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Device.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="Device.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Device.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Device.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="Device.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="Device.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="Device.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="Device.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Device.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Device_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="Device_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="Device_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="Device_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="Device_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="Device_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Device_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Device_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="Device_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="Device_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Device_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Device_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="Device_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="Device_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Device_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_VERILOG_INSTTEMPLATE" xil_pn:name="Memory.tfi"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
@@ -32,7 +67,6 @@
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
-    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="input_output_example.bgn" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="input_output_example.bit" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="input_output_example.bld"/>
@@ -43,18 +77,16 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="input_output_example.ngc"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="input_output_example.ngd"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="input_output_example.ngr"/>
-    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="input_output_example.pad"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="input_output_example.par" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="input_output_example.pcf" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="input_output_example.prj"/>
-    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="input_output_example.ptwx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="input_output_example.stx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="input_output_example.syr"/>
+    <file xil_pn:fileType="FILE_VERILOG_INSTTEMPLATE" xil_pn:name="input_output_example.tfi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="input_output_example.twr" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="input_output_example.twx" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="input_output_example.unroutes" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="input_output_example.ut" xil_pn:subbranch="FPGAConfiguration"/>
-    <file xil_pn:fileType="FILE_XPI" xil_pn:name="input_output_example.xpi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="input_output_example.xst"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="input_output_example_envsettings.html"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="input_output_example_guide.ncd" xil_pn:origination="imported"/>
@@ -62,22 +94,14 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="input_output_example_map.mrp" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="input_output_example_map.ncd" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="input_output_example_map.ngm" xil_pn:subbranch="Map"/>
-    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="input_output_example_map.xrpt"/>
-    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="input_output_example_ngdbuild.xrpt"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="input_output_example_pad.csv" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="input_output_example_pad.txt" xil_pn:subbranch="Par"/>
-    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="input_output_example_par.xrpt"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="input_output_example_summary.html"/>
-    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="input_output_example_summary.xml"/>
-    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="input_output_example_usage.xml"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="input_output_example_xst.xrpt"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="input_output_tb_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="input_output_tb_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="input_output_tb_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="input_output_tb_stx_beh.prj"/>
-    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
@@ -89,56 +113,60 @@
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
     <transform xil_pn:end_ts="1516767975" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1516767975">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1516768243" xil_pn:in_ck="8022113196006704332" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1516768243">
+    <transform xil_pn:end_ts="1516844658" xil_pn:in_ck="7985494710123137990" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1516844658">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Device.v"/>
+      <outfile xil_pn:name="Device_tb.v"/>
+      <outfile xil_pn:name="Memory.v"/>
       <outfile xil_pn:name="inout.v"/>
       <outfile xil_pn:name="input_output_tb.v"/>
     </transform>
-    <transform xil_pn:end_ts="1516768029" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="911623274671616236" xil_pn:start_ts="1516768029">
+    <transform xil_pn:end_ts="1516844427" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="4855282356413351612" xil_pn:start_ts="1516844427">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1516768029" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-6865514217714343766" xil_pn:start_ts="1516768029">
+    <transform xil_pn:end_ts="1516844427" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="5797451535009273466" xil_pn:start_ts="1516844427">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1516768029" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="7828012029905138030" xil_pn:start_ts="1516768029">
+    <transform xil_pn:end_ts="1516844404" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="7135520006692282323" xil_pn:start_ts="1516844404">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1516768243" xil_pn:in_ck="8022113196006704332" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1516768243">
+    <transform xil_pn:end_ts="1516844658" xil_pn:in_ck="7985494710123137990" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1516844658">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Device.v"/>
+      <outfile xil_pn:name="Device_tb.v"/>
+      <outfile xil_pn:name="Memory.v"/>
       <outfile xil_pn:name="inout.v"/>
       <outfile xil_pn:name="input_output_tb.v"/>
     </transform>
-    <transform xil_pn:end_ts="1516768248" xil_pn:in_ck="8022113196006704332" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="8488723741675651159" xil_pn:start_ts="1516768243">
-      <status xil_pn:value="SuccessfullyRun"/>
+    <transform xil_pn:end_ts="1516844661" xil_pn:in_ck="7985494710123137990" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="9080727622341739575" xil_pn:start_ts="1516844658">
+      <status xil_pn:value="FailedRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="fuse.log"/>
-      <outfile xil_pn:name="input_output_tb_beh.prj"/>
-      <outfile xil_pn:name="input_output_tb_isim_beh.exe"/>
-      <outfile xil_pn:name="isim"/>
-      <outfile xil_pn:name="isim.log"/>
-      <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
     <transform xil_pn:end_ts="1516768249" xil_pn:in_ck="-8130385313734762876" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-7150749235977147238" xil_pn:start_ts="1516768248">
-      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="AbortedRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForced"/>
       <outfile xil_pn:name="input_output_tb_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
-      <outfile xil_pn:name="isim.log"/>
     </transform>
     <transform xil_pn:end_ts="1516767098" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1516767098">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1516767098" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="769910315311716032" xil_pn:start_ts="1516767098">
+    <transform xil_pn:end_ts="1516843558" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-190385135936578171" xil_pn:start_ts="1516843558">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1516767098" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="7828012029905138030" xil_pn:start_ts="1516767098">
+    <transform xil_pn:end_ts="1516843558" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="7135520006692282323" xil_pn:start_ts="1516843558">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -146,7 +174,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1516767098" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-5494893601272214590" xil_pn:start_ts="1516767098">
+    <transform xil_pn:end_ts="1516843558" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-8430671932820498681" xil_pn:start_ts="1516843558">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -154,11 +182,11 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1516767098" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="6582316503579159928" xil_pn:start_ts="1516767098">
+    <transform xil_pn:end_ts="1516843558" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-6007482916249439651" xil_pn:start_ts="1516843558">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1516767643" xil_pn:in_ck="140044999795" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="5299523340009682173" xil_pn:start_ts="1516767629">
+    <transform xil_pn:end_ts="1516843874" xil_pn:in_ck="2276398698130591876" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-5388523805873762622" xil_pn:start_ts="1516843859">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -166,67 +194,70 @@
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="Device.lso"/>
+      <outfile xil_pn:name="Device.ngc"/>
+      <outfile xil_pn:name="Device.ngr"/>
+      <outfile xil_pn:name="Device.prj"/>
+      <outfile xil_pn:name="Device.stx"/>
+      <outfile xil_pn:name="Device.syr"/>
+      <outfile xil_pn:name="Device.xst"/>
+      <outfile xil_pn:name="Device_xst.xrpt"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
-      <outfile xil_pn:name="input_output_example.lso"/>
-      <outfile xil_pn:name="input_output_example.ngc"/>
-      <outfile xil_pn:name="input_output_example.ngr"/>
-      <outfile xil_pn:name="input_output_example.prj"/>
-      <outfile xil_pn:name="input_output_example.stx"/>
-      <outfile xil_pn:name="input_output_example.syr"/>
-      <outfile xil_pn:name="input_output_example.xst"/>
-      <outfile xil_pn:name="input_output_example_xst.xrpt"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>
-    <transform xil_pn:end_ts="1516767439" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-1741615361157843603" xil_pn:start_ts="1516767439">
+    <transform xil_pn:end_ts="1516843908" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="5069202360159012658" xil_pn:start_ts="1516843908">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1516767659" xil_pn:in_ck="-5488591743114731151" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="6869170168857392143" xil_pn:start_ts="1516767643">
+    <transform xil_pn:end_ts="1516843922" xil_pn:in_ck="-1210090519980585817" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-8554431523595757836" xil_pn:start_ts="1516843908">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="Device.bld"/>
+      <outfile xil_pn:name="Device.ngd"/>
+      <outfile xil_pn:name="Device_ngdbuild.xrpt"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
-      <outfile xil_pn:name="input_output_example.bld"/>
-      <outfile xil_pn:name="input_output_example.ngd"/>
-      <outfile xil_pn:name="input_output_example_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1516767681" xil_pn:in_ck="-5488591743114731150" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="-3180699873896808002" xil_pn:start_ts="1516767659">
+    <transform xil_pn:end_ts="1516843941" xil_pn:in_ck="3865945095972167593" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="-3180699873896808002" xil_pn:start_ts="1516843922">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="Device.pcf"/>
+      <outfile xil_pn:name="Device_map.map"/>
+      <outfile xil_pn:name="Device_map.mrp"/>
+      <outfile xil_pn:name="Device_map.ncd"/>
+      <outfile xil_pn:name="Device_map.ngm"/>
+      <outfile xil_pn:name="Device_map.xrpt"/>
+      <outfile xil_pn:name="Device_summary.xml"/>
+      <outfile xil_pn:name="Device_usage.xml"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
-      <outfile xil_pn:name="input_output_example.pcf"/>
-      <outfile xil_pn:name="input_output_example_map.map"/>
-      <outfile xil_pn:name="input_output_example_map.mrp"/>
-      <outfile xil_pn:name="input_output_example_map.ncd"/>
-      <outfile xil_pn:name="input_output_example_map.ngm"/>
-      <outfile xil_pn:name="input_output_example_map.xrpt"/>
-      <outfile xil_pn:name="input_output_example_summary.xml"/>
-      <outfile xil_pn:name="input_output_example_usage.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1516767708" xil_pn:in_ck="8118288579258309003" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-1178055513630676559" xil_pn:start_ts="1516767681">
+    <transform xil_pn:end_ts="1516843969" xil_pn:in_ck="-4980507306044723877" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-1178055513630676559" xil_pn:start_ts="1516843941">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="Device.ncd"/>
+      <outfile xil_pn:name="Device.pad"/>
+      <outfile xil_pn:name="Device.par"/>
+      <outfile xil_pn:name="Device.ptwx"/>
+      <outfile xil_pn:name="Device.unroutes"/>
+      <outfile xil_pn:name="Device.xpi"/>
+      <outfile xil_pn:name="Device_pad.csv"/>
+      <outfile xil_pn:name="Device_pad.txt"/>
+      <outfile xil_pn:name="Device_par.xrpt"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
-      <outfile xil_pn:name="input_output_example.ncd"/>
-      <outfile xil_pn:name="input_output_example.pad"/>
-      <outfile xil_pn:name="input_output_example.par"/>
-      <outfile xil_pn:name="input_output_example.ptwx"/>
-      <outfile xil_pn:name="input_output_example.unroutes"/>
-      <outfile xil_pn:name="input_output_example.xpi"/>
-      <outfile xil_pn:name="input_output_example_pad.csv"/>
-      <outfile xil_pn:name="input_output_example_pad.txt"/>
-      <outfile xil_pn:name="input_output_example_par.xrpt"/>
     </transform>
     <transform xil_pn:end_ts="1516767739" xil_pn:in_ck="-5488591743114731282" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="396117104113915555" xil_pn:start_ts="1516767709">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="input_output_example.bgn"/>
       <outfile xil_pn:name="input_output_example.bit"/>
@@ -236,13 +267,13 @@
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1516767708" xil_pn:in_ck="-5488591743114731282" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416184" xil_pn:start_ts="1516767697">
+    <transform xil_pn:end_ts="1516843969" xil_pn:in_ck="-2087969556247424351" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416184" xil_pn:start_ts="1516843957">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="Device.twr"/>
+      <outfile xil_pn:name="Device.twx"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
-      <outfile xil_pn:name="input_output_example.twr"/>
-      <outfile xil_pn:name="input_output_example.twx"/>
     </transform>
   </transforms>
 

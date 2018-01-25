@@ -5,28 +5,109 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="872" delta="new" >"C:\Users\root\Desktop\USB_Research\inout\inout.v" Line 44: Using initial value of <arg fmt="%s" index="1">data_a</arg> since it is never assigned
+<msg type="warning" file="HDLCompiler" num="1490" delta="old" >"C:\Users\root\Desktop\USB_Research\inout\Memory.v" Line 43: Loop valiable declaration is not allowed in this mode of verilog
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1490" delta="old" >"C:\Users\root\Desktop\USB_Research\inout\Memory.v" Line 53: Loop valiable declaration is not allowed in this mode of verilog
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1439" delta="old" >"C:\Users\root\Desktop\USB_Research\inout\Memory.v" Line 32: Multiple packed dimensions are not allowed in this mode of verilog
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"C:\Users\root\Desktop\USB_Research\inout\inout.v" Line 21: Empty module &lt;<arg fmt="%s" index="1">Physical_Interface</arg>&gt; remains a black box.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\root\Desktop\USB_Research\inout\Device.v" Line 34: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_line_io</arg>&gt;. Formal port size is <arg fmt="%d" index="2">8</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"C:\Users\root\Desktop\USB_Research\inout\Memory.v" Line 34: Net &lt;<arg fmt="%s" index="1">data_i[7]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\root\Desktop\USB_Research\inout\Device.v" Line 41: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_io</arg>&gt;. Formal port size is <arg fmt="%d" index="2">8</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clk_i</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">rst_i</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">b_o_6</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">input_output_example</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;b_o_7&gt; </arg>
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">tx_oe</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">b_o_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">input_output_example</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;b_o_3&gt; </arg>
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">data_line_io&lt;0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">b_o_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">input_output_example</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;b_o_1&gt; </arg>
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">data_line_io&lt;7&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">b_o_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">input_output_example</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;b_o_5&gt; </arg>
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">data_line_io&lt;6&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">b_o_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">input_output_example</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;sel_FSM_FFd1&gt; </arg>
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">data_line_io&lt;5&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">b_o_6</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">input_output_example</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;sel_FSM_FFd2&gt; </arg>
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">data_line_io&lt;4&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">data_line_io&lt;3&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">data_line_io&lt;2&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2563" delta="new" >Inout &lt;<arg fmt="%s" index="1">data_line_io&lt;1&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">data_i</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">data_o_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MEM</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">data_o_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MEM</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">data_o_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MEM</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">data_o_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MEM</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">data_o_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MEM</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">data_o_5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MEM</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">data_o_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MEM</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">data_o_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MEM</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">data_o_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Memory</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">data_o_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Memory</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">data_o_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Memory</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">data_o_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Memory</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">data_o_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Memory</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">data_o_5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Memory</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">data_o_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Memory</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">data_o_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Memory</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 </messages>

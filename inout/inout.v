@@ -28,7 +28,7 @@ module Physical_Interface (
 	// internal wires and registers
 	
 	// wire assignments
-	//assign data_line_io = tx_oe ? data_i : data_o ;
+	//assign data_line_io = tx_oe ? data_o : data_i ;
 	
 	// initialisation
 	initial begin

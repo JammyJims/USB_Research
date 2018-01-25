@@ -5,17 +5,5 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="1490" delta="unknown" >"C:/Users/root/Desktop/USB_Research/inout/Memory.v" Line 43: Loop valiable declaration is not allowed in this mode of verilog
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="1490" delta="unknown" >"C:/Users/root/Desktop/USB_Research/inout/Memory.v" Line 53: Loop valiable declaration is not allowed in this mode of verilog
-</msg>
-
-<msg type="error" file="HDLCompiler" num="1439" delta="unknown" >"C:/Users/root/Desktop/USB_Research/inout/Memory.v" Line 32: Multiple packed dimensions are not allowed in this mode of verilog
-</msg>
-
-<msg type="error" file="HDLCompiler" num="598" delta="unknown" >"C:/Users/root/Desktop/USB_Research/inout/Memory.v" Line 22: Module &lt;<arg fmt="%s" index="1">Memory</arg>&gt; ignored due to previous errors.
-</msg>
-
 </messages>
 

@@ -18,7 +18,7 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-`define RAM_SIZE 128
+`define RAM_SIZE 5
 module Memory(
 	input clk_i,
 	input rst_i,
@@ -29,20 +29,31 @@ module Memory(
 	
 	// internal wires and registers
 	reg write_enable;
-	reg [`RAM_SIZE-1:0][7:0] RAM; // 8 bits wide, RAM_SIZE long
+	reg [7:0] ramA;
+	reg [7:0] ramB;
+	reg [7:0] ramC;
+	reg [7:0] ramD;
+	reg [7:0] ramE;
+	//reg [`RAM_SIZE-1:0] RAM[7:0]; // 8 bits wide, RAM_SIZE long
 	reg [7:0] data_o;
 	reg [7:0] data_i;
 	
 	// wire assignments
 	//assign write_enable = &data_i; // write enable on data_io == 1111_1111
-	assign data_io = tx_oe ? data_i : data_o ;
+	wire tx;
+	wire rx;
+	assign tx = data_o;
+	assign rx = data_i;
+	assign data_io = tx_oe ? tx : rx ;
 	
 	// initialisation
 	initial begin
 		// nuke the memory RAM
-		for (integer i=0; i<`RAM_SIZE; i=i+1) begin
-			RAM[i] = 8'b0000_0000;
-		end
+		ramA <= 8'b0000_0000;
+		ramB <= 8'b0000_0000;
+		ramC <= 8'b0000_0000;
+		ramD <= 8'b0000_0000;
+		ramE <= 8'b0000_0000;
 	end
 	
 	// clocked behaviour
@@ -50,9 +61,11 @@ module Memory(
 	always @(posedge clk_i) begin
 		if (rst_i) begin
 			// nuke the memory RAM
-			for (integer i=0; i<`RAM_SIZE; i=i+1) begin
-				RAM[i] = 8'b0000_0000;
-			end
+			ramA <= 8'b0000_0000;
+			ramB <= 8'b0000_0000;
+			ramC <= 8'b0000_0000;
+			ramD <= 8'b0000_0000;
+			ramE <= 8'b0000_0000;
 			
 			// reset address iterator
 			address = 0;
@@ -63,22 +76,36 @@ module Memory(
 			end else if (data_i == 8'b0000_0000) begin
 				write_enable = 1'b0;
 			end else begin
-				// cycles through all valid memory addresses
-				data_o = RAM[address];
-				if (address > `RAM_SIZE) begin
-					address = 0;
-				end else begin
-					address = address+1;
-				end
-					
-				// either read or write to/from memory
-				if (write_enable) begin
-					// data is sent into memory
-					RAM[address] = data_i;
+				if (write_enable) begin 
+					if 			(address == 0) begin
+						ramA <= data_i;
+					end else if (address == 1) begin
+						ramB <= data_i;
+					end else if (address == 2) begin
+						ramC <= data_i;
+					end else if (address == 3) begin
+						ramD <= data_i;
+					end else if (address == 4) begin
+						ramE <= data_i;
+					end else begin
+						address = 0;
+					end
 				end else begin // read enable
-					// data is sent out via data_io bidir
-					data_o = RAM[address];
+					if 			(address == 0) begin
+						data_o <= ramA;
+					end else if (address == 1) begin
+						data_o <= ramB;
+					end else if (address == 2) begin
+						data_o <= ramC;
+					end else if (address == 3) begin
+						data_o <= ramD;
+					end else if (address == 4) begin
+						data_o <= ramE;
+					end else begin
+						address = 0;
+					end
 				end
+				address = address + 1;
 			end
 		end
 	end

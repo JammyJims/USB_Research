@@ -9,3 +9,14 @@ ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-2 Device.ngc
 map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Device_map.ncd Device.ngd Device.pcf 
 par -w -intstyle ise -ol high -mt off Device_map.ncd Device.ncd Device.pcf 
 trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Device.twx Device.ncd -o Device.twr Device.pcf 
+xst -intstyle ise -ifn "C:/Users/root/Desktop/USB_Research/inout/Device.xst" -ofn "C:/Users/root/Desktop/USB_Research/inout/Device.syr" 
+xst -intstyle ise -ifn "C:/Users/root/Desktop/USB_Research/inout/Device.xst" -ofn "C:/Users/root/Desktop/USB_Research/inout/Device.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-2 Device.ngc Device.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Device_map.ncd Device.ngd Device.pcf 
+par -w -intstyle ise -ol high -mt off Device_map.ncd Device.ncd Device.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Device.twx Device.ncd -o Device.twr Device.pcf 
+xst -intstyle ise -ifn "C:/Users/root/Desktop/USB_Research/inout/Device.xst" -ofn "C:/Users/root/Desktop/USB_Research/inout/Device.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-2 Device.ngc Device.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Device_map.ncd Device.ngd Device.pcf 
+par -w -intstyle ise -ol high -mt off Device_map.ncd Device.ncd Device.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Device.twx Device.ncd -o Device.twr Device.pcf 

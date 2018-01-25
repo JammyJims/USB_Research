@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.18 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.18 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
  
 --> Reading design: Device.prj
 
@@ -107,9 +107,6 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 Analyzing Verilog file "C:\Users\root\Desktop\USB_Research\inout\Memory.v" into library work
 Parsing module <Memory>.
-WARNING:HDLCompiler:1490 - "C:\Users\root\Desktop\USB_Research\inout\Memory.v" Line 43: Loop valiable declaration is not allowed in this mode of verilog
-WARNING:HDLCompiler:1490 - "C:\Users\root\Desktop\USB_Research\inout\Memory.v" Line 53: Loop valiable declaration is not allowed in this mode of verilog
-WARNING:HDLCompiler:1439 - "C:\Users\root\Desktop\USB_Research\inout\Memory.v" Line 32: Multiple packed dimensions are not allowed in this mode of verilog
 Analyzing Verilog file "C:\Users\root\Desktop\USB_Research\inout\inout.v" into library work
 Parsing module <Physical_Interface>.
 Analyzing Verilog file "C:\Users\root\Desktop\USB_Research\inout\Device.v" into library work
@@ -123,11 +120,11 @@ Elaborating module <Device>.
 
 Elaborating module <Physical_Interface>.
 WARNING:HDLCompiler:1499 - "C:\Users\root\Desktop\USB_Research\inout\inout.v" Line 21: Empty module <Physical_Interface> remains a black box.
-WARNING:HDLCompiler:189 - "C:\Users\root\Desktop\USB_Research\inout\Device.v" Line 34: Size mismatch in connection of port <data_line_io>. Formal port size is 8-bit while actual signal size is 1-bit.
 
 Elaborating module <Memory>.
-WARNING:HDLCompiler:634 - "C:\Users\root\Desktop\USB_Research\inout\Memory.v" Line 34: Net <data_i[7]> does not have a driver.
-WARNING:HDLCompiler:189 - "C:\Users\root\Desktop\USB_Research\inout\Device.v" Line 41: Size mismatch in connection of port <data_io>. Formal port size is 8-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:413 - "C:\Users\root\Desktop\USB_Research\inout\Memory.v" Line 45: Result of 8-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\root\Desktop\USB_Research\inout\Memory.v" Line 46: Result of 8-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:634 - "C:\Users\root\Desktop\USB_Research\inout\Memory.v" Line 39: Net <data_i[7]> does not have a driver.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -141,85 +138,41 @@ Unit <Device> synthesized.
 
 Synthesizing Unit <Physical_Interface>.
     Related source file is "C:\Users\root\Desktop\USB_Research\inout\inout.v".
+WARNING:Xst:647 - Input <data_line_io> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <clk_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <rst_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <tx_oe> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <data_line_io<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:2563 - Inout <data_line_io<7>> is never assigned. Tied to value Z.
-WARNING:Xst:2563 - Inout <data_line_io<6>> is never assigned. Tied to value Z.
-WARNING:Xst:2563 - Inout <data_line_io<5>> is never assigned. Tied to value Z.
-WARNING:Xst:2563 - Inout <data_line_io<4>> is never assigned. Tied to value Z.
-WARNING:Xst:2563 - Inout <data_line_io<3>> is never assigned. Tied to value Z.
-WARNING:Xst:2563 - Inout <data_line_io<2>> is never assigned. Tied to value Z.
-WARNING:Xst:2563 - Inout <data_line_io<1>> is never assigned. Tied to value Z.
-    Found 1-bit tristate buffer for signal <data_line_io<7>> created at line 25
-    Found 1-bit tristate buffer for signal <data_line_io<6>> created at line 25
-    Found 1-bit tristate buffer for signal <data_line_io<5>> created at line 25
-    Found 1-bit tristate buffer for signal <data_line_io<4>> created at line 25
-    Found 1-bit tristate buffer for signal <data_line_io<3>> created at line 25
-    Found 1-bit tristate buffer for signal <data_line_io<2>> created at line 25
-    Found 1-bit tristate buffer for signal <data_line_io<1>> created at line 25
     Summary:
-	inferred   7 Tristate(s).
+	no macro.
 Unit <Physical_Interface> synthesized.
 
 Synthesizing Unit <Memory>.
     Related source file is "C:\Users\root\Desktop\USB_Research\inout\Memory.v".
 WARNING:Xst:653 - Signal <data_i> is used but never assigned. This sourceless signal will be automatically connected to value GND.
-    Found 8-bit register for signal <data_o>.
     Summary:
-	inferred   8 D-type flip-flop(s).
-	inferred   1 Multiplexer(s).
+	no macro.
 Unit <Memory> synthesized.
 
 =========================================================================
 HDL Synthesis Report
 
-Macro Statistics
-# Registers                                            : 1
- 8-bit register                                        : 1
-# Multiplexers                                         : 1
- 8-bit 2-to-1 multiplexer                              : 1
-# Tristates                                            : 7
- 1-bit tristate buffer                                 : 7
-
+Found no macro
 =========================================================================
 
 =========================================================================
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
-WARNING:Xst:1710 - FF/Latch <data_o_0> (without init value) has a constant value of 0 in block <MEM>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_o_1> (without init value) has a constant value of 0 in block <MEM>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_o_2> (without init value) has a constant value of 0 in block <MEM>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_o_3> (without init value) has a constant value of 0 in block <MEM>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_o_4> (without init value) has a constant value of 0 in block <MEM>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_o_5> (without init value) has a constant value of 0 in block <MEM>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_o_6> (without init value) has a constant value of 0 in block <MEM>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <data_o_7> (without init value) has a constant value of 0 in block <MEM>. This FF/Latch will be trimmed during the optimization process.
 
 =========================================================================
 Advanced HDL Synthesis Report
 
-Macro Statistics
-# Registers                                            : 8
- Flip-Flops                                            : 8
-# Multiplexers                                         : 1
- 8-bit 2-to-1 multiplexer                              : 1
-
+Found no macro
 =========================================================================
 
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:1710 - FF/Latch <data_o_0> (without init value) has a constant value of 0 in block <Memory>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_o_1> (without init value) has a constant value of 0 in block <Memory>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_o_2> (without init value) has a constant value of 0 in block <Memory>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_o_3> (without init value) has a constant value of 0 in block <Memory>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_o_4> (without init value) has a constant value of 0 in block <Memory>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_o_5> (without init value) has a constant value of 0 in block <Memory>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_o_6> (without init value) has a constant value of 0 in block <Memory>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_o_7> (without init value) has a constant value of 0 in block <Memory>. This FF/Latch will be trimmed during the optimization process.
 
 Optimizing unit <Device> ...
 
@@ -256,8 +209,8 @@ Primitive and Black Box Usage:
 ------------------------------
 # BELS                             : 1
 #      GND                         : 1
-# IO Buffers                       : 1
-#      OBUF                        : 1
+# IO Buffers                       : 8
+#      OBUF                        : 8
 
 Device utilization summary:
 ---------------------------
@@ -275,8 +228,8 @@ Slice Logic Distribution:
    Number of unique control sets:         0
 
 IO Utilization: 
- Number of IOs:                           4
- Number of bonded IOBs:                   1  out of    232     0%  
+ Number of IOs:                          11
+ Number of bonded IOBs:                   8  out of    232     3%  
 
 Specific Feature Utilization:
 
@@ -325,14 +278,14 @@ Cross Clock Domains Report:
 =========================================================================
 
 
-Total REAL time to Xst completion: 11.00 secs
-Total CPU time to Xst completion: 10.94 secs
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 8.52 secs
  
 --> 
 
-Total memory usage is 255832 kilobytes
+Total memory usage is 257704 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   35 (   0 filtered)
+Number of warnings :    9 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

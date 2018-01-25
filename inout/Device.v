@@ -22,7 +22,7 @@ module Device (
 	input clk_i,
 	input rst_i,
 	input tx_oe,
-	inout data_io
+	inout [7:0] data_io
 	);
 
 	// module instantiations
@@ -33,7 +33,7 @@ module Device (
 		 .tx_oe(tx_oe), 
 		 .data_line_io(data_io)
 		 );
-		 
+
 	// Instantiate the module
 	Memory MEM (
 		 .clk_i(clk_i), 
@@ -41,7 +41,5 @@ module Device (
 		 .data_io(data_io), 
 		 .tx_oe(tx_oe)
 		 );
-
-
 
 endmodule

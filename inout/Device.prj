@@ -1,0 +1,3 @@
+verilog work "Memory.v"
+verilog work "inout.v"
+verilog work "Device.v"

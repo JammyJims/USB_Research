@@ -1,0 +1,338 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.18 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.18 secs
+ 
+--> Reading design: Device.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Device.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Device"
+Output Format                      : NGC
+Target Device                      : xc6slx16-2-csg324
+
+---- Source Options
+Top Module Name                    : Device
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\root\Desktop\USB_Research\inout\Memory.v" into library work
+Parsing module <Memory>.
+WARNING:HDLCompiler:1490 - "C:\Users\root\Desktop\USB_Research\inout\Memory.v" Line 43: Loop valiable declaration is not allowed in this mode of verilog
+WARNING:HDLCompiler:1490 - "C:\Users\root\Desktop\USB_Research\inout\Memory.v" Line 53: Loop valiable declaration is not allowed in this mode of verilog
+WARNING:HDLCompiler:1439 - "C:\Users\root\Desktop\USB_Research\inout\Memory.v" Line 32: Multiple packed dimensions are not allowed in this mode of verilog
+Analyzing Verilog file "C:\Users\root\Desktop\USB_Research\inout\inout.v" into library work
+Parsing module <Physical_Interface>.
+Analyzing Verilog file "C:\Users\root\Desktop\USB_Research\inout\Device.v" into library work
+Parsing module <Device>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <Device>.
+
+Elaborating module <Physical_Interface>.
+WARNING:HDLCompiler:1499 - "C:\Users\root\Desktop\USB_Research\inout\inout.v" Line 21: Empty module <Physical_Interface> remains a black box.
+WARNING:HDLCompiler:189 - "C:\Users\root\Desktop\USB_Research\inout\Device.v" Line 34: Size mismatch in connection of port <data_line_io>. Formal port size is 8-bit while actual signal size is 1-bit.
+
+Elaborating module <Memory>.
+WARNING:HDLCompiler:634 - "C:\Users\root\Desktop\USB_Research\inout\Memory.v" Line 34: Net <data_i[7]> does not have a driver.
+WARNING:HDLCompiler:189 - "C:\Users\root\Desktop\USB_Research\inout\Device.v" Line 41: Size mismatch in connection of port <data_io>. Formal port size is 8-bit while actual signal size is 1-bit.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Device>.
+    Related source file is "C:\Users\root\Desktop\USB_Research\inout\Device.v".
+    Summary:
+	no macro.
+Unit <Device> synthesized.
+
+Synthesizing Unit <Physical_Interface>.
+    Related source file is "C:\Users\root\Desktop\USB_Research\inout\inout.v".
+WARNING:Xst:647 - Input <clk_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <rst_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <tx_oe> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <data_line_io<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:2563 - Inout <data_line_io<7>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <data_line_io<6>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <data_line_io<5>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <data_line_io<4>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <data_line_io<3>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <data_line_io<2>> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <data_line_io<1>> is never assigned. Tied to value Z.
+    Found 1-bit tristate buffer for signal <data_line_io<7>> created at line 25
+    Found 1-bit tristate buffer for signal <data_line_io<6>> created at line 25
+    Found 1-bit tristate buffer for signal <data_line_io<5>> created at line 25
+    Found 1-bit tristate buffer for signal <data_line_io<4>> created at line 25
+    Found 1-bit tristate buffer for signal <data_line_io<3>> created at line 25
+    Found 1-bit tristate buffer for signal <data_line_io<2>> created at line 25
+    Found 1-bit tristate buffer for signal <data_line_io<1>> created at line 25
+    Summary:
+	inferred   7 Tristate(s).
+Unit <Physical_Interface> synthesized.
+
+Synthesizing Unit <Memory>.
+    Related source file is "C:\Users\root\Desktop\USB_Research\inout\Memory.v".
+WARNING:Xst:653 - Signal <data_i> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 8-bit register for signal <data_o>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <Memory> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 1
+ 8-bit register                                        : 1
+# Multiplexers                                         : 1
+ 8-bit 2-to-1 multiplexer                              : 1
+# Tristates                                            : 7
+ 1-bit tristate buffer                                 : 7
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1710 - FF/Latch <data_o_0> (without init value) has a constant value of 0 in block <MEM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_o_1> (without init value) has a constant value of 0 in block <MEM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_o_2> (without init value) has a constant value of 0 in block <MEM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_o_3> (without init value) has a constant value of 0 in block <MEM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_o_4> (without init value) has a constant value of 0 in block <MEM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_o_5> (without init value) has a constant value of 0 in block <MEM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_o_6> (without init value) has a constant value of 0 in block <MEM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_o_7> (without init value) has a constant value of 0 in block <MEM>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 8
+ Flip-Flops                                            : 8
+# Multiplexers                                         : 1
+ 8-bit 2-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <data_o_0> (without init value) has a constant value of 0 in block <Memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_o_1> (without init value) has a constant value of 0 in block <Memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_o_2> (without init value) has a constant value of 0 in block <Memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_o_3> (without init value) has a constant value of 0 in block <Memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_o_4> (without init value) has a constant value of 0 in block <Memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_o_5> (without init value) has a constant value of 0 in block <Memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_o_6> (without init value) has a constant value of 0 in block <Memory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_o_7> (without init value) has a constant value of 0 in block <Memory>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <Device> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Device, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Device.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1
+#      GND                         : 1
+# IO Buffers                       : 1
+#      OBUF                        : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-2 
+
+
+Slice Logic Utilization: 
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:      0
+   Number with an unused Flip Flop:       0  out of      0         
+   Number with an unused LUT:             0  out of      0         
+   Number of fully used LUT-FF pairs:     0  out of      0         
+   Number of unique control sets:         0
+
+IO Utilization: 
+ Number of IOs:                           4
+ Number of bonded IOBs:                   1  out of    232     0%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 10.94 secs
+ 
+--> 
+
+Total memory usage is 255832 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   35 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

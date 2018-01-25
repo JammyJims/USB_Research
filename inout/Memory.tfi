@@ -1,0 +1,12 @@
+
+
+
+// Instantiate the module
+Memory instance_name (
+    .clk_i(clk_i), 
+    .rst_i(rst_i), 
+    .data_io(data_io), 
+    .tx_oe(tx_oe)
+    );
+
+

@@ -28,7 +28,7 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 166376 kilobytes
+Total memory usage is 162288 kilobytes
 
 Writing NGD file "Nexys3_USB_Interface.ngd" ...
 Total REAL time to NGDBUILD completion:  6 sec

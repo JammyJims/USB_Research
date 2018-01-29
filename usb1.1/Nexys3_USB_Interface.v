@@ -48,6 +48,8 @@ module Nexys3_USB_Interface(
 	wire ep2_re;
 	wire ep2_stat;
 	
+	reg loop;
+	
 	// turn on LEDs
 	always begin
 		Led <= 8'b1000_0001;
@@ -75,7 +77,7 @@ module Nexys3_USB_Interface(
 		 .rst_i(rst_i), 
 //		 .phy_tx_mode(phy_tx_mode), 
 //		 .usb_rst(usb_rst), 
-//		 .loop(loop), 
+		 .loop(loop), 
 //		 .dropped_frame(dropped_frame), 
 //		 .misaligned_frame(misaligned_frame), 
 //		 .crc16_err(crc16_err), 
@@ -110,5 +112,19 @@ module Nexys3_USB_Interface(
 //		 .clr_iso(clr_iso), 
 //		 .clr_bulk(clr_bulk)
 		 );
+
+	// state machine behaviour
+	reg [7:0] data1 = 8'b1111_1010;
+	reg [7:0] data2 = 8'b1111_1010;
+	reg [7:0] data3 = 8'b1111_1010;
+	reg [7:0] data4 = 8'b1111_1010;
+	integer iterator;
+	initial begin
+		iterator = 0;
+	end
+	always @(posedge clk_i) begin
+		iterator =1 ;
+		ep1_din
+	end
 
 endmodule

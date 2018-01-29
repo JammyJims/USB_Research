@@ -3,10 +3,10 @@
 ## - remove or comment the lines corresponding to unused pins
 ## - rename the used signals according to the project
 
-## Clock signal
-#NET "clk"            LOC = "V10" | IOSTANDARD = "LVCMOS33";   #Bank = 2, pin name = IO_L30N_GCLK0_USERCCLK,            Sch name = GCLK
-#Net "clk" TNM_NET = sys_clk_pin;
-#TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin 100000 kHz;
+# Clock signal
+NET "clk_i"            LOC = "V10" | IOSTANDARD = "LVCMOS33";   #Bank = 2, pin name = IO_L30N_GCLK0_USERCCLK,            Sch name = GCLK
+Net "clk_i" TNM_NET = sys_clk_pin;
+TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin 100000 kHz;
 
 ## onBoard USB controller
 ## NOTE: DEPP and DSTM net names use some of the same pins, if trying to use both DEPP and DSTM use a signle net name for each shared pin.

@@ -168,8 +168,8 @@ NET "Led<7>"         LOC = "T11" | IOSTANDARD = "LVCMOS33";   #Bank = 2, Pin nam
 
 ## 12 pin connectors
 
-NET "JA_dp"          LOC = "T12" | IOSTANDARD = "LVCMOS33";   #Bank = 2, Pin name = IO_L19P,                           Sch name = JA1
-NET "JA_dn"          LOC = "V12" | IOSTANDARD = "LVCMOS33";   #Bank = 2, Pin name = IO_L19N,   
+NET "dn"          LOC = "G11" | IOSTANDARD = "LVCMOS33";
+NET "dp"          LOC = "F10" | IOSTANDARD = "LVCMOS33";
 #JA
 #NET "JA<0>"          LOC = "T12" | IOSTANDARD = "LVCMOS33";   #Bank = 2, Pin name = IO_L19P,                           Sch name = JA1
 #NET "JA<1>"          LOC = "V12" | IOSTANDARD = "LVCMOS33";   #Bank = 2, Pin name = IO_L19N,                           Sch name = JA2  

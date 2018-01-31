@@ -23,10 +23,10 @@ module Nexys3_USB_Interface(
 	input clk_i,
 	input rst_i,
 	
-	// Pmod outputs
+	// Pmod outputs to USB 1.1 interface
 	
-	inout JA_dp,
-	inout JA_dn,
+	inout dp,
+	inout dn,
 	
 	// LEDS
 	output reg [7:0] Led
@@ -36,10 +36,13 @@ module Nexys3_USB_Interface(
 	wire tx_dp;
 	wire tx_dn;
 	wire tx_oe;
-	reg rx_d;
-	reg rx_dp;
-	reg rx_dn;
-	
+	wire rx_d;
+	wire rx_dp;
+	wire rx_dn;
+	//wire phy_tx_mode; 
+	//wire usb_rst;
+	//assign usb_rst = 1'b1;
+	//assign phy_tx_mode = 1'b0;
 	// endpoint wires
 	wire ep1_din;
 	wire ep1_we; 
@@ -48,36 +51,31 @@ module Nexys3_USB_Interface(
 	wire ep2_re;
 	wire ep2_stat;
 	
-	reg loop;
-	
-	// turn on LEDs
-	always begin
-		Led <= 8'b1000_0001;
-	end
-	
 	// tristate buffer to handle bi-directional data lines.
-	assign JA_dp = tx_oe ? tx_dp : rx_dp ;
-	assign JA_dn = tx_oe ? tx_dn : rx_dn ;
+	assign dp = tx_oe ? tx_dp : 1'bZ ;
+	assign rx_dp = dp;
+	assign dn = tx_oe ? tx_dn : 1'bZ ;
+	assign rx_dn = dp;
 	
 	// input wires to USB 1.1 Function Core
 	always begin
-		rx_dp <= JA_dp;
-		rx_dn <= JA_dn;
+		//rx_dp <= dp;
+		//rx_dn <= dn;
+		Led[6] <= dp;
+		Led[7] <= dn;
 	end
 	
 	initial begin
-		rx_d = 1'b0;
-		rx_dp = 1'b0;
-		rx_dn = 1'b0;
+		Led <= 8'b0000_1111;
 	end
 	
 	// Instantiate the module
 	usb1_top usb (
 		 .clk_i(clk_i), 
 		 .rst_i(rst_i), 
-//		 .phy_tx_mode(phy_tx_mode), 
-//		 .usb_rst(usb_rst), 
-		 .loop(loop), 
+		 //.phy_tx_mode(phy_tx_mode), 
+		 //.usb_rst(usb_rst), 
+		 //.loop(loop), 
 //		 .dropped_frame(dropped_frame), 
 //		 .misaligned_frame(misaligned_frame), 
 //		 .crc16_err(crc16_err), 
@@ -114,6 +112,7 @@ module Nexys3_USB_Interface(
 		 );
 
 	// state machine behaviour
+	/* 
 	reg [7:0] data1 = 8'b1111_1010;
 	reg [7:0] data2 = 8'b1111_1010;
 	reg [7:0] data3 = 8'b1111_1010;
@@ -122,9 +121,26 @@ module Nexys3_USB_Interface(
 	initial begin
 		iterator = 0;
 	end
+	
 	always @(posedge clk_i) begin
-		iterator =1 ;
-		ep1_din
+		if 			(iterator == 0) begin 
+			ep1_we <= 1;
+			ep1_din <= data1;
+		end else if (iterator == 1) begin
+			ep1_we <= 1;
+			ep1_din <= data2;
+		end else if (iterator == 2) begin
+			ep1_we <= 1;
+			ep1_din <= data3;
+		end else if (iterator == 3) begin
+			ep1_we <= 1;
+			ep1_din <= data4;
+			iterator = 0;
+		end else begin 
+			ep1_we <= 0;
+			iterator = 0;
+		end
+		iterator = iterator + 1;
 	end
-
+	*/
 endmodule

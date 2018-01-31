@@ -57,13 +57,16 @@
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Device_par.xrpt"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="Device_summary.html"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="Device_summary.xml"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Device_tb_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Device_tb_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="Device_tb_isim_beh.wdb"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Device_tb_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="Device_usage.xml"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Device_xst.xrpt"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="MEM_tb_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_VERILOG_INSTTEMPLATE" xil_pn:name="Memory.tfi"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Memory_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Memory_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="Memory_isim_beh.wdb"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="PHY_tb_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_VERILOG_INSTTEMPLATE" xil_pn:name="Physical_Interface.tfi"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
@@ -122,20 +125,26 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1516857435" xil_pn:in_ck="7985494710123137990" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1516857435">
+    <transform xil_pn:end_ts="1517371255" xil_pn:in_ck="1288336037939428264" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1517371255">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Device.v"/>
       <outfile xil_pn:name="Device_tb.v"/>
+      <outfile xil_pn:name="MEM_tb.v"/>
       <outfile xil_pn:name="Memory.v"/>
+      <outfile xil_pn:name="PHY_tb.v"/>
       <outfile xil_pn:name="inout.v"/>
       <outfile xil_pn:name="input_output_tb.v"/>
     </transform>
-    <transform xil_pn:end_ts="1516855276" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="4855282356413351612" xil_pn:start_ts="1516855276">
+    <transform xil_pn:end_ts="1517371123" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="4391469290034157648" xil_pn:start_ts="1517371123">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1516855276" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="5797451535009273466" xil_pn:start_ts="1516855276">
+    <transform xil_pn:end_ts="1517371123" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-4930751959641190386" xil_pn:start_ts="1517371123">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -143,33 +152,44 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1516857435" xil_pn:in_ck="7985494710123137990" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1516857435">
+    <transform xil_pn:end_ts="1517371255" xil_pn:in_ck="1288336037939428264" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1517371255">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Device.v"/>
       <outfile xil_pn:name="Device_tb.v"/>
+      <outfile xil_pn:name="MEM_tb.v"/>
       <outfile xil_pn:name="Memory.v"/>
+      <outfile xil_pn:name="PHY_tb.v"/>
       <outfile xil_pn:name="inout.v"/>
       <outfile xil_pn:name="input_output_tb.v"/>
     </transform>
-    <transform xil_pn:end_ts="1516857441" xil_pn:in_ck="7985494710123137990" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="9080727622341739575" xil_pn:start_ts="1516857435">
+    <transform xil_pn:end_ts="1517371259" xil_pn:in_ck="1288336037939428264" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-1430616550100830465" xil_pn:start_ts="1517371255">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="Device_tb_beh.prj"/>
-      <outfile xil_pn:name="Device_tb_isim_beh.exe"/>
+      <outfile xil_pn:name="Memory_beh.prj"/>
+      <outfile xil_pn:name="Memory_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1516857442" xil_pn:in_ck="6969232185018887256" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-4823660958694950086" xil_pn:start_ts="1516857441">
+    <transform xil_pn:end_ts="1517371260" xil_pn:in_ck="-2586116419056483656" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="2977399777060038882" xil_pn:start_ts="1517371259">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="Device_tb_isim_beh.wdb"/>
+      <outfile xil_pn:name="Memory_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
     </transform>

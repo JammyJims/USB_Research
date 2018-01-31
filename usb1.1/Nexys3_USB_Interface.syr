@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.17 secs
+Total CPU time to Xst completion: 0.22 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.17 secs
+Total CPU time to Xst completion: 0.22 secs
  
 --> Reading design: Nexys3_USB_Interface.prj
 
@@ -186,7 +186,6 @@ Parsing module <Nexys3_USB_Interface>.
 WARNING:HDLCompiler:1016 - "C:\Users\root\Desktop\USB_Research\usb1.1\Nexys3_USB_Interface.v" Line 73: Port phy_tx_mode is not connected to this instance
 
 Elaborating module <Nexys3_USB_Interface>.
-WARNING:HDLCompiler:872 - "C:\Users\root\Desktop\USB_Research\usb1.1\Nexys3_USB_Interface.v" Line 66: Using initial value of rx_d since it is never assigned
 
 Elaborating module <usb1_top>.
 
@@ -291,9 +290,10 @@ WARNING:HDLCompiler:189 - "C:\Users\root\Desktop\USB_Research\usb1.1\Nexys3_USB_
 WARNING:HDLCompiler:1127 - "C:\Users\root\Desktop\USB_Research\usb1.1\Nexys3_USB_Interface.v" Line 96: Assignment to ep2_dout ignored, since the identifier is never used
 WARNING:HDLCompiler:189 - "C:\Users\root\Desktop\USB_Research\usb1.1\Nexys3_USB_Interface.v" Line 98: Size mismatch in connection of port <ep2_stat>. Formal port size is 4-bit while actual signal size is 1-bit.
 WARNING:HDLCompiler:1127 - "C:\Users\root\Desktop\USB_Research\usb1.1\Nexys3_USB_Interface.v" Line 98: Assignment to ep2_stat ignored, since the identifier is never used
-WARNING:HDLCompiler:634 - "C:\Users\root\Desktop\USB_Research\usb1.1\Nexys3_USB_Interface.v" Line 44: Net <ep1_din> does not have a driver.
-WARNING:HDLCompiler:634 - "C:\Users\root\Desktop\USB_Research\usb1.1\Nexys3_USB_Interface.v" Line 45: Net <ep1_we> does not have a driver.
-WARNING:HDLCompiler:634 - "C:\Users\root\Desktop\USB_Research\usb1.1\Nexys3_USB_Interface.v" Line 48: Net <ep2_re> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\root\Desktop\USB_Research\usb1.1\Nexys3_USB_Interface.v" Line 39: Net <rx_d> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\root\Desktop\USB_Research\usb1.1\Nexys3_USB_Interface.v" Line 47: Net <ep1_din> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\root\Desktop\USB_Research\usb1.1\Nexys3_USB_Interface.v" Line 48: Net <ep1_we> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\root\Desktop\USB_Research\usb1.1\Nexys3_USB_Interface.v" Line 51: Net <ep2_re> does not have a driver.
 WARNING:HDLCompiler:552 - "C:\Users\root\Desktop\USB_Research\usb1.1\Nexys3_USB_Interface.v" Line 73: Input port phy_tx_mode is not connected on this instance
 
 =========================================================================
@@ -329,11 +329,15 @@ INFO:Xst:3210 - "C:\Users\root\Desktop\USB_Research\usb1.1\Nexys3_USB_Interface.
 INFO:Xst:3210 - "C:\Users\root\Desktop\USB_Research\usb1.1\Nexys3_USB_Interface.v" line 73: Output port <v_set_feature> of the instance <usb> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "C:\Users\root\Desktop\USB_Research\usb1.1\Nexys3_USB_Interface.v" line 73: Output port <iso_idle> of the instance <usb> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "C:\Users\root\Desktop\USB_Research\usb1.1\Nexys3_USB_Interface.v" line 73: Output port <bulk_idle> of the instance <usb> is unconnected or connected to loadless signal.
+WARNING:Xst:2935 - Signal 'Led<5:0>', unconnected in block 'Nexys3_USB_Interface', is tied to its initial value (001111).
+WARNING:Xst:653 - Signal <rx_d> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <ep1_din> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <ep1_we> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <ep2_re> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 1-bit tristate buffer for signal <dp> created at line 55
+    Found 1-bit tristate buffer for signal <dn> created at line 57
     Summary:
-	inferred   2 Multiplexer(s).
+	inferred   2 Tristate(s).
 Unit <Nexys3_USB_Interface> synthesized.
 
 Synthesizing Unit <usb1_top>.
@@ -362,7 +366,7 @@ Synthesizing Unit <usb_phy>.
     Related source file is "C:\Users\root\Desktop\USB_Research\usb1.1\usb_phy.v".
     Found 1-bit register for signal <usb_rst>.
     Found 5-bit register for signal <rst_cnt>.
-    Found 5-bit adder for signal <rst_cnt[4]_GND_3_o_add_2_OUT> created at line 173.
+    Found 5-bit adder for signal <rst_cnt[4]_GND_5_o_add_2_OUT> created at line 173.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred   6 D-type flip-flop(s).
@@ -414,8 +418,8 @@ Synthesizing Unit <usb_tx_phy>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 3-bit adder for signal <bit_cnt[2]_GND_4_o_add_6_OUT> created at line 207.
-    Found 3-bit adder for signal <one_cnt[2]_GND_4_o_add_23_OUT> created at line 258.
+    Found 3-bit adder for signal <bit_cnt[2]_GND_6_o_add_6_OUT> created at line 207.
+    Found 3-bit adder for signal <one_cnt[2]_GND_6_o_add_23_OUT> created at line 258.
     Found 1-bit 8-to-1 multiplexer for signal <bit_cnt[2]_hold_reg_d[7]_Mux_12_o> created at line 214.
     Summary:
 	inferred   2 Adder/Subtractor(s).
@@ -489,8 +493,8 @@ Synthesizing Unit <usb_rx_phy>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 3-bit adder for signal <one_cnt[2]_GND_5_o_add_48_OUT> created at line 396.
-    Found 3-bit adder for signal <bit_cnt[2]_GND_5_o_add_61_OUT> created at line 429.
+    Found 3-bit adder for signal <one_cnt[2]_GND_7_o_add_48_OUT> created at line 396.
+    Found 3-bit adder for signal <bit_cnt[2]_GND_7_o_add_61_OUT> created at line 429.
     WARNING:Xst:2404 -  FFs/Latches <rxd_s0<0:0>> (without init value) have a constant value of 0 in block <usb_rx_phy>.
     WARNING:Xst:2404 -  FFs/Latches <rxd_s1<0:0>> (without init value) have a constant value of 0 in block <usb_rx_phy>.
     WARNING:Xst:2404 -  FFs/Latches <rxd_s<0:0>> (without init value) have a constant value of 0 in block <usb_rx_phy>.
@@ -530,8 +534,8 @@ INFO:Xst:3210 - "C:\Users\root\Desktop\USB_Research\usb1.1\usb1_pl.v" line 354: 
     Found 1-bit register for signal <hms_clk>.
     Found 8-bit register for signal <rx_data_st>.
     Found 1-bit register for signal <ctrl_setup>.
-    Found 12-bit adder for signal <sof_time[11]_GND_7_o_add_11_OUT> created at line 236.
-    Found 5-bit adder for signal <hms_cnt[4]_GND_7_o_add_16_OUT> created at line 245.
+    Found 12-bit adder for signal <sof_time[11]_GND_9_o_add_11_OUT> created at line 236.
+    Found 5-bit adder for signal <hms_cnt[4]_GND_9_o_add_16_OUT> created at line 245.
     Found 7-bit comparator equal for signal <fsel> created at line 256
     Summary:
 	inferred   2 Adder/Subtractor(s).
@@ -661,10 +665,10 @@ Synthesizing Unit <usb1_idma>.
     Found 1-bit register for signal <ff_we1>.
     Found 1-bit register for signal <ff_we>.
     Found 6-bit register for signal <ec>.
-    Found 9-bit subtractor for signal <sizd_c[8]_GND_14_o_sub_36_OUT> created at line 297.
-    Found 6-bit adder for signal <ec[5]_GND_14_o_add_2_OUT> created at line 177.
-    Found 6-bit adder for signal <rc_cnt[5]_GND_14_o_add_11_OUT> created at line 199.
-    Found 8-bit adder for signal <rx_cnt_r[7]_GND_14_o_add_29_OUT> created at line 277.
+    Found 9-bit subtractor for signal <sizd_c[8]_GND_16_o_sub_36_OUT> created at line 297.
+    Found 6-bit adder for signal <ec[5]_GND_16_o_add_2_OUT> created at line 177.
+    Found 6-bit adder for signal <rc_cnt[5]_GND_16_o_add_11_OUT> created at line 199.
+    Found 8-bit adder for signal <rx_cnt_r[7]_GND_16_o_add_29_OUT> created at line 277.
     Summary:
 	inferred   4 Adder/Subtractor(s).
 	inferred  52 D-type flip-flop(s).
@@ -753,9 +757,9 @@ INFO:Xst:1799 - State 0001000000 is never reached in FSM <state>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 8-bit adder for signal <rx_ack_to_cnt[7]_GND_17_o_add_132_OUT> created at line 530.
-    Found 8-bit adder for signal <tx_data_to_cnt[7]_GND_17_o_add_139_OUT> created at line 547.
-    Found 2-bit 8-to-1 multiplexer for signal <_n0665> created at line 311.
+    Found 8-bit adder for signal <rx_ack_to_cnt[7]_GND_19_o_add_132_OUT> created at line 530.
+    Found 8-bit adder for signal <tx_data_to_cnt[7]_GND_19_o_add_139_OUT> created at line 547.
+    Found 2-bit 8-to-1 multiplexer for signal <_n0663> created at line 311.
     Summary:
 	inferred   2 Adder/Subtractor(s).
 	inferred  59 D-type flip-flop(s).
@@ -869,8 +873,8 @@ WARNING:Xst:647 - Input <ep0_stat<3:3>> is never used. This port will be preserv
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 7-bit subtractor for signal <rom_size[6]_GND_19_o_sub_36_OUT> created at line 283.
-    Found 7-bit adder for signal <rom_adr[6]_GND_19_o_add_29_OUT> created at line 276.
+    Found 7-bit subtractor for signal <rom_size[6]_GND_21_o_sub_36_OUT> created at line 283.
+    Found 7-bit adder for signal <rom_adr[6]_GND_21_o_add_29_OUT> created at line 276.
     Found 4x8-bit Read Only RAM for signal <_n0417>
     Found 7-bit comparator greater for signal <wLength[6]_rom_size_dd[6]_LessThan_26_o> created at line 266
     Summary:
@@ -885,7 +889,7 @@ Unit <usb1_ctrl> synthesized.
 Synthesizing Unit <usb1_rom1>.
     Related source file is "C:\Users\root\Desktop\USB_Research\usb1.1\usb1_rom1.v".
     Found 8-bit register for signal <dout>.
-    Found 128x8-bit Read Only RAM for signal <adr[6]_X_16_o_wide_mux_1_OUT>
+    Found 128x8-bit Read Only RAM for signal <adr[6]_X_18_o_wide_mux_1_OUT>
     Summary:
 	inferred   1 RAM(s).
 	inferred   8 D-type flip-flop(s).
@@ -916,11 +920,11 @@ Synthesizing Unit <usb1_fifo_1>.
     Found 6-bit adder for signal <wp_pl1> created at line 138.
     Found 6-bit adder for signal <rp_pl1> created at line 147.
     Found 7-bit adder for signal <cnt[6]_PWR_20_o_add_18_OUT> created at line 168.
-    Found 7-bit adder for signal <cnt[6]_GND_22_o_add_19_OUT> created at line 170.
+    Found 7-bit adder for signal <cnt[6]_GND_24_o_add_19_OUT> created at line 170.
     Found 6-bit comparator equal for signal <wp[5]_rp[5]_equal_15_o> created at line 151
     Found 6-bit comparator equal for signal <wp_pl1[5]_rp[5]_equal_17_o> created at line 159
     Found 7-bit comparator greater for signal <empty_n> created at line 172
-    Found 7-bit comparator lessequal for signal <cnt[6]_GND_22_o_LessThan_27_o> created at line 173
+    Found 7-bit comparator lessequal for signal <cnt[6]_GND_24_o_LessThan_27_o> created at line 173
     Summary:
 	inferred   3 Adder/Subtractor(s).
 	inferred  20 D-type flip-flop(s).
@@ -965,11 +969,11 @@ Synthesizing Unit <usb1_fifo_2>.
     Found 9-bit adder for signal <wp_pl1> created at line 138.
     Found 9-bit adder for signal <rp_pl1> created at line 147.
     Found 10-bit adder for signal <cnt[9]_PWR_23_o_add_18_OUT> created at line 168.
-    Found 10-bit adder for signal <cnt[9]_GND_25_o_add_19_OUT> created at line 170.
+    Found 10-bit adder for signal <cnt[9]_GND_27_o_add_19_OUT> created at line 170.
     Found 9-bit comparator equal for signal <wp[8]_rp[8]_equal_15_o> created at line 151
     Found 9-bit comparator equal for signal <wp_pl1[8]_rp[8]_equal_17_o> created at line 159
     Found 10-bit comparator greater for signal <empty_n> created at line 172
-    Found 10-bit comparator lessequal for signal <cnt[9]_GND_25_o_LessThan_27_o> created at line 173
+    Found 10-bit comparator lessequal for signal <cnt[9]_GND_27_o_LessThan_27_o> created at line 173
     Summary:
 	inferred   3 Adder/Subtractor(s).
 	inferred  29 D-type flip-flop(s).
@@ -1023,11 +1027,11 @@ Synthesizing Unit <usb1_fifo_3>.
     Found 8-bit adder for signal <wp_pl1> created at line 138.
     Found 8-bit adder for signal <rp_pl1> created at line 147.
     Found 9-bit adder for signal <cnt[8]_PWR_27_o_add_18_OUT> created at line 168.
-    Found 9-bit adder for signal <cnt[8]_GND_29_o_add_19_OUT> created at line 170.
+    Found 9-bit adder for signal <cnt[8]_GND_31_o_add_19_OUT> created at line 170.
     Found 8-bit comparator equal for signal <wp[7]_rp[7]_equal_15_o> created at line 151
     Found 8-bit comparator equal for signal <wp_pl1[7]_rp[7]_equal_17_o> created at line 159
     Found 9-bit comparator greater for signal <empty_n> created at line 172
-    Found 9-bit comparator lessequal for signal <cnt[8]_GND_29_o_LessThan_27_o> created at line 173
+    Found 9-bit comparator lessequal for signal <cnt[8]_GND_31_o_LessThan_27_o> created at line 173
     Summary:
 	inferred   3 Adder/Subtractor(s).
 	inferred  26 D-type flip-flop(s).
@@ -1082,7 +1086,7 @@ Synthesizing Unit <usb1_fifo_4>.
     Found 7-bit adder for signal <cnt[6]_PWR_31_o_add_18_OUT> created at line 168.
     Found 6-bit comparator equal for signal <empty> created at line 151
     Found 7-bit comparator greater for signal <empty_n> created at line 172
-    Found 7-bit comparator lessequal for signal <cnt[6]_GND_33_o_LessThan_27_o> created at line 173
+    Found 7-bit comparator lessequal for signal <cnt[6]_GND_35_o_LessThan_27_o> created at line 173
     Summary:
 	inferred   2 Adder/Subtractor(s).
 	inferred  19 D-type flip-flop(s).
@@ -1137,8 +1141,8 @@ Macro Statistics
  9-bit comparator equal                                : 4
  9-bit comparator greater                              : 2
  9-bit comparator lessequal                            : 2
-# Multiplexers                                         : 116
- 1-bit 2-to-1 multiplexer                              : 59
+# Multiplexers                                         : 114
+ 1-bit 2-to-1 multiplexer                              : 57
  1-bit 8-to-1 multiplexer                              : 1
  10-bit 2-to-1 multiplexer                             : 4
  2-bit 2-to-1 multiplexer                              : 4
@@ -1149,6 +1153,8 @@ Macro Statistics
  7-bit 2-to-1 multiplexer                              : 8
  8-bit 2-to-1 multiplexer                              : 19
  9-bit 2-to-1 multiplexer                              : 9
+# Tristates                                            : 2
+ 1-bit tristate buffer                                 : 2
 # FSMs                                                 : 7
 # Xors                                                 : 56
  1-bit xor2                                            : 27
@@ -1423,7 +1429,7 @@ The following registers are absorbed into counter <sof_time>: 1 register on sign
 Unit <usb1_pl> synthesized (advanced).
 
 Synthesizing (advanced) Unit <usb1_rom1>.
-INFO:Xst:3226 - The RAM <Mram_adr[6]_X_16_o_wide_mux_1_OUT> will be implemented as a BLOCK RAM, absorbing the following register(s): <dout>
+INFO:Xst:3226 - The RAM <Mram_adr[6]_X_18_o_wide_mux_1_OUT> will be implemented as a BLOCK RAM, absorbing the following register(s): <dout>
     -----------------------------------------------------------------------
     | ram_type           | Block                               |          |
     -----------------------------------------------------------------------
@@ -1501,8 +1507,8 @@ Macro Statistics
  9-bit comparator equal                                : 4
  9-bit comparator greater                              : 2
  9-bit comparator lessequal                            : 2
-# Multiplexers                                         : 92
- 1-bit 2-to-1 multiplexer                              : 56
+# Multiplexers                                         : 90
+ 1-bit 2-to-1 multiplexer                              : 54
  1-bit 8-to-1 multiplexer                              : 1
  10-bit 2-to-1 multiplexer                             : 2
  2-bit 2-to-1 multiplexer                              : 4
@@ -1532,6 +1538,9 @@ WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <wp_3> (without init
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <wp_4> (without init value) has a constant value of 0 in block <usb1_fifo_4>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <wp_5> (without init value) has a constant value of 0 in block <usb1_fifo_4>. This FF/Latch will be trimmed during the optimization process.
 INFO:Xst:2261 - The FF/Latch <append_eop_sync4> in Unit <usb_tx_phy> is equivalent to the following FF/Latch, which will be removed : <txdn> 
+INFO:Xst:2261 - The FF/Latch <rxdn_s0> in Unit <usb_rx_phy> is equivalent to the following FF/Latch, which will be removed : <rxdp_s0> 
+INFO:Xst:2261 - The FF/Latch <rxdp_s1> in Unit <usb_rx_phy> is equivalent to the following FF/Latch, which will be removed : <rxdn_s1> 
+INFO:Xst:2261 - The FF/Latch <rxdn_s_r> in Unit <usb_rx_phy> is equivalent to the following FF/Latch, which will be removed : <rxdp_s_r> 
 Analyzing FSM <MFsm> for best encoding.
 Optimizing FSM <usb/phy/i_tx_phy/FSM_0> on signal <state[1:3]> with user encoding.
 -------------------
@@ -1628,8 +1637,30 @@ Optimizing FSM <usb/u4/FSM_6> on signal <state[1:18]> with one-hot encoding.
  00001000000000000000 | 100000000000000000
 --------------------------------------------
 WARNING:Xst:1710 - FF/Latch <ep0_size_7> (without init value) has a constant value of 0 in block <usb1_ctrl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:2170 - Unit Nexys3_USB_Interface : the following signal(s) form a combinatorial loop: JA_dn.
-WARNING:Xst:2170 - Unit Nexys3_USB_Interface : the following signal(s) form a combinatorial loop: JA_dp.
+INFO:Xst:2261 - The FF/Latch <rxdp_s> in Unit <usb_rx_phy> is equivalent to the following FF/Latch, which will be removed : <rxdn_s> 
+WARNING:Xst:1710 - FF/Latch <bit_stuff_err> (without init value) has a constant value of 0 in block <usb_rx_phy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <byte_err> (without init value) has a constant value of 0 in block <usb_rx_phy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rx_active> (without init value) has a constant value of 0 in block <usb_rx_phy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <hold_reg_7> (without init value) has a constant value of 0 in block <usb_rx_phy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <one_cnt_0> (without init value) has a constant value of 0 in block <usb_rx_phy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <one_cnt_1> (without init value) has a constant value of 0 in block <usb_rx_phy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <one_cnt_2> (without init value) has a constant value of 0 in block <usb_rx_phy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <hold_reg_6> (without init value) has a constant value of 0 in block <usb_rx_phy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <shift_en> (without init value) has a constant value of 0 in block <usb_rx_phy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <hold_reg_5> (without init value) has a constant value of 0 in block <usb_rx_phy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <hold_reg_4> (without init value) has a constant value of 0 in block <usb_rx_phy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <hold_reg_3> (without init value) has a constant value of 0 in block <usb_rx_phy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <hold_reg_2> (without init value) has a constant value of 0 in block <usb_rx_phy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <hold_reg_1> (without init value) has a constant value of 0 in block <usb_rx_phy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <hold_reg_0> (without init value) has a constant value of 0 in block <usb_rx_phy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <se0_r> is unconnected in block <usb_rx_phy>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <sd_nrzi> is unconnected in block <usb_rx_phy>.
+WARNING:Xst:1710 - FF/Latch <rx_valid> (without init value) has a constant value of 0 in block <usb_rx_phy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rx_valid1> (without init value) has a constant value of 0 in block <usb_rx_phy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <bit_cnt_2> (without init value) has a constant value of 0 in block <usb_rx_phy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <rx_valid_r> of sequential type is unconnected in block <usb_rx_phy>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <bit_cnt_0> is unconnected in block <usb_rx_phy>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <bit_cnt_1> is unconnected in block <usb_rx_phy>.
 
 Optimizing unit <Nexys3_USB_Interface> ...
 
@@ -1638,6 +1669,21 @@ Optimizing unit <usb1_top> ...
 Optimizing unit <usb_tx_phy> ...
 
 Optimizing unit <usb_rx_phy> ...
+WARNING:Xst:1710 - FF/Latch <sync_err> (without init value) has a constant value of 0 in block <usb_rx_phy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <fs_state_FSM_FFd3> (without init value) has a constant value of 0 in block <usb_rx_phy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <fs_state_FSM_FFd2> (without init value) has a constant value of 0 in block <usb_rx_phy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <fs_state_FSM_FFd1> (without init value) has a constant value of 0 in block <usb_rx_phy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <se0_s> is unconnected in block <usb_rx_phy>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <rxdn_s_r> is unconnected in block <usb_rx_phy>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <rxdp_s> is unconnected in block <usb_rx_phy>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <rx_en> is unconnected in block <usb_rx_phy>.
+WARNING:Xst:1710 - FF/Latch <sync_err> (without init value) has a constant value of 0 in block <usb_rx_phy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <fs_state_FSM_FFd3> (without init value) has a constant value of 0 in block <usb_rx_phy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <fs_state_FSM_FFd2> (without init value) has a constant value of 0 in block <usb_rx_phy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <fs_state_FSM_FFd1> (without init value) has a constant value of 0 in block <usb_rx_phy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <se0_s> is unconnected in block <usb_rx_phy>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <rxdn_s_r> is unconnected in block <usb_rx_phy>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <rxdp_s> is unconnected in block <usb_rx_phy>.
 
 Optimizing unit <usb1_utmi_if> ...
 
@@ -1662,9 +1708,58 @@ Optimizing unit <usb1_fifo_1> ...
 Optimizing unit <usb1_fifo_2> ...
 
 Optimizing unit <usb1_fifo_3> ...
-WARNING:Xst:1710 - FF/Latch <usb/u11/f1/wp_8> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u11/f1/gb> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <usb/u1/u2/rc_cnt_2> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u2/rc_cnt_1> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u2/rc_cnt_0> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u2/ep_full_latched> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u2/send_data_r> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u2/rx_data_done_r> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u2/tx_dma_en_r> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u1/send_data_r> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/state_FSM_FFd1> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/state_FSM_FFd17> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/funct_adr_6> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/funct_adr_5> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/funct_adr_4> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/funct_adr_3> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/funct_adr_2> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/funct_adr_1> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/funct_adr_0> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/le_1> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u12/f0/cnt_9> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u12/f0/cnt_8> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u0/crc16_sum_0> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u0/rxv2> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u0/rxv1> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u0/token_valid_str1> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u3/pid_seq_err> (without init value) has a constant value of 1 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u3/out_token> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u3/in_token> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u3/setup_token> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u3/this_dpid_1> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u3/this_dpid_0> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u3/next_dpid_1> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u3/next_dpid_0> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u2/ec_5> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u2/ec_4> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u2/ec_3> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u2/ec_2> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u2/ec_1> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u2/ec_0> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u2/rc_cnt_5> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u2/rc_cnt_4> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u2/rc_cnt_3> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u14/f0/rp_3> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u14/f0/wp_7> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u14/f0/wp_6> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u14/f0/wp_5> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u14/f0/wp_4> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u14/f0/wp_3> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u14/f0/wp_2> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u14/f0/wp_1> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u14/f0/wp_0> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u14/f0/gb> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u13/f1/rp_3> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u13/f1/wp_7> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u13/f1/wp_6> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u13/f1/wp_5> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
@@ -1674,6 +1769,154 @@ WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u13/f1/wp_2> (w
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u13/f1/wp_1> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u13/f1/wp_0> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u13/f1/gb> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u12/f0/cnt_7> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u12/f0/cnt_6> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u12/f0/cnt_5> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u12/f0/cnt_4> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u12/f0/cnt_3> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u12/f0/cnt_2> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u12/f0/cnt_1> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u12/f0/cnt_0> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u11/f1/cnt_9> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u11/f1/cnt_8> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u11/f1/cnt_7> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u11/f1/cnt_6> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u11/f1/cnt_5> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u11/f1/cnt_4> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u11/f1/cnt_3> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u11/f1/cnt_2> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u11/f1/cnt_1> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u11/f1/cnt_0> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u11/f1/rp_8> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u11/f1/wp_8> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u11/f1/gb> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u0/crc16_sum_6> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u0/crc16_sum_7> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u0/crc16_sum_8> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u0/crc16_sum_9> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u0/crc16_sum_15> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u0/data_valid0> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u0/token_valid_r1> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u0/state_FSM_FFd2> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u0/state_FSM_FFd1> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/ctrl_out> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/ctrl_in> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/frame_no_we_r> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/ctrl_setup> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u0/rx_data_0> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u0/rx_data_1> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u0/rx_data_2> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u0/rx_data_3> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u0/rx_data_4> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u0/rx_data_5> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u0/rx_data_6> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u0/rx_data_7> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u0/rx_active> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u0/rx_err> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u0/rx_valid> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u15/f1/rp_0> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u15/f1/rp_1> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u15/f1/rp_2> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u15/f1/rp_3> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u15/f1/rp_4> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u15/f1/rp_5> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u0/crc16_sum_1> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u0/crc16_sum_2> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u0/crc16_sum_3> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u0/crc16_sum_4> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u0/crc16_sum_5> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u0/token1_6> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u0/token1_5> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u1/send_data_r2> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u0/token1_4> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u2/mwe_r> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u0/token1_3> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u0/token1_2> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u0/token1_1> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u2/tx_dma_en_r1> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u0/token1_0> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u0/token0_7> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u0/token0_6> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u0/token1_7> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u0/pid_2> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/hdr1_1> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u0/pid_3> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u0/d0_0> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u0/d0_1> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u0/d0_2> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u0/d0_3> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u0/d0_4> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u0/d0_5> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u0/d0_6> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u0/d0_7> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u0/rx_active_r> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u3/ep5_dpid_1> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u3/ep5_dpid_0> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u3/ep7_dpid_1> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u3/ep7_dpid_0> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u3/ep3_dpid_1> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u3/ep3_dpid_0> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u3/ep2_dpid_1> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u3/ep2_dpid_0> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u3/ep4_dpid_1> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u3/ep4_dpid_0> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u3/ep0_dpid_1> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u3/ep0_dpid_0> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u3/ep1_dpid_1> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u3/ep1_dpid_0> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u3/ep6_dpid_0> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u3/ep6_dpid_1> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u0/pid_0> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u0/pid_1> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u0/token0_0> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u0/token0_1> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u0/token0_2> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u0/token0_3> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u0/crc16_sum_14> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u0/crc16_sum_13> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u0/crc16_sum_12> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u0/crc16_sum_11> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u0/crc16_sum_10> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u0/token0_5> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u0/token0_4> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/frame_no_r_5> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/frame_no_r_6> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/frame_no_r_7> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/frame_no_r_8> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/frame_no_r_9> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/frame_no_r_10> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u0/d1_7> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u0/d1_6> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u2/tx_dma_en_r2> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u0/d1_5> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u0/d1_4> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u0/d1_3> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u0/d1_2> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u0/d1_1> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u0/d1_0> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/frame_no_r_4> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/frame_no_r_3> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/frame_no_r_2> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/frame_no_r_1> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/frame_no_r_0> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u3/uc_dpd_0> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u3/uc_dpd_1> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u0/d2_0> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u0/d2_1> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u0/d2_2> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u0/d2_3> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u0/d2_4> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u0/d2_5> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u0/d2_6> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u0/d2_7> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/rx_data_st_0> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/rx_data_st_1> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/rx_data_st_2> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/rx_data_st_3> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/rx_data_st_4> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/rx_data_st_5> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/rx_data_st_6> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/rx_data_st_7> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2677 - Node <usb/u15/f1/cnt_6> of sequential type is unconnected in block <Nexys3_USB_Interface>.
 WARNING:Xst:2677 - Node <usb/u15/f1/cnt_5> of sequential type is unconnected in block <Nexys3_USB_Interface>.
 WARNING:Xst:2677 - Node <usb/u15/f1/cnt_4> of sequential type is unconnected in block <Nexys3_USB_Interface>.
@@ -1800,81 +2043,347 @@ WARNING:Xst:2677 - Node <usb/u13/f1/cnt_3> of sequential type is unconnected in 
 WARNING:Xst:2677 - Node <usb/u13/f1/cnt_2> of sequential type is unconnected in block <Nexys3_USB_Interface>.
 WARNING:Xst:2677 - Node <usb/u13/f1/cnt_1> of sequential type is unconnected in block <Nexys3_USB_Interface>.
 WARNING:Xst:2677 - Node <usb/u13/f1/cnt_0> of sequential type is unconnected in block <Nexys3_USB_Interface>.
-WARNING:Xst:1710 - FF/Latch <usb/u11/f1/wp_7> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u11/f1/wp_6> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u11/f1/wp_5> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u11/f1/wp_4> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u11/f1/wp_3> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u11/f1/wp_2> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u11/f1/wp_1> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u11/f1/wp_0> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u14/f0/rp_7> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u14/f0/rp_6> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u14/f0/rp_5> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u14/f0/rp_4> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u14/f0/rp_2> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u14/f0/rp_1> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u14/f0/rp_0> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <usb/u13/f1/rp_0> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u13/f1/rp_1> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u13/f1/rp_2> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u13/f1/rp_3> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u13/f1/rp_4> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u13/f1/rp_5> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u13/f1/rp_6> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u13/f1/rp_7> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u11/f1/rp_0> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u11/f1/rp_1> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u11/f1/rp_2> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u11/f1/rp_3> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u11/f1/rp_4> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u11/f1/rp_5> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u11/f1/rp_6> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u11/f1/rp_7> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u11/f1/rp_8> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u2/rc_cnt_5> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u15/f1/rp_0> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u15/f1/rp_1> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u15/f1/rp_2> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u15/f1/rp_3> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u15/f1/rp_4> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u15/f1/rp_5> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <usb/u1/u3/uc_dpd_set> is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <usb/u1/u3/match_r> is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <usb/u1/u2/ep_empty_r> is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <usb/u1/u2/sizd_is_zero> is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <usb/u4/set_adr_pending> is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <usb/u4/hdr2_6> is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <usb/u4/funct_adr_tmp_6> is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <usb/u4/hdr2_5> is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <usb/u4/funct_adr_tmp_5> is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <usb/u4/hdr2_4> is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <usb/u4/funct_adr_tmp_4> is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <usb/u4/funct_adr_tmp_3> is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <usb/u4/funct_adr_tmp_2> is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <usb/u4/funct_adr_tmp_1> is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <usb/u4/funct_adr_tmp_0> is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:1710 - FF/Latch <usb/u4/get_config> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/set_interface> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/set_config> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/get_interface> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/synch_frame> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/v_set_int> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/le_0> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/le_2> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/le_3> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/le_4> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/le_5> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/le_6> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/le_7> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/hdr1_0> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/hdr1_2> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/hdr1_3> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/hdr1_4> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/hdr1_5> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/hdr1_6> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/hdr1_7> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u10/f1/rp_0> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u10/f1/rp_1> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u10/f1/rp_2> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u10/f1/rp_3> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u10/f1/rp_4> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u10/f1/rp_5> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u10/f0/gb> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u10/f0/wp_5> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u10/f0/rp_0> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/ep0_dout_1> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/ep0_dout_2> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/ep0_dout_3> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/ep0_dout_4> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/ep0_dout_5> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/ep0_dout_6> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/ep0_dout_7> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/clear_feature> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/set_address> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/get_descriptor> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/set_descriptor> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/rom_sel_r> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/ep0_size_0> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/ep0_size_2> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/ep0_size_3> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/ep0_size_4> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/ep0_size_5> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/state_FSM_FFd14> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/state_FSM_FFd15> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/state_FSM_FFd10> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/state_FSM_FFd9> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/state_FSM_FFd8> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/state_FSM_FFd7> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/state_FSM_FFd6> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/state_FSM_FFd5> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/state_FSM_FFd4> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u1/zero_length_r> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u1/state_FSM_FFd2> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u2/ff/wp> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u2/ff/rp> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u2/ff_we1> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u2/ep_empty_latched> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/hdr6_5> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/hdr6_4> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/hdr6_6> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/fifo_we_rom_r2> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u2/ff_we> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/hdr2_1> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/hdr2_0> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/hdr2_2> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/hdr2_3> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/hdr3_0> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/hdr3_1> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/hdr3_2> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/hdr3_3> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/hdr3_4> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/hdr0_6> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/hdr0_5> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/hdr0_4> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/hdr0_3> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/hdr0_2> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/hdr0_1> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/hdr0_0> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/hdr3_5> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/hdr3_6> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/hdr3_7> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/hdr6_0> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/hdr6_1> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/hdr6_2> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/hdr6_3> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/configured> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/v_set_feature> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/v_get_status> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <usb/u15/f1/u0/Mram_mem> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/u4/state_FSM_FFd3> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/u11/f1/rp_7> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/u11/f1/rp_6> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/u11/f1/rp_5> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/u11/f1/rp_4> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/u11/f1/rp_3> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/u11/f1/rp_2> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/u11/f1/rp_1> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/u11/f1/rp_0> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/u11/f1/u0/Mram_mem> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/u11/f1/wp_7> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/u11/f1/wp_6> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/u11/f1/wp_5> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/u11/f1/wp_4> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/u11/f1/wp_3> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/u11/f1/wp_2> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/u11/f1/wp_1> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/u11/f1/wp_0> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/u14/f0/rp_7> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/u14/f0/rp_6> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/u14/f0/rp_5> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/u14/f0/rp_4> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/u14/f0/rp_2> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/u14/f0/rp_1> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/u14/f0/rp_0> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/u13/f1/rp_7> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/u13/f1/rp_6> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/u13/f1/rp_5> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/u13/f1/rp_4> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/u13/f1/rp_2> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/u13/f1/rp_1> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/u13/f1/rp_0> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/u13/f1/u0/Mram_mem> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <usb/u10/f0/u0/Mram_mem> is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:1710 - FF/Latch <usb/u4/state_FSM_FFd11> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/rom_size_0> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/rom_size_1> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/rom_size_2> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/rom_size_3> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/rom_size_4> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/rom_size_5> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/rom_size_6> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u1/tx_valid_r1> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u1/crc16_add> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u2/sizd_c_8> (without init value) has a constant value of 1 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u2/sizd_c_7> (without init value) has a constant value of 1 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u2/sizd_c_6> (without init value) has a constant value of 1 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u2/sizd_c_5> (without init value) has a constant value of 1 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u2/sizd_c_4> (without init value) has a constant value of 1 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u2/sizd_c_3> (without init value) has a constant value of 1 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u2/sizd_c_2> (without init value) has a constant value of 1 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u2/sizd_c_1> (without init value) has a constant value of 1 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u2/sizd_c_0> (without init value) has a constant value of 1 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u1/state_FSM_FFd1> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u1/tx_valid_r> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u1/crc16_0> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u1/crc16_1> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u1/crc16_2> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u1/crc16_3> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u1/crc16_4> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u1/crc16_5> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u1/crc16_6> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u1/crc16_7> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u1/crc16_8> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u1/crc16_9> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u1/crc16_13> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u1/crc16_15> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u1/crc16_10> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u1/crc16_11> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u1/crc16_12> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u1/crc16_14> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <usb/u4/rom_adr_6> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/u4/rom_adr_5> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/u4/rom_adr_4> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/u4/rom_adr_3> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/u4/rom_adr_2> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/u4/rom_adr_1> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/u4/rom_adr_0> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/u10/f0/rp_5> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/u10/f0/rp_4> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/u10/f0/rp_3> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/u10/f0/rp_2> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/u10/f0/rp_1> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/u10/f0/wp_4> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/u10/f0/wp_3> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/u10/f0/wp_2> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/u10/f0/wp_1> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/u10/f0/wp_0> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <usb/u4/ep0_size_1> is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/u4/state_FSM_FFd2> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/u4/state_FSM_FFd12> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/u4/state_FSM_FFd13> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:1710 - FF/Latch <usb/u1/u3/rx_ack_to> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u3/abort> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u3/rx_ack_to_cnt_1> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u3/rx_ack_to_cnt_2> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u3/rx_ack_to_cnt_3> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u3/rx_ack_to_cnt_4> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u3/rx_ack_to_cnt_5> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u3/rx_ack_to_cnt_6> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u3/rx_ack_to_cnt_7> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u0/DataOut_0> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u0/DataOut_1> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u0/DataOut_2> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u0/DataOut_3> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u0/DataOut_4> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u0/DataOut_5> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u0/DataOut_6> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u0/DataOut_7> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/phy/i_tx_phy/TxReady_o> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/phy/i_tx_phy/append_eop_sync3> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u10/f1/gb> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u10/f1/wp_0> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u10/f1/wp_1> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u10/f1/wp_2> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u10/f1/wp_3> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u10/f1/wp_4> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u10/f1/wp_5> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/ep0_dout_0> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/ep0_we> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/write_done_r> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/write_done> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/adv> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/get_status> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/set_feature> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/config_err> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/state_FSM_FFd18> (without init value) has a constant value of 1 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/state_FSM_FFd16> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u3/send_token> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u3/token_pid_sel_0> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u3/token_pid_sel_1> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/phy/i_tx_phy/bit_cnt_2> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/phy/i_tx_phy/one_cnt_2> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/phy/i_tx_phy/one_cnt_1> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/phy/i_tx_phy/one_cnt_0> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/phy/i_tx_phy/bit_cnt_1> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/phy/i_tx_phy/bit_cnt_0> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/phy/i_tx_phy/state_FSM_FFd1> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/phy/i_tx_phy/state_FSM_FFd2> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/phy/i_tx_phy/state_FSM_FFd3> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/phy/i_tx_phy/sd_bs_o> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/phy/i_tx_phy/sd_raw_o> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/phy/i_tx_phy/ld_data> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/phy/i_tx_phy/txoe_r1> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/phy/i_tx_phy/txoe> (without init value) has a constant value of 1 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/phy/i_tx_phy/data_done> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/phy/i_tx_phy/sft_done> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/phy/i_tx_phy/sft_done_r> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/phy/i_tx_phy/tx_ip> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/phy/i_tx_phy/append_eop> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/phy/i_tx_phy/sd_nrzi_o> (without init value) has a constant value of 1 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u0/tx_ready> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/phy/i_tx_phy/append_eop_sync4> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/hdr_done_r> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u4/send_stall> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u1/tx_first_r> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u1/send_token_r> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/phy/i_tx_phy/append_eop_sync1> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/phy/i_tx_phy/txoe_r2> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/phy/i_tx_phy/tx_ip_sync> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/phy/i_tx_phy/hold_reg_0> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/phy/i_tx_phy/hold_reg_1> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/phy/i_tx_phy/hold_reg_2> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/phy/i_tx_phy/hold_reg_3> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/phy/i_tx_phy/hold_reg_4> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/phy/i_tx_phy/hold_reg_5> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/phy/i_tx_phy/hold_reg_6> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/phy/i_tx_phy/hold_reg_7> (without init value) has a constant value of 1 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/phy/i_tx_phy/hold_reg_d_6> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/phy/i_tx_phy/hold_reg_d_7> (without init value) has a constant value of 1 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/phy/i_tx_phy/hold_reg_d_5> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/u1/u3/send_stall_r> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/phy/i_tx_phy/txdp> (without init value) has a constant value of 1 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/phy/i_tx_phy/hold_reg_d_4> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/phy/i_tx_phy/hold_reg_d_3> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/phy/i_tx_phy/hold_reg_d_2> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/phy/i_tx_phy/append_eop_sync2> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/phy/i_tx_phy/hold_reg_d_0> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <usb/phy/i_tx_phy/hold_reg_d_1> (without init value) has a constant value of 0 in block <Nexys3_USB_Interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <usb/tx_data_st_6> is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <usb/u1/u2/ff/Mram_mem21> is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <usb/tx_data_st_7> is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <usb/u1/u2/ff/Mram_mem22> is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <usb/tx_data_st_1> is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <usb/tx_data_st_0> is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <usb/tx_data_st_3> is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <usb/tx_data_st_2> is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <usb/tx_data_st_5> is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <usb/u10/f1/u0/Mram_mem> is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <usb/tx_data_st_4> is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <usb/u1/u2/ff/Mram_mem1> is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/phy/rst_cnt_4> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/phy/rst_cnt_3> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/phy/rst_cnt_1> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/phy/rst_cnt_0> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/phy/rst_cnt_2> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/phy/usb_rst> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/rst_local> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/ep_empty> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/phy/i_rx_phy/dpll_state_FSM_FFd1> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/phy/i_rx_phy/dpll_state_FSM_FFd2> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/phy/i_rx_phy/fs_ce> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/phy/i_rx_phy/fs_ce_r2> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/phy/i_rx_phy/rxdp_s1> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/phy/i_rx_phy/fs_ce_r1> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/phy/i_rx_phy/rxdn_s0> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/u0/TxValid> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/u1/u3/tx_data_to_cnt_7> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/u1/u3/tx_data_to_cnt_6> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/u1/u3/tx_data_to_cnt_5> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/u1/u3/tx_data_to_cnt_4> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/u1/u3/tx_data_to_cnt_3> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/u1/u3/tx_data_to_cnt_2> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/u1/u3/tx_data_to_cnt_1> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/u1/u3/tx_data_to_cnt_0> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/u1/u3/state_FSM_FFd1> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/u1/u3/rx_ack_to_cnt_0> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/u1/u3/state_FSM_FFd3> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/u1/u3/state_FSM_FFd2> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/u1/u3/tx_data_to> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/u1/u3/rx_ack_to_clr> of sequential type is unconnected in block <Nexys3_USB_Interface>.
+WARNING:Xst:2677 - Node <usb/u1/u2/idma_done> of sequential type is unconnected in block <Nexys3_USB_Interface>.
 
 Mapping all equations...
 Building and optimizing final netlist ...
-INFO:Xst:2399 - RAMs <usb/u11/f1/u0/Mram_mem>, <usb/u13/f1/u0/Mram_mem> are equivalent, second RAM is removed
-Found area constraint ratio of 100 (+ 5) on block Nexys3_USB_Interface, actual ratio is 9.
-FlipFlop usb/u1/u0/token0_7 has been replicated 2 time(s)
-FlipFlop usb/u1/u0/token1_0 has been replicated 2 time(s)
-FlipFlop usb/u1/u0/token1_1 has been replicated 3 time(s)
-FlipFlop usb/u1/u0/token1_2 has been replicated 2 time(s)
-FlipFlop usb/u1/u1/state_FSM_FFd2 has been replicated 1 time(s)
+Found area constraint ratio of 100 (+ 5) on block Nexys3_USB_Interface, actual ratio is 0.
 
 Final Macro Processing ...
-
-Processing Unit <Nexys3_USB_Interface> :
-	Found 2-bit shift register for signal <usb/phy/i_rx_phy/fs_ce>.
-	Found 3-bit shift register for signal <usb/u1/u0/d2_7>.
-	Found 3-bit shift register for signal <usb/u1/u0/d2_6>.
-	Found 3-bit shift register for signal <usb/u1/u0/d2_5>.
-	Found 3-bit shift register for signal <usb/u1/u0/d2_4>.
-	Found 3-bit shift register for signal <usb/u1/u0/d2_3>.
-	Found 3-bit shift register for signal <usb/u1/u0/d2_2>.
-	Found 3-bit shift register for signal <usb/u1/u0/d2_1>.
-	Found 3-bit shift register for signal <usb/u1/u0/d2_0>.
-	Found 2-bit shift register for signal <usb/u1/u2/ff_we>.
-Unit <Nexys3_USB_Interface> processed.
 
 =========================================================================
 Final Register Report
 
-Macro Statistics
-# Registers                                            : 497
- Flip-Flops                                            : 497
-# Shift Registers                                      : 10
- 2-bit shift register                                  : 2
- 3-bit shift register                                  : 8
-
+Found no macro
 =========================================================================
 
 =========================================================================
@@ -1896,39 +2405,10 @@ Top Level Output File Name         : Nexys3_USB_Interface.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 775
+# BELS                             : 2
 #      GND                         : 1
-#      INV                         : 11
-#      LUT1                        : 23
-#      LUT2                        : 64
-#      LUT3                        : 68
-#      LUT4                        : 118
-#      LUT5                        : 138
-#      LUT6                        : 253
-#      MUXCY                       : 40
-#      MUXF7                       : 13
 #      VCC                         : 1
-#      XORCY                       : 45
-# FlipFlops/Latches                : 499
-#      FD                          : 141
-#      FDC                         : 21
-#      FDCE                        : 34
-#      FDE                         : 84
-#      FDPE                        : 9
-#      FDR                         : 69
-#      FDRE                        : 120
-#      FDS                         : 2
-#      FDSE                        : 19
-# RAMS                             : 8
-#      RAM16X1D                    : 2
-#      RAM32M                      : 1
-#      RAMB8BWER                   : 5
-# Shift Registers                  : 10
-#      SRLC16E                     : 10
-# Clock Buffers                    : 1
-#      BUFGP                       : 1
-# IO Buffers                       : 11
-#      IBUF                        : 1
+# IO Buffers                       : 10
 #      OBUF                        : 10
 
 Device utilization summary:
@@ -1938,28 +2418,19 @@ Selected Device : 6slx16csg324-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             499  out of  18224     2%  
- Number of Slice LUTs:                  693  out of   9112     7%  
-    Number used as Logic:               675  out of   9112     7%  
-    Number used as Memory:               18  out of   2176     0%  
-       Number used as RAM:                8
-       Number used as SRL:               10
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    846
-   Number with an unused Flip Flop:     347  out of    846    41%  
-   Number with an unused LUT:           153  out of    846    18%  
-   Number of fully used LUT-FF pairs:   346  out of    846    40%  
-   Number of unique control sets:        48
+ Number of LUT Flip Flop pairs used:      0
+   Number with an unused Flip Flop:       0  out of      0         
+   Number with an unused LUT:             0  out of      0         
+   Number of fully used LUT-FF pairs:     0  out of      0         
+   Number of unique control sets:         0
 
 IO Utilization: 
  Number of IOs:                          12
- Number of bonded IOBs:                  12  out of    232     5%  
+ Number of bonded IOBs:                  10  out of    232     4%  
 
 Specific Feature Utilization:
- Number of Block RAM/FIFO:                3  out of     32     9%  
-    Number using Block RAM only:          3
- Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
 
 ---------------------------
 Partition Resource Summary:
@@ -1979,11 +2450,7 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
------------------------------------+------------------------+-------+
-Clock Signal                       | Clock buffer(FF name)  | Load  |
------------------------------------+------------------------+-------+
-clk_i                              | BUFGP                  | 517   |
------------------------------------+------------------------+-------+
+No clock signals found in this design
 
 Asynchronous Control Signals Information:
 ----------------------------------------
@@ -1993,9 +2460,9 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 7.402ns (Maximum Frequency: 135.103MHz)
-   Minimum input arrival time before clock: 4.612ns
-   Maximum output required time after clock: 5.431ns
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -2003,107 +2470,21 @@ Timing Details:
 All values displayed in nanoseconds (ns)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'clk_i'
-  Clock period: 7.402ns (frequency: 135.103MHz)
-  Total number of paths / destination ports: 20670 / 1092
--------------------------------------------------------------------------
-Delay:               7.402ns (Levels of Logic = 15)
-  Source:            usb/u1/u0/token1_1_1 (FF)
-  Destination:       usb/u11/f1/cnt_9 (FF)
-  Source Clock:      clk_i rising
-  Destination Clock: clk_i rising
-
-  Data Path: usb/u1/u0/token1_1_1 to usb/u11/f1/cnt_9
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDE:C->Q              6   0.525   1.306  usb/u1/u0/token1_1_1 (usb/u1/u0/token1_1_1)
-     LUT6:I1->O            6   0.254   0.984  usb/u1/u2/Mmux_ep_empty_int12 (usb/u1/u2/ep_empty_int)
-     LUT6:I4->O            1   0.250   0.000  usb/u1/u2/_n0154_inv21_SW3_G (N254)
-     MUXF7:I1->O           2   0.175   0.834  usb/u1/u2/_n0154_inv21_SW3 (N155)
-     LUT6:I4->O            9   0.250   0.976  usb/u1/u2/_n0154_inv31_1 (usb/u1/u2/_n0154_inv31)
-     LUT6:I5->O            1   0.254   0.000  usb/u11/f1/Maccum_cnt_lut<1> (usb/u11/f1/Maccum_cnt_lut<1>)
-     MUXCY:S->O            1   0.215   0.000  usb/u11/f1/Maccum_cnt_cy<1> (usb/u11/f1/Maccum_cnt_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  usb/u11/f1/Maccum_cnt_cy<2> (usb/u11/f1/Maccum_cnt_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  usb/u11/f1/Maccum_cnt_cy<3> (usb/u11/f1/Maccum_cnt_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  usb/u11/f1/Maccum_cnt_cy<4> (usb/u11/f1/Maccum_cnt_cy<4>)
-     MUXCY:CI->O           1   0.023   0.000  usb/u11/f1/Maccum_cnt_cy<5> (usb/u11/f1/Maccum_cnt_cy<5>)
-     MUXCY:CI->O           1   0.023   0.000  usb/u11/f1/Maccum_cnt_cy<6> (usb/u11/f1/Maccum_cnt_cy<6>)
-     MUXCY:CI->O           1   0.023   0.000  usb/u11/f1/Maccum_cnt_cy<7> (usb/u11/f1/Maccum_cnt_cy<7>)
-     MUXCY:CI->O           0   0.023   0.000  usb/u11/f1/Maccum_cnt_cy<8> (usb/u11/f1/Maccum_cnt_cy<8>)
-     XORCY:CI->O           1   0.206   0.682  usb/u11/f1/Maccum_cnt_xor<9> (usb/u11/f1/Result<9>)
-     LUT6:I5->O            1   0.254   0.000  usb/u11/f1/cnt_9_dpot (usb/u11/f1/cnt_9_dpot)
-     FDRE:D                    0.074          usb/u11/f1/cnt_9
-    ----------------------------------------
-    Total                      7.402ns (2.620ns logic, 4.782ns route)
-                                       (35.4% logic, 64.6% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_i'
-  Total number of paths / destination ports: 44 / 44
--------------------------------------------------------------------------
-Offset:              4.612ns (Levels of Logic = 4)
-  Source:            rst_i (PAD)
-  Destination:       usb/phy/i_tx_phy/TxReady_o (FF)
-  Destination Clock: clk_i rising
-
-  Data Path: rst_i to usb/phy/i_tx_phy/TxReady_o
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             6   1.328   0.984  rst_i_IBUF (rst_i_IBUF)
-     LUT2:I0->O            1   0.250   0.682  usb/phy/i_tx_phy/tx_ready_d_SW0 (N2)
-     LUT6:I5->O            1   0.254   0.790  usb/phy/i_tx_phy/tx_ready_d (usb/phy/i_tx_phy/tx_ready_d_0)
-     LUT2:I0->O            1   0.250   0.000  usb/phy/i_tx_phy/TxReady_o_rstpot (usb/phy/i_tx_phy/TxReady_o_rstpot)
-     FD:D                      0.074          usb/phy/i_tx_phy/TxReady_o
-    ----------------------------------------
-    Total                      4.612ns (2.156ns logic, 2.456ns route)
-                                       (46.7% logic, 53.3% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_i'
-  Total number of paths / destination ports: 4 / 2
--------------------------------------------------------------------------
-Offset:              5.431ns (Levels of Logic = 2)
-  Source:            usb/phy/i_tx_phy/txoe (FF)
-  Destination:       JA_dp (PAD)
-  Source Clock:      clk_i rising
-
-  Data Path: usb/phy/i_tx_phy/txoe to JA_dp
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDSE:C->Q             3   0.525   0.994  usb/phy/i_tx_phy/txoe (usb/phy/i_tx_phy/txoe)
-     LUT3:I0->O            3   0.235   0.765  Mmux_JA_dn111 (JA_dn_OBUF)
-     OBUF:I->O                 2.912          JA_dn_OBUF (JA_dn)
-    ----------------------------------------
-    Total                      5.431ns (3.672ns logic, 1.759ns route)
-                                       (67.6% logic, 32.4% route)
-
-=========================================================================
 
 Cross Clock Domains Report:
 --------------------------
 
-Clock to Setup on destination clock clk_i
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk_i          |    7.402|         |         |         |
----------------+---------+---------+---------+---------+
-
 =========================================================================
 
 
-Total REAL time to Xst completion: 27.00 secs
-Total CPU time to Xst completion: 26.61 secs
+Total REAL time to Xst completion: 32.00 secs
+Total CPU time to Xst completion: 32.28 secs
  
 --> 
 
-Total memory usage is 264964 kilobytes
+Total memory usage is 300456 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  335 (   0 filtered)
-Number of infos    :   50 (   0 filtered)
+Number of warnings :  861 (   0 filtered)
+Number of infos    :   53 (   0 filtered)
 

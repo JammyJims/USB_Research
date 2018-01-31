@@ -36,16 +36,13 @@ module Memory(
 	reg [7:0] ramE;
 	//reg [`RAM_SIZE-1:0] RAM[7:0]; // 8 bits wide, RAM_SIZE long
 	reg [7:0] data_o;
-	reg [7:0] data_i;
-	
+	wire [7:0] data_i;
 	// wire assignments
 	//assign write_enable = &data_i; // write enable on data_io == 1111_1111
-	wire tx;
-	wire rx;
-	assign tx = data_o;
-	assign rx = data_i;
-	assign data_io = tx_oe ? tx : rx ;
 	
+	assign data_io = tx_oe ? data_o: 8'hZZ;
+	assign data_i = data_io;
+
 	// initialisation
 	initial begin
 		// nuke the memory RAM
@@ -54,6 +51,8 @@ module Memory(
 		ramC <= 8'b0000_0000;
 		ramD <= 8'b0000_0000;
 		ramE <= 8'b0000_0000;
+		address = 0;
+		clk = 0;
 	end
 	
 	// clocked behaviour
@@ -78,34 +77,43 @@ module Memory(
 			end else begin
 				if (write_enable) begin 
 					if 			(address == 0) begin
-						ramA <= data_i;
+						ramA = data_i;
+						address = 1;
 					end else if (address == 1) begin
-						ramB <= data_i;
+						ramB = data_i;
+						address = 2;
 					end else if (address == 2) begin
-						ramC <= data_i;
+						ramC = data_i;
+						address = 3;
 					end else if (address == 3) begin
-						ramD <= data_i;
+						ramD = data_i;
+						address = 4;
 					end else if (address == 4) begin
-						ramE <= data_i;
+						ramE = data_i;
+						address = 0;
 					end else begin
 						address = 0;
 					end
 				end else begin // read enable
 					if 			(address == 0) begin
-						data_o <= ramA;
+						data_o = ramA;
+						address = 1;
 					end else if (address == 1) begin
-						data_o <= ramB;
+						data_o = ramB;
+						address = 2;
 					end else if (address == 2) begin
-						data_o <= ramC;
+						data_o = ramC;
+						address = 3;
 					end else if (address == 3) begin
-						data_o <= ramD;
+						data_o = ramD;
+						address = 4;
 					end else if (address == 4) begin
-						data_o <= ramE;
+						data_o = ramE;
+						address = 0;
 					end else begin
 						address = 0;
 					end
 				end
-				address = address + 1;
 			end
 		end
 	end

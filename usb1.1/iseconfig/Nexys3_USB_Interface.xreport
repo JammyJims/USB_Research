@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-01-29T11:08:57</DateModified>
+  <DateModified>2018-01-31T16:29:27</DateModified>
   <ModuleName>Nexys3_USB_Interface</ModuleName>
-  <SummaryTimeStamp>2018-01-24T14:04:41</SummaryTimeStamp>
+  <SummaryTimeStamp>2018-01-31T12:12:38</SummaryTimeStamp>
   <SavedFilePath>C:/Users/root/Desktop/USB_Research/usb1.1/iseconfig/Nexys3_USB_Interface.xreport</SavedFilePath>
   <ImplementationReportsDirectory>C:/Users/root/Desktop/USB_Research/usb1.1\</ImplementationReportsDirectory>
   <DateInitialized>2018-01-02T11:58:21</DateInitialized>

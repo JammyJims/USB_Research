@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.22 secs
+Total CPU time to Xst completion: 0.21 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.22 secs
+Total CPU time to Xst completion: 0.21 secs
  
 --> Reading design: Nexys3_USB_Interface.prj
 
@@ -2478,7 +2478,7 @@ Cross Clock Domains Report:
 
 
 Total REAL time to Xst completion: 32.00 secs
-Total CPU time to Xst completion: 32.28 secs
+Total CPU time to Xst completion: 32.04 secs
  
 --> 
 

@@ -39,17 +39,34 @@ module Nexys3_USB_Interface(
 	wire rx_d;
 	wire rx_dp;
 	wire rx_dn;
-	//wire phy_tx_mode; 
-	//wire usb_rst;
-	//assign usb_rst = 1'b1;
-	//assign phy_tx_mode = 1'b0;
+	
+	// configuration bits
+	wire phy_tx_mode; 
+	wire usb_rst;
+	wire loop;
+	assign usb_rst = 1'b1;
+	assign phy_tx_mode = 1'b1;
+	assign loop = 1'b1;
+	
 	// endpoint wires
-	wire ep1_din;
+	reg [7:0] ep1_din;
 	wire ep1_we; 
-	wire ep1_stat;
-	wire ep2_dout;
+	wire [3:0] ep1_stat;
+	wire [7:0] ep2_dout;
 	wire ep2_re;
-	wire ep2_stat;
+	wire [3:0] ep2_stat;
+	
+	// wValue, wIndex, Vendor_Data
+	wire [15:0] wValue;
+	wire [15:0] wIndex;
+	reg [15:0] vendor_data;
+	
+	// set vendor_data to 0xABCD
+	always @(posedge clk_i) begin
+		if (wValue == 16'h0001 && wIndex == 16'h0001) begin
+			vendor_data = 16'hABCD;
+		end
+	end
 	
 	// tristate buffer to handle bi-directional data lines.
 	assign dp = tx_oe ? tx_dp : 1'bZ ;
@@ -73,17 +90,17 @@ module Nexys3_USB_Interface(
 	usb1_top usb (
 		 .clk_i(clk_i), 
 		 .rst_i(rst_i), 
-		 //.phy_tx_mode(phy_tx_mode), 
-		 //.usb_rst(usb_rst), 
-		 //.loop(loop), 
+		 .phy_tx_mode(phy_tx_mode), 
+		 .usb_rst(usb_rst), 
+		 .loop(loop), 
 //		 .dropped_frame(dropped_frame), 
 //		 .misaligned_frame(misaligned_frame), 
 //		 .crc16_err(crc16_err), 
 //		 .v_set_int(v_set_int), 
 //		 .v_set_feature(v_set_feature), 
-//		 .wValue(wValue), 
-//		 .wIndex(wIndex), 
-//		 .vendor_data(vendor_data), 
+		 .wValue(wValue), 
+		 .wIndex(wIndex), 
+		 .vendor_data(vendor_data), 
 		 .tx_dp(tx_dp), 
 		 .tx_dn(tx_dn), 
 		 .tx_oe(tx_oe), 

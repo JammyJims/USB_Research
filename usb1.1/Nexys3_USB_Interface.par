@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-ROOT-PC::  Wed Jan 31 15:11:00 2018
+ROOT-PC::  Fri Feb 02 14:33:53 2018
 
 par -w -intstyle ise -ol high -mt off Nexys3_USB_Interface_map.ncd
 Nexys3_USB_Interface.ncd Nexys3_USB_Interface.pcf 
@@ -73,9 +73,9 @@ WARNING:Par:288 - The signal clk_i_IBUF has no load.  PAR will not attempt to ro
 Starting Router
 
 
-Phase  1  : 10 unrouted;      REAL time: 6 secs 
+Phase  1  : 10 unrouted;      REAL time: 7 secs 
 
-Phase  2  : 10 unrouted;      REAL time: 6 secs 
+Phase  2  : 10 unrouted;      REAL time: 7 secs 
 
 Phase  3  : 0 unrouted;      REAL time: 9 secs 
 
@@ -117,9 +117,9 @@ All signals are completely routed.
 WARNING:Par:283 - There are 1 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
 Total REAL time to PAR completion: 11 secs 
-Total CPU time to PAR completion: 10 secs 
+Total CPU time to PAR completion: 11 secs 
 
-Peak Memory Usage:  315 MB
+Peak Memory Usage:  316 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.

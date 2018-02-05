@@ -1,9 +1,9 @@
 --------------------------------------------------------------------------------
-Release 14.7 Trace  (lin64)
+Release 14.7 Trace  (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-/media/sf_Research/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle
-ise -v 3 -s 2 -n 3 -fastpaths -xml helloworld_top.twx helloworld_top.ncd -o
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 2
+-n 3 -fastpaths -xml helloworld_top.twx helloworld_top.ncd -o
 helloworld_top.twr helloworld_top.pcf -ucf helloworld_top.ucf
 
 Design file:              helloworld_top.ncd
@@ -16,6 +16,7 @@ Environment Variable      Effect
 NONE                      No environment variables were set
 --------------------------------------------------------------------------------
 
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
 INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
 INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
    option. All paths that are not constrained will be reported in the 
@@ -25,75 +26,29 @@ INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on
    and for more information on accounting for different loading conditions, 
    please see the device datasheet.
 
-================================================================================
-Timing constraint: TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 
-50%;
-For more information, see Period Analysis in the Timing Closure User Guide (UG612).
-
- 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
- 0 timing errors detected. (0 component switching limit errors)
- Minimum period is   2.666ns.
---------------------------------------------------------------------------------
-
-Component Switching Limit Checks: TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
---------------------------------------------------------------------------------
-Slack: 7.334ns (period - min period limit)
-  Period: 10.000ns
-  Min period limit: 2.666ns (375.094MHz) (Tbcper_I)
-  Physical resource: clk_BUFGP/BUFG/I0
-  Logical resource: clk_BUFGP/BUFG/I0
-  Location pin: BUFGMUX_X3Y13.I0
-  Clock network: clk_BUFGP/IBUFG
---------------------------------------------------------------------------------
-Slack: 7.751ns (period - min period limit)
-  Period: 10.000ns
-  Min period limit: 2.249ns (444.642MHz) (Tockper)
-  Physical resource: LED_B_OBUF/CLK0
-  Logical resource: LED_B/CK0
-  Location pin: OLOGIC_X17Y2.CLK0
-  Clock network: clk_BUFGP
---------------------------------------------------------------------------------
-Slack: 8.134ns (period - min period limit)
-  Period: 10.000ns
-  Min period limit: 1.866ns (535.906MHz) (Tickper)
-  Physical resource: LED_S_OBUF/CLK0
-  Logical resource: LED_S/CLK0
-  Location pin: ILOGIC_X9Y0.CLK0
-  Clock network: clk_BUFGP
---------------------------------------------------------------------------------
-
-
-All constraints were met.
 
 
 Data Sheet report:
 -----------------
-No constraints were found to generate data for the Data Sheet Report section.
-Use the Advanced Analysis (-a) option or generate global constraints for each
-clock, its pad to setup and clock to pad paths, and a pad to pad constraint.
+All values displayed in nanoseconds (ns)
 
-Timing summary:
----------------
-
-Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
-
-Constraints cover 0 paths, 0 nets, and 0 connections
-
-Design statistics:
-   Minimum period:   2.666ns{1}   (Maximum frequency: 375.094MHz)
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+Button         |LED_B          |   12.255|
+Switch         |LED_S          |    8.373|
+---------------+---------------+---------+
 
 
-------------------------------------Footnotes-----------------------------------
-1)  The minimum period statistic assumes all single cycle delays.
-
-Analysis completed Mon Dec 11 20:47:18 2017 
+Analysis completed Mon Feb 05 14:24:48 2018 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 386 MB
+Peak Memory Usage: 218 MB
 
 
 

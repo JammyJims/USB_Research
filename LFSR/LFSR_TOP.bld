@@ -5,7 +5,7 @@ Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
 -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-2
 LFSR_TOP.ngc LFSR_TOP.ngd
 
-Reading NGO file "U:/Xilinx/LFSR/LFSR_TOP.ngc" ...
+Reading NGO file "C:/Users/root/Desktop/USB_Research/LFSR/LFSR_TOP.ngc" ...
 Gathering constraint information from source properties...
 Done.
 
@@ -27,10 +27,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 162504 kilobytes
+Total memory usage is 162260 kilobytes
 
 Writing NGD file "LFSR_TOP.ngd" ...
-Total REAL time to NGDBUILD completion:  3 sec
-Total CPU time to NGDBUILD completion:   2 sec
+Total REAL time to NGDBUILD completion:  6 sec
+Total CPU time to NGDBUILD completion:   6 sec
 
 Writing NGDBUILD log file "LFSR_TOP.bld"...

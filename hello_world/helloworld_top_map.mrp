@@ -1,4 +1,4 @@
-Release 14.7 Map P.20131013 (lin64)
+Release 14.7 Map P.20131013 (nt64)
 Xilinx Mapping Report File for Design 'helloworld_top'
 
 Design Information
@@ -11,7 +11,7 @@ Target Device  : xc6slx16
 Target Package : csg324
 Target Speed   : -2
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Mon Dec 11 20:45:17 2017
+Mapped Date    : Mon Feb 05 14:24:15 2018
 
 Design Summary
 --------------
@@ -29,24 +29,17 @@ Slice Logic Distribution:
 IO Utilization:
   Number of bonded IOBs:                         5 out of     232    2%
     Number of LOCed IOBs:                        5 out of       5  100%
-    IOB Flip Flops:                              2
 
 Specific Feature Utilization:
   Number of RAMB16BWERs:                         0 out of      32    0%
   Number of RAMB8BWERs:                          0 out of      64    0%
   Number of BUFIO2/BUFIO2_2CLKs:                 0 out of      32    0%
   Number of BUFIO2FB/BUFIO2FB_2CLKs:             0 out of      32    0%
-  Number of BUFG/BUFGMUXs:                       1 out of      16    6%
-    Number used as BUFGs:                        1
-    Number used as BUFGMUX:                      0
+  Number of BUFG/BUFGMUXs:                       0 out of      16    0%
   Number of DCM/DCM_CLKGENs:                     0 out of       4    0%
-  Number of ILOGIC2/ISERDES2s:                   1 out of     248    1%
-    Number used as ILOGIC2s:                     1
-    Number used as ISERDES2s:                    0
+  Number of ILOGIC2/ISERDES2s:                   0 out of     248    0%
   Number of IODELAY2/IODRP2/IODRP2_MCBs:         0 out of     248    0%
-  Number of OLOGIC2/OSERDES2s:                   1 out of     248    1%
-    Number used as OLOGIC2s:                     1
-    Number used as OSERDES2s:                    0
+  Number of OLOGIC2/OSERDES2s:                   0 out of     248    0%
   Number of BSCANs:                              0 out of       4    0%
   Number of BUFHs:                               0 out of     128    0%
   Number of BUFPLLs:                             0 out of       8    0%
@@ -60,11 +53,11 @@ Specific Feature Utilization:
   Number of STARTUPs:                            0 out of       1    0%
   Number of SUSPEND_SYNCs:                       0 out of       1    0%
 
-Average Fanout of Non-Clock Nets:                1.00
+Average Fanout of Non-Clock Nets:                0.67
 
-Peak Memory Usage:  757 MB
-Total REAL time to MAP completion:  41 secs 
-Total CPU time to MAP completion:   21 secs 
+Peak Memory Usage:  342 MB
+Total REAL time to MAP completion:  9 secs 
+Total CPU time to MAP completion:   8 secs 
 
 Table of Contents
 -----------------
@@ -90,6 +83,11 @@ Section 2 - Warnings
 
 Section 3 - Informational
 -------------------------
+INFO:LIT:243 - Logical network reset has no load.
+INFO:LIT:395 - The above info message is repeated 1 more times for the following
+   (max. 5 shown):
+   clk_IBUF
+   To see the details of these info messages, please use the -detail switch.
 INFO:MapLib:562 - No environment variables are currently set.
 INFO:LIT:244 - All of the single ended outputs in this design are using slew
    rate limited output drivers. The delay on speed critical single ended outputs
@@ -116,9 +114,9 @@ Section 6 - IOB Properties
 |                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Button                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
-| LED_B                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| LED_B                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | LED_S                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| Switch                             | IOB              | INPUT     | LVCMOS25             |       |          |      | IFF          |          |          |
+| Switch                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
 | clk                                | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------+
 

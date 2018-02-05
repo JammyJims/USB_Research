@@ -5,7 +5,7 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="error" file="Simulator" num="861" delta="unknown" >Failed to link the design
+<msg type="warning" file="HDLCompiler" num="248" delta="unknown" >"C:/Users/root/Desktop/USB_Research/LFSR/Clock_Divider.v" Line 34: Block identifier is required on this block
 </msg>
 
 </messages>

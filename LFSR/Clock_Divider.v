@@ -31,7 +31,7 @@ module Clock_Divider(
 	always @* clk_div[0] = clk;
 	genvar index;
 	generate
-		for (index=0; index<30; index=index+1) begin : for_divide
+		for (index=0; index<30; index=index+1) begin //: for_divide
 			always @(posedge clk_div[index]) begin
 				clk_div[index+1] = ~clk_div[index+1];
 			end

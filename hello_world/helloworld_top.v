@@ -18,47 +18,47 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
+
+// modules are like classes in C++
 module helloworld_top(
+	// every module has a list of inputs and outputs, think like a black box.
+	// all variables are assumed to have type wire unless stated to be of type reg
 	input Button,
 	input Switch,
 	input clk,
+	input reset,
+	// outputs are generally of type reg
 	output reg LED_B,
-	output reg LED_S
+	output reg LED_S 
 	);
 	
+	// can allocate internal registers and wires in the body of the module
+	//wire internal_a;
+	//wire [7:0] internal_b; // this is a data bus, 8 wires named internal_b
+	//reg register_c // in general, if using the keyword reg, alter the value in an 
+	
+	// the always keyword usually has an argument @(posedge clk_i)
+	// the '*' symbol means wildcard, everything between 'begin' and 'end' is to be run on any change at all.
+	// state machines are written between 
 	always @(*) begin
-		LED_B <= Button;
+		// both statements happen at the exact same time.
+		// like C++: registers go on the left; assigned value goes on the right. 
+		LED_B <= Button; 
 		LED_S <= Switch;
+		// can dereference data busses like so
+		// register_c <= internal_b[2]
 	end
 	
-endmodule
-
-// Examples of `define text macros
-`define MY_NUMBER 5
-`define MY_STRING "Hello world!"
-`define ADD2PLUS2 2 + 2
-`define ADD5(RESULT, SOURCE) \
-  RESULT = SOURCE + 5; \
-  $display("Inside ADD5 macro. Scope is %m");
-
-module test;
-
-  reg [7:0] a, b;
-
-  initial begin
-    $display(`MY_NUMBER);
-    $display(`MY_STRING);
-    $display(2 + 2);
-    $display(`ADD2PLUS2);
-    
-    a = 1;
-    `ifdef MY_FEATURE
-      `ADD5(b, a)
-      $display("a:%0d, b:%0d", a, b);
-    `else
-      $display("No feature");
-    `endif
-  end
-  
-endmodule
-
+	// state machine behaviour
+	// things change on the clock input
+	always @(posedge clk) begin
+		if (reset) begin
+			// what if reset was pressed (set to high)
+		end else begin
+			// normal state machine behaviour
+			// extra detail omitted from this file.
+		end
+	end
+	
+	// if still lost, refer to google searches regarding Verilog syntax
+endmodule // need to end the module (similar to ending the scope of a function in C++ using curly brackets {} )

@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.41 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.42 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
  
 --> Reading design: LFSR_TOP.prj
 
@@ -105,9 +105,10 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "\\uofa\users$\users6\a1687296\Xilinx\LFSR\Clock_Divider.v" into library work
+Analyzing Verilog file "C:\Users\root\Desktop\USB_Research\LFSR\Clock_Divider.v" into library work
 Parsing module <Clock_Divider>.
-Analyzing Verilog file "\\uofa\users$\users6\a1687296\Xilinx\LFSR\LFSR_TOP.v" into library work
+WARNING:HDLCompiler:248 - "C:\Users\root\Desktop\USB_Research\LFSR\Clock_Divider.v" Line 34: Block identifier is required on this block
+Analyzing Verilog file "C:\Users\root\Desktop\USB_Research\LFSR\LFSR_TOP.v" into library work
 Parsing module <LFSR_TOP>.
 
 =========================================================================
@@ -123,7 +124,7 @@ Elaborating module <Clock_Divider>.
 =========================================================================
 
 Synthesizing Unit <LFSR_TOP>.
-    Related source file is "\\uofa\users$\users6\a1687296\Xilinx\LFSR\LFSR_TOP.v".
+    Related source file is "C:\Users\root\Desktop\USB_Research\LFSR\LFSR_TOP.v".
     Register <out_reg> equivalent to <Led> has been removed
     Found 8-bit register for signal <Led>.
     Summary:
@@ -131,7 +132,7 @@ Synthesizing Unit <LFSR_TOP>.
 Unit <LFSR_TOP> synthesized.
 
 Synthesizing Unit <Clock_Divider>.
-    Related source file is "\\uofa\users$\users6\a1687296\Xilinx\LFSR\Clock_Divider.v".
+    Related source file is "C:\Users\root\Desktop\USB_Research\LFSR\Clock_Divider.v".
 WARNING:Xst:2935 - Signal 'clk_div<31>', unconnected in block 'Clock_Divider', is tied to its initial value (0).
     Found 1-bit register for signal <clk_div<2>>.
     Found 1-bit register for signal <clk_div<3>>.
@@ -204,6 +205,7 @@ Optimizing unit <LFSR_TOP> ...
 Optimizing unit <Clock_Divider> ...
 WARNING:Xst:2677 - Node <alt_clk/clk_div_30> of sequential type is unconnected in block <LFSR_TOP>.
 WARNING:Xst:2677 - Node <alt_clk/clk_div_29> of sequential type is unconnected in block <LFSR_TOP>.
+WARNING:Xst:2677 - Node <alt_clk/clk_div_28> of sequential type is unconnected in block <LFSR_TOP>.
 
 Mapping all equations...
 Building and optimizing final netlist ...
@@ -215,8 +217,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 36
- Flip-Flops                                            : 36
+# Registers                                            : 35
+ Flip-Flops                                            : 35
 
 =========================================================================
 
@@ -239,11 +241,11 @@ Top Level Output File Name         : LFSR_TOP.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 29
-#      INV                         : 28
+# BELS                             : 28
+#      INV                         : 27
 #      LUT4                        : 1
-# FlipFlops/Latches                : 36
-#      FD                          : 36
+# FlipFlops/Latches                : 35
+#      FD                          : 35
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
 # IO Buffers                       : 16
@@ -256,16 +258,16 @@ Selected Device : 6slx16csg324-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              36  out of  18224     0%  
- Number of Slice LUTs:                   29  out of   9112     0%  
-    Number used as Logic:                29  out of   9112     0%  
+ Number of Slice Registers:              35  out of  18224     0%  
+ Number of Slice LUTs:                   28  out of   9112     0%  
+    Number used as Logic:                28  out of   9112     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:     36
-   Number with an unused Flip Flop:       0  out of     36     0%  
-   Number with an unused LUT:             7  out of     36    19%  
-   Number of fully used LUT-FF pairs:    29  out of     36    80%  
-   Number of unique control sets:        29
+ Number of LUT Flip Flop pairs used:     35
+   Number with an unused Flip Flop:       0  out of     35     0%  
+   Number with an unused LUT:             7  out of     35    20%  
+   Number of fully used LUT-FF pairs:    28  out of     35    80%  
+   Number of unique control sets:        28
 
 IO Utilization: 
  Number of IOs:                          17
@@ -295,8 +297,7 @@ Clock Information:
 -----------------------------------+-------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)   | Load  |
 -----------------------------------+-------------------------+-------+
-alt_clk/clk_div_28                 | NONE(Led_0)             | 8     |
-alt_clk/clk_div_27                 | NONE(alt_clk/clk_div_28)| 1     |
+alt_clk/clk_div_27                 | NONE(Led_0)             | 8     |
 alt_clk/clk_div_26                 | NONE(alt_clk/clk_div_27)| 1     |
 alt_clk/clk_div_25                 | NONE(alt_clk/clk_div_26)| 1     |
 alt_clk/clk_div_24                 | NONE(alt_clk/clk_div_25)| 1     |
@@ -345,15 +346,15 @@ Timing Details:
 All values displayed in nanoseconds (ns)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'alt_clk/clk_div_28'
+Timing constraint: Default period analysis for Clock 'alt_clk/clk_div_27'
   Clock period: 1.895ns (frequency: 527.704MHz)
   Total number of paths / destination ports: 14 / 8
 -------------------------------------------------------------------------
 Delay:               1.895ns (Levels of Logic = 1)
   Source:            Led_7 (FF)
   Destination:       Led_0 (FF)
-  Source Clock:      alt_clk/clk_div_28 rising
-  Destination Clock: alt_clk/clk_div_28 rising
+  Source Clock:      alt_clk/clk_div_27 rising
+  Destination Clock: alt_clk/clk_div_27 rising
 
   Data Path: Led_7 to Led_0
                                 Gate     Net
@@ -367,33 +368,11 @@ Delay:               1.895ns (Levels of Logic = 1)
                                        (45.0% logic, 55.0% route)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'alt_clk/clk_div_27'
+Timing constraint: Default period analysis for Clock 'alt_clk/clk_div_26'
   Clock period: 2.510ns (frequency: 398.406MHz)
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
 Delay:               2.510ns (Levels of Logic = 1)
-  Source:            alt_clk/clk_div_28 (FF)
-  Destination:       alt_clk/clk_div_28 (FF)
-  Source Clock:      alt_clk/clk_div_27 rising
-  Destination Clock: alt_clk/clk_div_27 rising
-
-  Data Path: alt_clk/clk_div_28 to alt_clk/clk_div_28
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FD:C->Q               9   0.525   0.975  alt_clk/clk_div_28 (alt_clk/clk_div_28)
-     INV:I->O              1   0.255   0.681  alt_clk/clk_div[28]_INV_28_o1_INV_0 (alt_clk/clk_div[28]_INV_28_o)
-     FD:D                      0.074          alt_clk/clk_div_28
-    ----------------------------------------
-    Total                      2.510ns (0.854ns logic, 1.656ns route)
-                                       (34.0% logic, 66.0% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'alt_clk/clk_div_26'
-  Clock period: 2.260ns (frequency: 442.478MHz)
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Delay:               2.260ns (Levels of Logic = 1)
   Source:            alt_clk/clk_div_27 (FF)
   Destination:       alt_clk/clk_div_27 (FF)
   Source Clock:      alt_clk/clk_div_26 rising
@@ -403,12 +382,12 @@ Delay:               2.260ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               2   0.525   0.725  alt_clk/clk_div_27 (alt_clk/clk_div_27)
+     FD:C->Q               9   0.525   0.975  alt_clk/clk_div_27 (alt_clk/clk_div_27)
      INV:I->O              1   0.255   0.681  alt_clk/clk_div[27]_INV_27_o1_INV_0 (alt_clk/clk_div[27]_INV_27_o)
      FD:D                      0.074          alt_clk/clk_div_27
     ----------------------------------------
-    Total                      2.260ns (0.854ns logic, 1.406ns route)
-                                       (37.8% logic, 62.2% route)
+    Total                      2.510ns (0.854ns logic, 1.656ns route)
+                                       (34.0% logic, 66.0% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'alt_clk/clk_div_25'
@@ -983,13 +962,13 @@ Delay:               2.260ns (Levels of Logic = 1)
                                        (37.8% logic, 62.2% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'alt_clk/clk_div_28'
+Timing constraint: Default OFFSET OUT AFTER for Clock 'alt_clk/clk_div_27'
   Total number of paths / destination ports: 16 / 16
 -------------------------------------------------------------------------
 Offset:              4.240ns (Levels of Logic = 1)
   Source:            Led_5 (FF)
   Destination:       out_reg<5> (PAD)
-  Source Clock:      alt_clk/clk_div_28 rising
+  Source Clock:      alt_clk/clk_div_27 rising
 
   Data Path: Led_5 to out_reg<5>
                                 Gate     Net
@@ -1155,7 +1134,7 @@ Clock to Setup on destination clock alt_clk/clk_div_26
                   | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ------------------+---------+---------+---------+---------+
-alt_clk/clk_div_26|    2.260|         |         |         |
+alt_clk/clk_div_26|    2.510|         |         |         |
 ------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock alt_clk/clk_div_27
@@ -1163,15 +1142,7 @@ Clock to Setup on destination clock alt_clk/clk_div_27
                   | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ------------------+---------+---------+---------+---------+
-alt_clk/clk_div_27|    2.510|         |         |         |
-------------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock alt_clk/clk_div_28
-------------------+---------+---------+---------+---------+
-                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
-------------------+---------+---------+---------+---------+
-alt_clk/clk_div_28|    1.895|         |         |         |
+alt_clk/clk_div_27|    1.895|         |         |         |
 ------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock alt_clk/clk_div_3
@@ -1241,14 +1212,14 @@ clk            |    2.260|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 9.00 secs
-Total CPU time to Xst completion: 9.02 secs
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 12.25 secs
  
 --> 
 
-Total memory usage is 257376 kilobytes
+Total memory usage is 257832 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    3 (   0 filtered)
+Number of warnings :    5 (   0 filtered)
 Number of infos    :    1 (   0 filtered)
 

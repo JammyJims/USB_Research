@@ -35,7 +35,7 @@ For more information, see Period Analysis in the Timing Closure User Guide (UG61
  Minimum period is   2.666ns.
 --------------------------------------------------------------------------------
 
-Paths for end point alt_clk/clk_div_1 (SLICE_X17Y29.D6), 1 path
+Paths for end point alt_clk/clk_div_1 (SLICE_X19Y30.A6), 1 path
 --------------------------------------------------------------------------------
 Slack (setup path):     9.008ns (requirement - (data path - clock path skew + uncertainty))
   Source:               alt_clk/clk_div_1 (FF)
@@ -57,10 +57,10 @@ Slack (setup path):     9.008ns (requirement - (data path - clock path skew + un
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X17Y29.DQ      Tcko                  0.430   alt_clk/clk_div_1
+    SLICE_X19Y30.AQ      Tcko                  0.430   alt_clk/clk_div_1
                                                        alt_clk/clk_div_1
-    SLICE_X17Y29.D6      net (fanout=2)        0.154   alt_clk/clk_div_1
-    SLICE_X17Y29.CLK     Tas                   0.373   alt_clk/clk_div_1
+    SLICE_X19Y30.A6      net (fanout=2)        0.154   alt_clk/clk_div_1
+    SLICE_X19Y30.CLK     Tas                   0.373   alt_clk/clk_div_1
                                                        alt_clk/clk_div[1]_INV_1_o1_INV_0
                                                        alt_clk/clk_div_1
     -------------------------------------------------  ---------------------------
@@ -72,7 +72,7 @@ Slack (setup path):     9.008ns (requirement - (data path - clock path skew + un
 Hold Paths: TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
 --------------------------------------------------------------------------------
 
-Paths for end point alt_clk/clk_div_1 (SLICE_X17Y29.D6), 1 path
+Paths for end point alt_clk/clk_div_1 (SLICE_X19Y30.A6), 1 path
 --------------------------------------------------------------------------------
 Slack (hold path):      0.438ns (requirement - (clock path skew + uncertainty - data path))
   Source:               alt_clk/clk_div_1 (FF)
@@ -88,10 +88,10 @@ Slack (hold path):      0.438ns (requirement - (clock path skew + uncertainty - 
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X17Y29.DQ      Tcko                  0.198   alt_clk/clk_div_1
+    SLICE_X19Y30.AQ      Tcko                  0.198   alt_clk/clk_div_1
                                                        alt_clk/clk_div_1
-    SLICE_X17Y29.D6      net (fanout=2)        0.025   alt_clk/clk_div_1
-    SLICE_X17Y29.CLK     Tah         (-Th)    -0.215   alt_clk/clk_div_1
+    SLICE_X19Y30.A6      net (fanout=2)        0.025   alt_clk/clk_div_1
+    SLICE_X19Y30.CLK     Tah         (-Th)    -0.215   alt_clk/clk_div_1
                                                        alt_clk/clk_div[1]_INV_1_o1_INV_0
                                                        alt_clk/clk_div_1
     -------------------------------------------------  ---------------------------
@@ -115,7 +115,7 @@ Slack: 9.530ns (period - min period limit)
   Min period limit: 0.470ns (2127.660MHz) (Tcp)
   Physical resource: alt_clk/clk_div_1/CLK
   Logical resource: alt_clk/clk_div_1/CK
-  Location pin: SLICE_X17Y29.CLK
+  Location pin: SLICE_X19Y30.CLK
   Clock network: clk_BUFGP
 --------------------------------------------------------------------------------
 
@@ -150,14 +150,14 @@ Design statistics:
 ------------------------------------Footnotes-----------------------------------
 1)  The minimum period statistic assumes all single cycle delays.
 
-Analysis completed Wed Dec 13 15:57:00 2017 
+Analysis completed Mon Feb 05 10:56:09 2018 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 218 MB
+Peak Memory Usage: 220 MB
 
 
 

@@ -1,19 +1,41 @@
-Release 14.7 ngdbuild P.20131013 (lin64)
+Release 14.7 ngdbuild P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Command Line:
-/media/sf_Research/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/ngdbuild -intstyle
-ise -dd _ngo -nt timestamp -uc helloworld_top.ucf -p xc6slx16-csg324-2
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+-intstyle ise -dd _ngo -nt timestamp -uc helloworld_top.ucf -p xc6slx16-csg324-2
 helloworld_top.ngc helloworld_top.ngd
 
 Reading NGO file
-"/media/sf_Research/Xilinx/14.7/ISE_DS/hello_world/helloworld_top.ngc" ...
+"C:/Users/root/Desktop/USB_Research/hello_world/helloworld_top.ngc" ...
 Gathering constraint information from source properties...
 Done.
 
 Annotating constraints to design from ucf file "helloworld_top.ucf" ...
 Resolving constraint associations...
 Checking Constraint Associations...
+WARNING:ConstraintSystem:137 - Constraint <Net "clk" TNM_NET = sys_clk_pin;>
+   [helloworld_top.ucf(3)]: No appropriate instances for the TNM constraint are
+   driven by "clk".
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_sys_clk_pin = PERIOD
+   sys_clk_pin 100000 kHz;> [helloworld_top.ucf(4)]: Unable to find an active
+   'TNM' or 'TimeGrp' constraint named 'sys_clk_pin'.
+
+WARNING:ConstraintSystem:191 - The TNM 'sys_clk_pin', does not directly or
+   indirectly drive any flip-flops, latches and/or RAMS and cannot be actively
+   used by the referencing Period constraint 'TS_sys_clk_pin'. If clock manager
+   blocks are directly or indirectly driven, a new TNM constraint will not be
+   derived even though the referencing constraint is a PERIOD constraint unless
+   an output of the clock manager drives flip-flops, latches or RAMs. This TNM
+   is used in the following user PERIOD specification:
+   <TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin 100000 kHz;>
+   [helloworld_top.ucf(4)]
+
+WARNING:ConstraintSystem:197 - The following specification is invalid because
+   the referenced TNM constraint was removed:
+   <TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin 100000 kHz;>
+   [helloworld_top.ucf(4)]
+
 Done...
 
 Checking expanded design ...
@@ -27,12 +49,12 @@ Partition Implementation Status
 
 NGDBUILD Design Results Summary:
   Number of errors:     0
-  Number of warnings:   0
+  Number of warnings:   4
 
-Total memory usage is 494704 kilobytes
+Total memory usage is 162260 kilobytes
 
 Writing NGD file "helloworld_top.ngd" ...
-Total REAL time to NGDBUILD completion:  30 sec
-Total CPU time to NGDBUILD completion:   21 sec
+Total REAL time to NGDBUILD completion:  6 sec
+Total CPU time to NGDBUILD completion:   6 sec
 
 Writing NGDBUILD log file "helloworld_top.bld"...

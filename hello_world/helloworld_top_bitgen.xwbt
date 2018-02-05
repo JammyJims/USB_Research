@@ -1,8 +1,8 @@
 INTSTYLE=ise
-INFILE=/media/sf_Research/Xilinx/14.7/ISE_DS/hello_world/helloworld_top.ncd
-OUTFILE=/media/sf_Research/Xilinx/14.7/ISE_DS/hello_world/helloworld_top.bit
+INFILE=C:\Users\root\Desktop\USB_Research\hello_world\helloworld_top.ncd
+OUTFILE=C:\Users\root\Desktop\USB_Research\hello_world\helloworld_top.bit
 FAMILY=Spartan6
 PART=xc6slx16-2csg324
-WORKINGDIR=/media/sf_Research/Xilinx/14.7/ISE_DS/hello_world
+WORKINGDIR=C:\Users\root\Desktop\USB_Research\hello_world
 LICENSE=WebPack
 USER_INFO=211445683_0_0_755

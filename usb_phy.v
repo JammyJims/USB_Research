@@ -1,13 +1,13 @@
 /////////////////////////////////////////////////////////////////////
 ////                                                             ////
-////  UTMI Interface                                             ////
+////  USB 1.1 PHY                                                ////
 ////                                                             ////
 ////                                                             ////
 ////  Author: Rudolf Usselmann                                   ////
 ////          rudi@asics.ws                                      ////
 ////                                                             ////
 ////                                                             ////
-////  Downloaded from: http://www.opencores.org/cores/usb1_funct/////
+////  Downloaded from: http://www.opencores.org/cores/usb_phy/   ////
 ////                                                             ////
 /////////////////////////////////////////////////////////////////////
 ////                                                             ////
@@ -38,16 +38,27 @@
 
 //  CVS Log
 //
-//  $Id: usb1_utmi_if.v,v 1.1.1.1 2002-09-19 12:07:14 rudi Exp $
+//  $Id: usb_phy.v,v 1.4 2003-10-21 05:58:40 rudi Exp $
 //
-//  $Date: 2002-09-19 12:07:14 $
-//  $Revision: 1.1.1.1 $
+//  $Date: 2003-10-21 05:58:40 $
+//  $Revision: 1.4 $
 //  $Author: rudi $
 //  $Locker:  $
 //  $State: Exp $
 //
 // Change History:
 //               $Log: not supported by cvs2svn $
+//               Revision 1.3  2003/10/19 17:40:13  rudi
+//               - Made core more robust against line noise
+//               - Added Error Checking and Reporting
+//               (See README.txt for more info)
+//
+//               Revision 1.2  2002/09/16 16:06:37  rudi
+//               Changed top level name to be consistent ...
+//
+//               Revision 1.1.1.1  2002/09/16 14:26:59  rudi
+//               Created Directory Structure
+//
 //
 //
 //
@@ -56,92 +67,113 @@
 //
 //
 
-`include "usb1_defines.v"
+`include "timescale.v"
 
-module usb1_utmi_if( // UTMI Interface (EXTERNAL)
-		phy_clk, rst,
-		DataOut, TxValid, TxReady,
-		RxValid, RxActive, RxError, DataIn,
+module usb_phy(clk, rst, phy_tx_mode, usb_rst,
+	
+		// Transciever Interface
+		txdp, txdn, txoe,	
+		rxd, rxdp, rxdn,
 
-		// Internal Interface
-		rx_data, rx_valid, rx_active, rx_err,
-		tx_data, tx_valid, tx_valid_last, tx_ready,
-		tx_first
-
+		// UTMI Interface
+		DataOut_i, TxValid_i, TxReady_o, RxValid_o,
+		RxActive_o, RxError_o, DataIn_o, LineState_o
 		);
 
-input		phy_clk;
+input		clk;
 input		rst;
-
-output	[7:0]	DataOut;
-output		TxValid;
-input		TxReady;
-
-input	[7:0]	DataIn;
-input		RxValid;
-input		RxActive;
-input		RxError;
-
-
-output	[7:0]	rx_data;
-output		rx_valid, rx_active, rx_err;
-input	[7:0]	tx_data;
-input		tx_valid;
-input		tx_valid_last;
-output		tx_ready;
-input		tx_first;
+input		phy_tx_mode;
+output		usb_rst;
+output		txdp, txdn, txoe;
+input		rxd, rxdp, rxdn;
+input	[7:0]	DataOut_i;
+input		TxValid_i;
+output		TxReady_o;
+output	[7:0]	DataIn_o;
+output		RxValid_o;
+output		RxActive_o;
+output		RxError_o;
+output	[1:0]	LineState_o;
 
 ///////////////////////////////////////////////////////////////////
 //
 // Local Wires and Registers
 //
-reg	[7:0]	rx_data;
-reg		rx_valid, rx_active, rx_err;
-reg	[7:0]	DataOut;
-reg		tx_ready;
-reg		TxValid;
+
+reg	[4:0]	rst_cnt;
+reg		usb_rst;
+wire		fs_ce;
+wire		rst;
 
 ///////////////////////////////////////////////////////////////////
 //
 // Misc Logic
 //
 
+///////////////////////////////////////////////////////////////////
+//
+// TX Phy
+//
+
+usb_tx_phy i_tx_phy(
+	.clk(		clk		),
+	.rst(		rst		),
+	.fs_ce(		fs_ce		),
+	.phy_mode(	phy_tx_mode	),
+
+	// Transciever Interface
+	.txdp(		txdp		),
+	.txdn(		txdn		),
+	.txoe(		txoe		),
+
+	// UTMI Interface
+	.DataOut_i(	DataOut_i	),
+	.TxValid_i(	TxValid_i	),
+	.TxReady_o(	TxReady_o	)
+	);
 
 ///////////////////////////////////////////////////////////////////
 //
-// RX Interface Input registers
+// RX Phy and DPLL
 //
 
-always @(posedge phy_clk or negedge rst)
-	if(!rst)	rx_valid <= #1 1'b0;
-	else		rx_valid <= #1 RxValid;
+usb_rx_phy i_rx_phy(
+	.clk(		clk		),
+	.rst(		rst		),
+	.fs_ce(		fs_ce		),
 
-always @(posedge phy_clk or negedge rst)
-	if(!rst)	rx_active <= #1 1'b0;
-	else		rx_active <= #1 RxActive;
+	// Transciever Interface
+	.rxd(		rxd		),
+	.rxdp(		rxdp		),
+	.rxdn(		rxdn		),
 
-always @(posedge phy_clk or negedge rst)
-	if(!rst)	rx_err <= #1 1'b0;
-	else		rx_err <= #1 RxError;
-
-always @(posedge phy_clk)
-		rx_data <= #1 DataIn;
+	// UTMI Interface
+	.DataIn_o(	DataIn_o	),
+	.RxValid_o(	RxValid_o	),
+	.RxActive_o(	RxActive_o	),
+	.RxError_o(	RxError_o	),
+	.RxEn_i(	txoe		),
+	.LineState(	LineState_o	)
+	);
 
 ///////////////////////////////////////////////////////////////////
 //
-// TX Interface Output/Input registers
+// Generate an USB Reset is we see SE0 for at least 2.5uS
 //
 
-always @(posedge phy_clk)
-	if(TxReady | tx_first)	DataOut <= #1 tx_data;
-
-always @(posedge phy_clk)
-	tx_ready <= #1 TxReady;
-
-always @(posedge phy_clk or negedge rst)
-	if(!rst)	TxValid <= #1 1'b0;
+`ifdef USB_ASYNC_REST
+always @(posedge clk or negedge rst)
+`else
+always @(posedge clk)
+`endif
+	if(!rst)			rst_cnt <= 5'h0;
 	else
-	TxValid <= #1 tx_valid | tx_valid_last | (TxValid & !TxReady);
+	if(LineState_o != 2'h0)		rst_cnt <= 5'h0;
+	else	
+	if(!usb_rst && fs_ce)		rst_cnt <= rst_cnt + 5'h1;
+
+always @(posedge clk)
+	usb_rst <= (rst_cnt == 5'h1f);
 
 endmodule
 

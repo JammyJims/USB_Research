@@ -1,1 +1,0 @@
-vhdtdtfi -lang verilog -prj inout -o C:/Users/root/Desktop/USB_Research/inout/Physical_Interface.tfi -lib work C:/Users/root/Desktop/USB_Research/inout//inout.v -module Physical_Interface -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

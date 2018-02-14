@@ -1,7 +1,0 @@
-xst -intstyle ise -ifn "/media/sf_Red/Projects/USB_Research/my_usb/usbf_top.xst" -ofn "/media/sf_Red/Projects/USB_Research/my_usb/usbf_top.syr" 
-ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-2 usbf_top.ngc usbf_top.ngd  
-map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o usbf_top_map.ncd usbf_top.ngd usbf_top.pcf 
-map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o usbf_top_map.ncd usbf_top.ngd usbf_top.pcf 
-xst -intstyle ise -ifn "U:/Desktop/XilinxProject/my_usb/usbf_top.xst" -ofn "U:/Desktop/XilinxProject/my_usb/usbf_top.syr" 
-ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-2 usbf_top.ngc usbf_top.ngd  
-map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o usbf_top_map.ncd usbf_top.ngd usbf_top.pcf 

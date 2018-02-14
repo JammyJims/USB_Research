@@ -1,4 +1,0 @@
-verilog work "Clock_Divider.v"
-verilog work "LFSR_TOP.v"
-verilog work "LFSR_TOP_TEST.v"
-verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

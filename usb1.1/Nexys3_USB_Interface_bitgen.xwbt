@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=C:\Users\root\Desktop\USB_Research\usb1.1\Nexys3_USB_Interface.ncd
-OUTFILE=C:\Users\root\Desktop\USB_Research\usb1.1\Nexys3_USB_Interface.bit
-FAMILY=Spartan6
-PART=xc6slx16-2csg324
-WORKINGDIR=C:\Users\root\Desktop\USB_Research\usb1.1
-LICENSE=WebPack
-USER_INFO=211445683_0_0_755

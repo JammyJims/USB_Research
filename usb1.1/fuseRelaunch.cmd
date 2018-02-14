@@ -1,1 +1,0 @@
--intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/root/Desktop/USB_Research/usb1.1/Physical_Transfer_TEST_isim_beh.exe" -prj "C:/Users/root/Desktop/USB_Research/usb1.1/Physical_Transfer_TEST_beh.prj" "work.Physical_Transfer_TEST" "work.glbl" 

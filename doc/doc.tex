@@ -147,14 +147,22 @@ Finite State Machines are the Flow statements of hardware.
 \subsubsection{Module Instantiations} 
 Module Instantiation is the basic idea that is required to create the top module that interfaces between the USB 1.1 Function Core and the Nexys3 Development Board and is important to any Hardware Development. Analogous to object instantiation in an object orient programming language such as C++ or Java
 \section{Research Findings}
-\subsection{USB Protocol and }
+\subsection{USB Protocol and Enumeration}
 USB devices must go through an enumeration process which will allocate a device ID in the range from [1:128] with ID=0 being reserved for newly connected devices. The USB protocol works by using endpoints and descriptors to describe the functionality of a particular USB device, notably HID devices such as keyboards, and mice loop between endpoints 1 and 2 when transferring polled data.\\
 
 I suspect that the enumeration process will be dealt with by the USB 1.1 function core however information regarding the device, configuration, and endpoint descriptors are missing or have yet to be filled out. There is a reasonable chance that somewhere in the USB 1.1 function core is a piece of ROM that is used to fetch the descriptors from but the question regarding where that ROM lies in the USB core eludes me.\\
 
 So far, I have connected up the Nexys 3 Development Board hosting the USB 1.1 function core, bi-directional lines, and LEDs (programmed state, and logic of the data lines D+ and D-) to receive a setup transaction. There are no acknowledgments to be found in response to the setup packets which is to be expected as I have not described how the USB 1.1 function core will behave (what to reply).\\
 
-Note that VBus and GND pins coming from the USB interface need not be connected, logic lines D+ and D- will still work without connecting these two wires.
+Note that VBus and GND pins coming from the USB interface need not be connected, logic lines D+ and D- will still work without connecting these two wires. A common GND pin may still need to be considered when using separate computers for Analysis and Experiment. Possible reason packets were still sent may be because Analysis and Experiment computers were the same. \\
+
+\subsection{what to do next}
+Date written: 16/02/2018
+\begin{enumerate}
+	\item work with the iCE stick, see if all Verilog project files could be transferred onto that development board.
+	\item Order in a USB 1.1 PHY transceiver from \href{https://au.mouser.com/Semiconductors/Interface-ICs/USB-Interface-IC/_/N-45lw3Z1yzvvqx?P=1yxy7lq&pop=3nh2d&Ns=Pricing|0}{au.Mouser.com} or another retailer.
+	\item Instantiate a USB 1.1 PHY following \href{http://www.xess.com/projects/fpga-usb-v2-project/}{this guide}
+\end{enumerate}
 
 \subsection{Experiment Setup}
 \underline{Connection Setup, make sure to reference figure \ref{fig:Experiment Setup}. }\\
